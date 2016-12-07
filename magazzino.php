@@ -33,9 +33,10 @@
 					<!-- Table -->
 					<table class="table">
 						<tr>
-							<td>codici</td>
-							<td>descrizione prodotti</td>
-							<td>um</td>
+							<td>Codice</td>
+							<td>Descrizione</td>
+							<td>Iva</td>
+							<td>Prezzo senza Iva</td>
 						</tr>
 					</table>
 				</div>
