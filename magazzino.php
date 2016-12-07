@@ -2,12 +2,8 @@
 	<head>
 	
 		<style>
-			table, th, td {
-				border-collapse: collapse;
-			}
-			td:hover {
-				background-color:#cc6600;
-				color:blue;
+			td:nth-child(odd){
+				background-color: #f2f2f2;
 			}
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
