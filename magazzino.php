@@ -38,6 +38,12 @@
 							<th>Iva</th>
 							<th>Prezzo senza Iva</th>
 						</tr>
+						<tr>
+							<td>11010</td>
+							<td>Mela</td>
+							<td>22%</td>
+							<td>0,30</td>
+						</tr>
 					</table>
 				</div>
 		
