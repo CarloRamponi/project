@@ -33,10 +33,10 @@
 					<!-- Table -->
 					<table class="table">
 						<tr>
-							<td>Codice</td>
-							<td>Descrizione</td>
-							<td>Iva</td>
-							<td>Prezzo senza Iva</td>
+							<th>Codice</th>
+							<th>Descrizione</th>
+							<th>Iva</th>
+							<th>Prezzo senza Iva</th>
 						</tr>
 					</table>
 				</div>
@@ -50,4 +50,3 @@
 		
 	</body>
 </html>
-
