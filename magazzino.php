@@ -22,11 +22,25 @@
         
 			<div class="panel panel-default">
 			<!-- Default panel contents -->
-				<div class="panel-heading">Panel heading</div>
+				<div class="panel-heading">Elenco Prodotti</div>
 
 				<!-- Table -->
 				<table class="table">
-				...
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 				</table>
 			</div>
     
