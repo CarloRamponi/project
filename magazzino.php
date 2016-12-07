@@ -27,19 +27,9 @@
 				<!-- Table -->
 				<table class="table">
 					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td>codici</td>
+						<td>descrizione prodotti</td>
+						<td>um</td>
 					</tr>
 				</table>
 			</div>
