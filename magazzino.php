@@ -14,19 +14,23 @@
 
 	<div id="wrapper">
 
-	<div class="container">
+		<div class="container">
     
-    	<div class="page-header">
-    	<h3>Magazzino</h3>
-    	</div>
+			<div class="page-header">
+			<h3>Magazzino</h3>
+			</div>
         
-        <div class="row">
-        <div class="col-lg-12">
-        <h1>O.o</h1>
-        </div>
-        </div>
+			<div class="panel panel-default">
+			<!-- Default panel contents -->
+				<div class="panel-heading">Panel heading</div>
+
+				<!-- Table -->
+				<table class="table">
+				...
+				</table>
+			</div>
     
-    </div>
+		</div>
     
     </div>
     
