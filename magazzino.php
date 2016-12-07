@@ -2,7 +2,7 @@
 	<head>
 	
 		<style>
-			td,th:nth-child(odd){
+			td:nth-child(odd),th:nth-child(odd){
 				background-color: #f2f2f2;
 			}
 		</style>
