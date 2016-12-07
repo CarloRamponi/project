@@ -86,7 +86,7 @@
             
             <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
             	<input type="text" name="user" class="form-control" placeholder="Username" value="<?php echo $username; ?>" maxlength="50" />
                 </div>
                 <span class="text-danger"><?php echo $usernameError; ?></span>
