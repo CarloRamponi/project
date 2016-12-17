@@ -40,12 +40,27 @@
 							<th>Iva</th>
 							<th>Prezzo senza Iva</th>
 						</tr>
-						<tr>
-							<td>11010</td>
-							<td>Mela</td>
-							<td>22%</td>
-							<td>0,30</td>
-						</tr>
+						<?php
+							$res=mysql_query("SELECT * from prodotti");
+							$n=mysql_num_rows($res);
+							if($n){
+								for(i = 0; i< $n; i++){
+									$row=mysql_fetch_row($res);
+									?>
+									<tr>
+										<td><?php echo $row['codice']; ?></td>
+										<td><?php echo $row['descrizione']; ?></td>
+										<td><?php echo $row['iva']."%"; ?></td>
+										<td><?php echo $row['prezzo']."€"; ?></td>
+									</tr>
+									<span id="del<?php echo $row['codice']; ?>"></span>
+									<span id="edit<?php echo $row['codice']; ?>"></span>
+									<?php
+								}
+							} else { ?>
+								<tr><td colspan="4">Nessun prodotto nel database!</td></tr>
+							<?php } ?>
+						?>
 					</table>
 				</div>
 
