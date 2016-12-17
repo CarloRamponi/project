@@ -2,18 +2,18 @@
 	ob_start();
 	session_start();
 	require_once 'dbconnect.php';
-	
+
 	// if session is not set this will redirect to login page
 	if( !isset($_SESSION['user']) ) {
 		header("Location: index.php");
 		exit;
 	}
 	// select loggedin users detail
-	$res=mysql_query("SELECT * FROM utenti WHERE username=".$_SESSION['user']);
-	$userRow=mysql_fetch_array($res);
+	$res=mysql_query("SELECT * FROM utenti WHERE username=$_SESSION['user']");
+	$userRow=mysql_fetch_row($res);
 ?>
 <!DOCTYPE html>
-	
+
 	<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -32,7 +32,7 @@
             <li class="<?php if($page==3) echo "active"; ?>"><a href="notYet.php?page=3">Marketing</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 			  <span class="glyphicon glyphicon-user"></span>&nbsp;Hi' <?php echo $userRow['username']; ?>&nbsp;<span class="caret"></span></a>
@@ -43,4 +43,4 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </nav> 
+    </nav>
