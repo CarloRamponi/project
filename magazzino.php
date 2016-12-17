@@ -43,30 +43,30 @@
 						<?php
 							$res=mysql_query("SELECT * from prodotti");
 							$n=mysql_num_rows($res);
-							if($n){
-								for(i = 0; i< $n; i++){
-									$row=mysql_fetch_row($res);
-									?>
+							if($n!=0){
+								for($i = 0; $i< $n; $i++){
+									$row=mysql_fetch_array($res);
+						?>
 									<tr>
 										<td><?php echo $row['codice']; ?></td>
 										<td><?php echo $row['descrizione']; ?></td>
-										<td><?php echo $row['iva']."%"; ?></td>
-										<td><?php echo $row['prezzo']."€"; ?></td>
+										<td><?php echo $row['iva']; ?>%</td>
+										<td><?php echo $row['prezzo']; ?>€</td>
 									</tr>
-									<span id="del<?php echo $row['codice']; ?>"></span>
-									<span id="edit<?php echo $row['codice']; ?>"></span>
-									<?php
+						<?php
+									echo "<span id='del".$row['id']."'></span>";
+									echo "<span id='edit".$row['id']."'></span>";
 								}
-							} else { ?>
-								<tr><td colspan="4">Nessun prodotto nel database!</td></tr>
-							<?php } ?>
+							} else {
 						?>
+								<tr><td colspan="4">Nessun prodotto nel database!</td></tr>
+						<?php } ?>
 					</table>
 				</div>
 
 				<?php if($userRow['magazzino']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
-					ciao!
+					<?php echo "n=".$row['id']; ?>
 				<?php } ?>
 			</div>
 
