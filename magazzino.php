@@ -1,6 +1,6 @@
 <html>
 	<head>
-	
+
 		<style>
 			td:nth-child(odd),th:nth-child(odd){
 				background-color: #f2f2f2;
@@ -17,15 +17,17 @@
 			$page=1;
 			include 'header.php'
 		?>
-		
+
 		<div id="wrapper">
 
 			<div class="container">
-		
+
 				<div class="page-header">
 				<h3>Magazzino</h3>
 				</div>
-			
+
+				<?php if($userRow['magazzino']){ ?>
+
 				<div class="panel panel-default">
 				<!-- Default panel contents -->
 					<div class="panel-heading">Elenco Prodotti</div>
@@ -46,13 +48,22 @@
 						</tr>
 					</table>
 				</div>
-		
+
+				<?php if($userRow['magazzino']==2){ ?>
+					<!-- Bottoni aggiungi e modifica! -->
+					ciao!
+				<?php } ?>
 			</div>
-		
+
+			<?php } else { ?>
+				<!-- Non autorizzato a visualizzare! -->
+				Non autorizzato
+			<?php } ?>
+
 		</div>
-		
+
 		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-		
+
 	</body>
 </html>
