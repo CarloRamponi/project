@@ -9,7 +9,7 @@
 		exit;
 	}
 	// select loggedin users detail
-	$res=mysql_query("SELECT * FROM utenti WHERE username=".$_SESSION['user']);
+	$res=mysql_query("SELECT * FROM utenti WHERE username='".$_SESSION['user']."'");
 	$userRow=mysql_fetch_array($res);
 ?>
 <!DOCTYPE html>
