@@ -26,7 +26,7 @@
 				<h3>Magazzino</h3>
 				</div>
 
-				<?php if($useerRow['magazzino']){ ?>
+				<?php if($userRow['magazzino']){ ?>
 
 				<div class="panel panel-default">
 				<!-- Default panel contents -->
