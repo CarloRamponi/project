@@ -75,7 +75,7 @@
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
 					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
-					<a class="btn btn-success" href = 'aggiungiMagazzino.php'>Aggiungi</a>
+					<a class="btn btn-success" href = 'aggiungiMagazzino.php?type=aggiungi'>Aggiungi</a>
 				<?php } ?>
 			</div>
 
@@ -88,7 +88,11 @@
 
 		<script>
 			function bottoniElimina(n){
-				alert("BottoniElimina "+ n +"");
+				for (i=1;i<=n;i++){
+					if(document.getElementById("del"+i+"")){
+						document.getElementById("del"+i+"").outerHTML="<a href='eliminaMagazzino.php?id="+i+"' style='font-size:30px;'><div class='glyphicon glyphicon-edit'></div>";	
+					}
+				}
 			}
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
