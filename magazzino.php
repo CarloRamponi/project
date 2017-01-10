@@ -17,6 +17,8 @@
 			$page=1;
 			include 'header.php'
 		?>
+		
+		<script>var numeroProdotti=0;</script>
 
 		<div id="wrapper">
 
@@ -88,6 +90,11 @@
 			}
 			function bottoniModifica(n){
 				alert("BottoniModifica "+ n +"");
+				for (i=1;i<=n;i++){
+					if(document.getElementById("edit"+i+"")){
+						document.getElementById("edit"+i+"").outerHTML="<a class='btn btn-default btn-circle' href='aggiugniMagazzino.php?type='modifica'&id="+i+"'>EDIT</a>";	
+					}
+				}
 			}
 		</script>
 
