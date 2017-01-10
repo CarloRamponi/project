@@ -5,14 +5,14 @@
 			td:nth-child(odd),th:nth-child(odd){
 				background-color: #f2f2f2;
 			}
-			table, th, td {
+			<!--table, th, td {
 				border: 1px solid black;
 				border-collapse: collapse;
-			}
+			}-->
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>GS - Magazzino</title>
-		<!--<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />-->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
