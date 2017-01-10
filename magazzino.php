@@ -15,7 +15,7 @@
 
 		<?php
 			$page=1;
-			include 'header.php'
+			include 'header.php';
 		?>
 		
 		<script>var numeroProdotti=0;</script>
