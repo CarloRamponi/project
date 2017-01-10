@@ -12,7 +12,9 @@
 	$userRow=mysql_fetch_array($res);
 	$permessi=$userRow[0];
 
-	echo "Permessi: ". $permessi ."";
+	if(isset($_GET['id'])){
+		$res=mysql_query("DELETE from prodotti WHERE id='".$_GET['id']."'");
+	}
 
 
 ?>
