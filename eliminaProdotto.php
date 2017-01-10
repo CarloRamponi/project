@@ -16,5 +16,7 @@
 		$res=mysql_query("DELETE from prodotti WHERE id='".$_GET['id']."'");
 	}
 
+	header("location: magazzino.php");
+
 
 ?>
