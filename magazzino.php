@@ -71,7 +71,7 @@
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
 					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
-					<button class="btn btn-success" onclick="Location.href = 'aggiungiMagazzino.php'">Aggiungi</button>
+					<a class="btn btn-success" href = 'aggiungiMagazzino.php'>Aggiungi</a>
 				<?php } ?>
 			</div>
 
