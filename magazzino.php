@@ -56,8 +56,8 @@
 										<td><?php echo $prodotti[$i]['iva']; ?>%</td>
 										<td><?php echo $prodotti[$i]['prezzo']; ?>€</td>
 										<?php
-											echo "<span id='del".$prodotti[$i]['id']."'></span>";
-											echo "<span id='edit".$prodotti[$i]['id']."'></span>";
+											echo "<td id='del".$prodotti[$i]['id']."'></td>";
+											echo "<td id='edit".$prodotti[$i]['id']."'></td>";
 										?>
 									</tr>
 						<?php
