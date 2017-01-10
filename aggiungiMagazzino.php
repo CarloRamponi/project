@@ -56,7 +56,7 @@
 
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicons-sheriffs-star"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicons-restart"></span></span>
             	<input type="text" name="iva" class="form-control" placeholder="Iva del prodotto" maxlength="150" />
                 </div>
             </div>
