@@ -5,6 +5,10 @@
 			td:nth-child(odd),th:nth-child(odd){
 				background-color: #f2f2f2;
 			}
+			table, th, td {
+				border: 10px solid black;
+				border-collapse: collapse;
+			}
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>GS - Magazzino</title>
