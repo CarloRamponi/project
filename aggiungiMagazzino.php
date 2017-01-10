@@ -33,7 +33,7 @@
     	<h3><?php if($type == "modifica") echo "Modifica"; else echo "Aggiungi"; ?></h3>
     	</div>
 
-         <form method="post" <?php if($type=="modifica") echo 'action="modificaProdottiScript.php"'; else echo 'action="eliminaProdottiScript.php"'; ?> autocomplete="off">
+         <form method="post" <?php if($type=="modifica") echo 'action="modificaProdottoScript.php"'; else echo 'action="aggiungiProdottoScript.php"'; ?> autocomplete="off">
 
     	<div class="col-md-12">
 
@@ -72,6 +72,12 @@
 
             <div class="form-group">
             	<hr />
+				<?php
+					if(isset($_GET['error'])){
+						if($_GET['error']=="vuoto")
+						?><span class="text-danger">I campi non possono essere vuoti!</span><?php
+					}
+				?>
             </div>
 
             <div class="form-group">
