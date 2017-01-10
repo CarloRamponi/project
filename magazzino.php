@@ -97,11 +97,9 @@
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edit"+i+"")){
-						if(document.getElementById("mod"+i+"")){
-							
-					}
 						document.getElementById("edit"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='mod".$prodotti[$i]['id']."'><a href='aggiungiMagazzino.php?type='modifica'&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";	
-					}
+					} else if(document.getElementById("mod"+i+""))
+							document.getElementById("mod"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edit".$prodotti[$i]['id']."'></td>";
 				}
 			}
 		</script>
