@@ -90,7 +90,7 @@
 			function bottoniElimina(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("del"+i+"")){
-						document.getElementById("del"+i+"").outerHTML="<td style='background-color:#FFFFFF;'><a href='eliminaMagazzino.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";	
+						document.getElementById("del"+i+"").outerHTML="<td style='background-color:#FFFFFF;'><a href='eliminaProdotto.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";	
 					}
 				}
 			}
