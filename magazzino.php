@@ -17,7 +17,7 @@
 			$page=1;
 			include 'header.php';
 		?>
-		
+
 		<script>var numeroProdotti=0;</script>
 
 		<div id="wrapper">
@@ -94,7 +94,7 @@
 				alert("BottoniModifica "+ n +"");
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edit"+i+"")){
-						document.getElementById("edit"+i+"").outerHTML="<a href='aggiugniMagazzino.php?type='modifica'&id="+i+"'><span class='glyphicon glyphicon-edit'></span></a>";	
+						document.getElementById("edit"+i+"").outerHTML="<a href='aggiugniMagazzino.php?type='modifica'&id="+i+"'><span class='glyphicon glyphicon-edit' style='font-size:30px;'></span></a>";	
 					}
 				}
 			}
