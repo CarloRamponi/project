@@ -94,7 +94,7 @@
 				alert("BottoniModifica "+ n +"");
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edit"+i+"")){
-						document.getElementById("edit"+i+"").outerHTML="<a class='glyphicon glyphicon-edit' href='aggiugniMagazzino.php?type='modifica'&id="+i+"'></a>";	
+						document.getElementById("edit"+i+"").innerText="<a class='glyphicon glyphicon-edit' href='aggiugniMagazzino.php?type='modifica'&id="+i+"'></a>";	
 					}
 				}
 			}
