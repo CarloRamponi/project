@@ -44,9 +44,9 @@
 							$res=mysql_query("SELECT * from prodotti");
 							$n=mysql_num_rows($res);
 							if($n!=0){
-								for($i = 0; $i< $n; $i++){
+								$i=0;
+								for(; $i< $n; $i++){
 									$prodotti[$i]=mysql_fetch_array($res);
-
 
 						?>
 									<tr>
