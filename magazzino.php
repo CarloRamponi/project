@@ -43,7 +43,6 @@
 						<?php
 							$res=mysql_query("SELECT * from prodotti");
 							$n=mysql_num_rows($res);
-							echo "<script>var numeroProdotti=".$n.";</script>";
 							if($n!=0){
 								for($i = 0; $i< $n; $i++){
 									$prodotti[$i]=mysql_fetch_array($res);
@@ -56,11 +55,11 @@
 										<td><?php echo $prodotti[$i]['iva']; ?>%</td>
 										<td><?php echo $prodotti[$i]['prezzo']; ?>€</td>
 									</tr>
-									<script></script>
 						<?php
 									echo "<span id='del".$prodotti[$i]['id']."'></span>";
 									echo "<span id='edit".$prodotti[$i]['id']."'></span>";
 								}
+								echo "<script>var numeroProdotti=".$prodotti[$i]['id'].";</script>";
 							} else {
 						?>
 								<tr><td colspan="4">Nessun prodotto nel database!</td></tr>
