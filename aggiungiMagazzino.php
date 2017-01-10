@@ -56,7 +56,7 @@
 
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicons-asterisk"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicons-chevron-right"></span></span>
             	<input type="text" name="iva" class="form-control" placeholder="Iva del prodotto" maxlength="150" />
                 </div>
             </div>
@@ -64,7 +64,7 @@
              <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
-            	<input type="text" name="prezzo" class="form-control" placeholder="prezzo unitario del prodotto" maxlength="150" />
+            	<input type="text" name="prezzo" class="form-control" placeholder="Prezzo unitario del prodotto" maxlength="150" />
                 </div>
             </div>
 
