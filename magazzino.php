@@ -43,19 +43,23 @@
 						<?php
 							$res=mysql_query("SELECT * from prodotti");
 							$n=mysql_num_rows($res);
+							echo "<script>var numeroProdotti=".$n.";</script>";
 							if($n!=0){
 								for($i = 0; $i< $n; $i++){
-									$row=mysql_fetch_array($res);
+									$prodotti[$i]=mysql_fetch_array($res);
+
+
 						?>
 									<tr>
-										<td><?php echo $row['codice']; ?></td>
-										<td><?php echo $row['descrizione']; ?></td>
-										<td><?php echo $row['iva']; ?>%</td>
-										<td><?php echo $row['prezzo']; ?>€</td>
+										<td><?php echo $prodotti[$i]['codice']; ?></td>
+										<td><?php echo $prodotti[$i]['descrizione']; ?></td>
+										<td><?php echo $prodotti[$i]['iva']; ?>%</td>
+										<td><?php echo $prodotti[$i]['prezzo']; ?>€</td>
 									</tr>
+									<script></script>
 						<?php
-									echo "<span id='del".$row['id']."'></span>";
-									echo "<span id='edit".$row['id']."'></span>";
+									echo "<span id='del".$prodotti[$i]['id']."'></span>";
+									echo "<span id='edit".$prodotti[$i]['id']."'></span>";
 								}
 							} else {
 						?>
@@ -66,6 +70,7 @@
 
 				<?php if($userRow['magazzino']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
+					<script>alert(numeroProdotti);</script>
 					<button class="btn btn-danger">Elimina</button>
 					<button class="btn btn-warning">Modifica</button>
 					<button class="btn btn-success">Aggiungi</button>
