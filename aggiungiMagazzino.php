@@ -43,7 +43,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-barcode"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Codice prodotto" value="0"/>
+            	<input type="integer" name="codice" class="form-control" placeholder="Codice prodotto"/>
                 </div>
             </div>
 
@@ -56,14 +56,14 @@
 
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-coins"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicons-asterisk"></span></span>
             	<input type="text" name="iva" class="form-control" placeholder="Iva del prodotto" maxlength="150" />
                 </div>
             </div>
 
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-money"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
             	<input type="text" name="prezzo" class="form-control" placeholder="prezzo unitario del prodotto" maxlength="150" />
                 </div>
             </div>
