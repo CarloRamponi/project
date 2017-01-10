@@ -94,7 +94,7 @@
 				alert("BottoniModifica "+ n +"");
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edit"+i+"")){
-						document.getElementById("edit"+i+"").outerHTML="<a class='btn btn-default btn-circle' href='aggiugniMagazzino.php?type='modifica'&id="+i+"'>EDIT</a>";	
+						document.getElementById("edit"+i+"").outerHTML="<td></td><a class='btn btn-default btn-circle' href='aggiugniMagazzino.php?type='modifica'&id="+i+"'>EDIT</a></td>";	
 					}
 				}
 			}
