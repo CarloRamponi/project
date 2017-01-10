@@ -12,8 +12,10 @@
 	$userRow=mysql_fetch_array($res);
 	$permessi=$userRow[0];
 
-	if(isset($_GET['id'])){
-		$res=mysql_query("DELETE from prodotti WHERE id='".$_GET['id']."'");
+	if($permessi==2){
+		if(isset($_GET['id'])){
+			$res=mysql_query("DELETE from prodotti WHERE id='".$_GET['id']."'");
+		}
 	}
 
 	header("location: magazzino.php");
