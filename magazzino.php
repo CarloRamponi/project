@@ -55,10 +55,12 @@
 										<td><?php echo $prodotti[$i]['descrizione']; ?></td>
 										<td><?php echo $prodotti[$i]['iva']; ?>%</td>
 										<td><?php echo $prodotti[$i]['prezzo']; ?>€</td>
+										<?php
+											echo "<span id='del".$prodotti[$i]['id']."'></span>";
+											echo "<span id='edit".$prodotti[$i]['id']."'></span>";
+										?>
 									</tr>
 						<?php
-									echo "<span id='del".$prodotti[$i]['id']."'></span>";
-									echo "<span id='edit".$prodotti[$i]['id']."'></span>";
 									$num=$prodotti[$i]['id'];
 								}
 								echo "<script>var numeroProdotti=".$num.";</script>";
