@@ -21,7 +21,7 @@
 	<?php
 		$page=1;
 		include 'header.php';
-		$res=mysql_query("SELECT * from prodotti where id='".$_GET['id']"'");
+		$res=mysql_query("SELECT * from prodotti where id='".$_GET['id']."'");
 		$prodotto=mysql_fetch_array($res);
 	?>
 
