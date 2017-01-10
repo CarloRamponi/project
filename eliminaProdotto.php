@@ -12,7 +12,7 @@
 	$userRow=mysql_fetch_array($res);
 	$permessi=$userRow[0];
 
-	echo "Permessi: ". $permessi;
+	echo "Permessi: ". $permessi ."";
 
 
 ?>
