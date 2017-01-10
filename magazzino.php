@@ -68,7 +68,7 @@
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger">Elimina</button>
 					<button class="btn btn-warning">Modifica</button>
-					<button class="btn btn-succes">Aggiungi</button>
+					<button class="btn btn-success">Aggiungi</button>
 				<?php } ?>
 			</div>
 
