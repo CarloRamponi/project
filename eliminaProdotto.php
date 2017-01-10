@@ -6,7 +6,7 @@
 		header("Location: index.php");
 	}
 
-	require_once 'dbconnect';
+	require_once 'dbconnect.php';
 
 	$res=mysql_query("SELECT magazzino FROM utenti WHERE username='".$_SESSION['user']."'");
 	$userRow=mysql_fetch_array($res);
