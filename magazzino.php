@@ -85,10 +85,10 @@
 
 		<script>
 			function bottoniElimina(n){
-				alert("BottoniElimina ". n ."");
+				alert("BottoniElimina "+ n +"");
 			}
 			function bottoniModifica(n){
-				alert("BottoniModifica ". n ."");
+				alert("BottoniModifica "+ n +"");
 			}
 		</script>
 
