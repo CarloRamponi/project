@@ -63,7 +63,7 @@
 
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-coins"></span></span>
             	<input type="text" name="prezzo" class="form-control" placeholder="Prezzo unitario del prodotto" maxlength="150" />
                 </div>
             </div>
