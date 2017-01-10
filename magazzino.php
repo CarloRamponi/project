@@ -5,10 +5,6 @@
 			td:nth-child(odd),th:nth-child(odd){
 				background-color: #f2f2f2;
 			}
-			<!--table, th, td {
-				border: 1px solid black;
-				border-collapse: collapse;
-			}-->
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>GS - Magazzino</title>
@@ -101,7 +97,7 @@
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edit"+i+"")){
-						document.getElementById("edit"+i+"").outerHTML="<td><a href='aggiugniMagazzino.php?type='modifica'&id="+i+"' style='font-size:30px;'><div style='background-color:black'class='glyphicon glyphicon-edit'></div></a></td>";	
+						document.getElementById("edit"+i+"").outerHTML="<td><a href='aggiugniMagazzino.php?type='modifica'&id="+i+"' style='font-size:30px;'><div class='glyphicon glyphicon-edit'></div></a></td>";	
 					}
 				}
 			}
