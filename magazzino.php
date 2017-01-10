@@ -15,7 +15,7 @@
 
 		<?php
 			$page=1;
-			include 'header.php'
+			include 'header.php';
 		?>
 
 		<div id="wrapper">
