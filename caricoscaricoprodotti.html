@@ -1,0 +1,81 @@
+<html>
+	<head>
+
+		<style>
+			td:nth-child(odd),th:nth-child(odd){
+				background-color: #f2f2f2;
+			}
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>GS - Magazzino</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+
+		
+
+		<div id="wrapper">
+
+			<div class="container">
+
+				<div class="page-header">
+				<h3>Magazzino</h3>
+				</div>
+
+				
+
+				<div class="panel panel-default">
+				<!-- Default panel contents -->
+					<div class="panel-heading">Elenco Prodotti</div>
+
+					<!-- Table -->
+					<table class="table">
+						<tr>
+						<tr><td>DATA</td><td>TIPO</td><td>QUANTITÀ</td></tr>
+						<tr><td>\\</td><td>\\</td><td>\\</td></tr>
+						<tr><td>\\</td><td>\\</td><td>\\</td></tr>
+						<tr><td>\\</td><td>\\</td><td>\\</td></tr>	
+						</tr>
+						
+									<tr>
+										<td></td>
+										<td></td>
+										<td>%</td>
+										<td>€</td>
+									</tr>
+						
+								<tr><td colspan="4">Nessun prodotto nel database!</td></tr>
+						
+					</table>
+				</div>
+
+				
+					<!-- Bottoni aggiungi e modifica! -->
+					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
+					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
+					<button class="btn btn-success" onclick="Location.href = 'aggiungiMagazzino.php'">Aggiungi</button>
+				
+			</div>
+
+			
+				<!-- Non autorizzato a visualizzare! -->
+				Non autorizzato
+			
+
+		</div>
+
+		<script>
+			function bottoniElimina(n){
+				alert("BottoniElimina "+ n +"");
+			}
+			function bottoniModifica(n){
+				alert("BottoniModifica "+ n +"");
+			}
+		</script>
+
+		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

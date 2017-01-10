@@ -93,7 +93,7 @@
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edit"+i+"")){
-						document.getElementById("edit"+i+"").outerHTML="<a href='aggiugniMagazzino.php?type='modifica'&id="+i+"' style='font-size:30px;'>\e065</a>";	
+						document.getElementById("edit"+i+"").outerHTML="<a href='aggiugniMagazzino.php?type='modifica'&id="+i+"' style='font-size:30px;'><div class='glyphicon glyphicon-edit'></div></a>";	
 					}
 				}
 			}
