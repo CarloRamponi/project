@@ -66,7 +66,9 @@
 
 				<?php if($userRow['magazzino']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
-					<?php echo "n=".$row['id']; ?>
+					<button class="btn btn-danger">Elimina</button>
+					<button class="btn btn-warning">Modifica</button>
+					<button class="btn btn-succes">Aggiungi</button>
 				<?php } ?>
 			</div>
 
