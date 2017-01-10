@@ -70,10 +70,9 @@
 
 				<?php if($userRow['magazzino']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
-					<script>alert(numeroProdotti);</script>
-					<button class="btn btn-danger">Elimina</button>
-					<button class="btn btn-warning">Modifica</button>
-					<button class="btn btn-success">Aggiungi</button>
+					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
+					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
+					<button class="btn btn-success" onclick="Location.href = 'aggiungiMagazzino.php'">Aggiungi</button>
 				<?php } ?>
 			</div>
 
@@ -83,6 +82,15 @@
 			<?php } ?>
 
 		</div>
+
+		<script>
+			function bottoniElimina(n){
+				alert("BottoniElimina ". n ."");
+			}
+			function bottoniModifica(n){
+				alert("BottoniModifica ". n ."");
+			}
+		</script>
 
 		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
