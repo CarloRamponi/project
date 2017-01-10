@@ -90,14 +90,14 @@
 			function bottoniElimina(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("del"+i+"")){
-						document.getElementById("del"+i+"").outerHTML="<td><a href='eliminaMagazzino.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";	
+						document.getElementById("del"+i+"").outerHTML="<td style='background-color:#FFFFFF;'><a href='eliminaMagazzino.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";	
 					}
 				}
 			}
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edit"+i+"")){
-						document.getElementById("edit"+i+"").outerHTML="<td><a href='aggiugniMagazzino.php?type='modifica'&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";	
+						document.getElementById("edit"+i+"").outerHTML="<td style='background-color:#FFFFFF;'><a href='aggiugniMagazzino.php?type='modifica'&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";	
 					}
 				}
 			}
