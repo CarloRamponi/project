@@ -21,6 +21,8 @@
 	<?php
 		$page=1;
 		include 'header.php';
+		$res=mysql_query("SELECT * from prodotti where id='".$_GET['id']"'");
+		$prodotto=mysql_fetch_array($res);
 	?>
 
 	<div id="wrapper">
@@ -43,28 +45,28 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-barcode"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Codice prodotto"/>
+            	<input type="integer" name="codice" class="form-control" placeholder="Codice prodotto" <?php if(type=="modifica") echo "value='".$prodotto['codice']."'";?>/>
                 </div>
             </div>
 
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
-            	<input type="text" name="descrizione" class="form-control" placeholder="Descrizione del prodotto" maxlength="150" />
+            	<input type="text" name="descrizione" class="form-control" placeholder="Descrizione del prodotto" maxlength="150" <?php if(type=="modifica") echo "value='".$prodotto['descrizione']."'";?>/>
                 </div>
             </div>
 
              <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
-            	<input type="text" name="iva" class="form-control" placeholder="Iva del prodotto" maxlength="150" />
+            	<input type="text" name="iva" class="form-control" placeholder="Iva del prodotto" maxlength="150" <?php if(type=="modifica") echo "value='".$prodotto['iva']."'";?>/>
                 </div>
             </div>
 
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-coins"></span></span>
-            	<input type="text" name="prezzo" class="form-control" placeholder="Prezzo unitario del prodotto" maxlength="150" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+            	<input type="text" name="prezzo" class="form-control" placeholder="Prezzo unitario del prodotto" maxlength="150" <?php if(type=="modifica") echo "value='".$prodotto['prezzo']."'";?>/>
                 </div>
             </div>
 
