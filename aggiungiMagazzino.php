@@ -12,7 +12,7 @@
 		}
 	?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php if($type=="modifica") echo "Modifica prodotto - Simulimpresa" else echo "Aggiungi prodotto - Simulimpresa"?></title>
+<title><?php if($type=="modifica") echo "Modifica prodotto - Simulimpresa"; else echo "Aggiungi prodotto - Simulimpresa";?></title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -31,7 +31,7 @@
     	<h3><?php if($type == "modifica") echo "Modifica"; else echo "Aggiungi"; ?></h3>
     	</div>
 
-         <form method="post" <?php if($type=="modifica") echo 'action="modificaProdottiScript.php"'; else echo 'action="eliminaProdottiScript.php"' ?> autocomplete="off">
+         <form method="post" <?php if($type=="modifica") echo 'action="modificaProdottiScript.php"'; else echo 'action="eliminaProdottiScript.php"'; ?> autocomplete="off">
 
     	<div class="col-md-12">
 
