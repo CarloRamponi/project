@@ -6,7 +6,7 @@
 				background-color: #f2f2f2;
 			}
 			table, th, td {
-				border: 10px solid black;
+				border: 1px solid black;
 				border-collapse: collapse;
 			}
 		</style>
