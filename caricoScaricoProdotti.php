@@ -26,7 +26,7 @@
 			if($n==0){
 				header('location: magazzino.php');
 			} else {
-				$res = mysql_query("SELECT * FROM log WHERE codice=".$codice."");
+				$res = mysql_query("SELECT * FROM log ORDER BY data WHERE codice=".$codice."");
 				$num = mysql_num_rows($res);
 				if($num){
 					for($i=0; $i<$num; $i++)
