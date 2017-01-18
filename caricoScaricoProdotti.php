@@ -87,6 +87,16 @@
 
 		</div>
 
+		<script>
+			function bottoniElimina(n){
+				for (i=1;i<=n;i++){
+					if(document.getElementById("del"+i+"")){
+						document.getElementById("del"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaProdotto.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
+					} else if(document.getElementById("eli"+i+""))
+							document.getElementById("eli"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='del"+i+"'></td>";
+				}
+			}
+		</script>
 
 		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>

@@ -51,7 +51,7 @@
 
 						?>
 									<tr>
-										<td><?php echo $prodotti[$i]['codice']; ?></td>
+										<td><a href="caricoScaricoProdotti.php?codice=<?php echo $prodotti[$i]['codice']; ?>"><?php echo $prodotti[$i]['codice']; ?></a></td>
 										<td><?php echo $prodotti[$i]['descrizione']; ?></td>
 										<td><?php echo $prodotti[$i]['iva']; ?>%</td>
 										<td><?php echo $prodotti[$i]['prezzo']; ?>€</td>
