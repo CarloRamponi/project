@@ -33,7 +33,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-            	<input type="text" name="data" class="form-control" placeholder="data" maxlength="150" />
+            	<input type="date" name="data" class="form-control" placeholder="data" maxlength="150" />
                 </div>
             </div>
             
@@ -52,7 +52,7 @@
             </div>
             
             <div class="form-group">
-            	<select class="form-control">
+            	<select class="form-control"></select><span class="glyphicon glyphicon-calendar"></span>
 					<option>Carico</option>
 					<option>Scarico</option>
 				</select>
