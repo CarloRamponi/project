@@ -42,7 +42,7 @@
 
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-piggy-bank"></span></span>
             	<input type="text" name="quantita" class="form-control" placeholder="quantità"/>
                 </div>
             </div>
