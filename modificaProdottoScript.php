@@ -20,7 +20,7 @@
         if($codice=="" || $descrizione == "" || $iva=="" || $prezzo=="" || $_GET['id']=="")
             header("location: aggiungiMagazzino.php?error=vuoto");
         else{
-            mysql_query("UPDATE prodotti SET codice=".$codice.", descrizione=".$descrizione.", iva=".$iva.", prezzo="$prezzo." WHERE id=".$_GET['id'].";");
+            mysql_query("UPDATE prodotti SET codice=".$codice.", descrizione=".$descrizione.", iva=".$iva.", prezzo=".$prezzo." WHERE id=".$_GET['id'].";");
         }
     }
 
