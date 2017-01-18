@@ -45,7 +45,7 @@
 				<h3>Magazzino</h3>
 				</div>
 
-				<?php if($userRow['magazzino']){ ?>
+				<?php //if($userRow['magazzino']){ ?>
 
 				<div class="panel panel-default">
 				<!-- Default panel contents -->
@@ -57,7 +57,7 @@
  						<?php if($num==0) { ?>
 							<tr><td colspan=3>Nessuno log nel database...</td></tr>
 						<?php } else {
-							for($i=0; i<$num; i++){ ?>
+							for($i=0; $i<$num; $i++){ ?>
 								<tr>
 									<td><?php echo $log[$i]['data']; ?></td>
 									<td><?php echo $log[$i]['tipo']; ?></td>
@@ -78,10 +78,10 @@
 					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
 					<button class="btn btn-success" onclick="Location.href = 'aggiungiMagazzino.php'">Aggiungi</button>
 
-				<?php } else { ?>
+				<?php //} else { ?>
 					<!-- Non autorizzato a visualizzare! -->
 					Non autorizzato
-				<?php } ?>
+				<?php //} ?>
 
 			</div>
 
