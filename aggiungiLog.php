@@ -39,14 +39,14 @@
             
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-cogwheel"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
             	<input type="text" name="tipo" class="form-control" placeholder="tipo"/>
                 </div>
             </div>
             
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-playing-dices"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
             	<input type="text" name="quantità" class="form-control" placeholder="quantità"/>
                 </div>
             </div>
