@@ -78,7 +78,7 @@
 					<?php if($userRow['magazzino']==2) { ?>
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
-					<button class="btn btn-success" onclick="Location.href = 'aggiungiLog.php'">Aggiungi</button>
+					<a class="btn btn-success" href = 'aggiungiLog.php?type=aggiungi'>Aggiungi</a>
 					<?php } ?>
 				<?php } else { ?>
 					<!-- Non autorizzato a visualizzare! -->
