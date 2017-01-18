@@ -46,7 +46,7 @@
             
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-scale-classic"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-playing-dices"></span></span>
             	<input type="text" name="quantità" class="form-control" placeholder="quantità"/>
                 </div>
             </div>
