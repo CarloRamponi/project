@@ -30,7 +30,7 @@
 				$num = mysql_num_rows($res);
 				if($num){
 					for($i=0; $i<$num; $i++)
-						$log[i]=mysql_fetch_array($res);
+						$log[$i]=mysql_fetch_array($res);
 				}
 			}
 		?>
