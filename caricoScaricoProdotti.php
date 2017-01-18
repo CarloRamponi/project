@@ -21,12 +21,12 @@
 			} else {
 				header('location: magazzino.php');
 			}
-			$res=mysql_query("SELECT * from prodotti WHERE codice=".$codice.";");
+			$res=mysql_query("SELECT * from prodotti WHERE codice=".$codice."");
 			$n=mysql_num_rows($res);
 			if($n==0){
 				header('location: magazzino.php');
 			} else {
-				$res = mysql_query("SELECT * FROM log WHERE codice=".$codice.";");
+				$res = mysql_query("SELECT * FROM log WHERE codice=".$codice."");
 				$num = mysql_num_rows($res);
 				if($num){
 					$log=mysql_fetch_array($res);
@@ -65,6 +65,7 @@
 									<?php echo "<td style='background-color:#FFFFFF' id='del".$log[$i]['id']."'></td>"; ?>
 								</tr>
 						<?php }
+							}
 						$numeroMassimo = $log[$i]['id'];
 						echo "<script>var numeroProdotti=".$num.";</script>";
 						?>
