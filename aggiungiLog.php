@@ -47,12 +47,12 @@
              <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-            	<input type="text" name="quantità" class="form-control" placeholder="quantità"/>
+            	<input type="text" name="quantita" class="form-control" placeholder="quantità"/>
                 </div>
             </div>
             
             <div class="form-group">
-            	<select class="form-control">
+            	<select class="form-control" name="tipo">
 					<option>Carico</option>
 					<option>Scarico</option>
 				</select>
