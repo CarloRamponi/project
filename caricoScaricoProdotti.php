@@ -21,12 +21,12 @@
 			} else {
 				header('location: magazzino.php');
 			}
-			$res=mysql_query("SELECT * from prodotti WHERE codice=".$codice."");
+			$res=mysql_query("SELECT * from prodotti WHERE codice=".$codice.";");
 			$n=mysql_num_rows($res);
 			if($n==0){
 				header('location: magazzino.php');
 			} else {
-				$res = mysql_query("SELECT * FROM log WHERE codice=".$codice."");
+				$res = mysql_query("SELECT * FROM log WHERE codice=".$codice.";");
 				$num = mysql_num_rows($res);
 				if($num){
 					for($i=0; $i<$num; $i++)
