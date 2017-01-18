@@ -38,7 +38,7 @@
     	<h3><?php if($type == "modifica") echo "Modifica"; else echo "Aggiungi"; ?></h3>
     	</div>
 
-         <form method="post" <?php if($type=="modifica") echo 'action="modificaProdottoScript.php"'; else echo 'action="aggiungiProdottoScript.php"'; ?> autocomplete="off">
+         <form method="post" <?php if($type=="modifica") echo "action=\"modificaProdottoScript.php?id=$prodotto['id']\""; else echo 'action="aggiungiProdottoScript.php"'; ?> autocomplete="off">
 
     	<div class="col-md-12">
 
