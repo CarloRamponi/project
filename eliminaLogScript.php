@@ -15,10 +15,12 @@
 	if($permessi==2){
 		if(isset($_GET['id'])){
 			$res=mysql_query("DELETE from log WHERE id='".$_GET['id']."'");
+			$res=mysql_query("SELECT * from log WHERE id='".$_GET['id']"'");
+			$arr=mysql_fetch_row($res);
 		}
 	}
 
-	header("location: caricoScaricoProdotti.php?codice=");
+	header("location: caricoScaricoProdotti.php?codice=".$arr['codice']."");
 
 
 ?>
