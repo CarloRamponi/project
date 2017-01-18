@@ -52,7 +52,7 @@
             </div>
             
             <div class="form-group">
-            	<select class="form-control"></select><span class="glyphicon glyphicon-calendar"></span>
+            	<select class="form-control"></select>
 					<option>Carico</option>
 					<option>Scarico</option>
 				</select>
