@@ -45,7 +45,7 @@
 				<h3>Magazzino</h3>
 				</div>
 
-				<?php //if($userRow['magazzino']){ ?>
+				<?php if($userRow['magazzino']){ ?>
 
 				<div class="panel panel-default">
 				<!-- Default panel contents -->
@@ -72,30 +72,21 @@
 					</table>
 				</div>
 
-
+					<?php if($userRow['magazzino']==2) { ?>
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
-					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
 					<button class="btn btn-success" onclick="Location.href = 'aggiungiMagazzino.php'">Aggiungi</button>
-
-				<?php //} else { ?>
+					<?php } ?>
+				<?php } else { ?>
 					<!-- Non autorizzato a visualizzare! -->
 					Non autorizzato
-				<?php //} ?>
+				<?php } ?>
 
 			</div>
 
 
 		</div>
 
-		<script>
-			function bottoniElimina(n){
-				alert("BottoniElimina "+ n +"");
-			}
-			function bottoniModifica(n){
-				alert("BottoniModifica "+ n +"");
-			}
-		</script>
 
 		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
