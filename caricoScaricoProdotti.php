@@ -61,7 +61,7 @@
 								<tr>
 									<td><?php echo $log[$i]['data']; ?></td>
 									<td><?php echo $log[$i]['tipo']; ?></td>
-									<td><?php echo $log[$i]['quantità']; ?></td>
+									<td><?php echo $log[$i]['quantita']; ?></td>
 									<?php echo "<td style='background-color:#FFFFFF' id='del".$log[$i]['id']."'></td>"; ?>
 								</tr>
 						<?php }
