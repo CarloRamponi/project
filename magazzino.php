@@ -32,7 +32,7 @@
 
 				<div class="panel panel-default">
 				<!-- Default panel contents -->
-					<div class="panel-heading">Elenco Prodotti</div>
+					<div class="panel-heading">Log carico scarico prodotto</div>
 
 					<!-- Table -->
 					<table class="table">
