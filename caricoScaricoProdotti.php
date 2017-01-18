@@ -68,7 +68,7 @@
 						<?php }
 							}
 						$numeroMassimo = $log[$i]['id'];
-						echo "<script>var numeroProdotti=".$num.";</script>";
+						echo "<script>var numeroProdotti=".$numeroMassimo.";</script>";
 						?>
 					</table>
 				</div>
