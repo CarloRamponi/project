@@ -16,9 +16,9 @@
 		<?php
 			$page=1;
 			include 'header.php';
-			if(isset($_GET['codice']))
+			if(isset($_GET['codice'])){
 				$codice = $_GET['codice'];
-			else {
+			} else {
 				header('location: magazzino.php');
 			}
 			$res=mysql_query("SELECT * from prodotti WHERE codice=".$codice.";");
