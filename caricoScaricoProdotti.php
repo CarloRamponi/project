@@ -21,7 +21,7 @@
 			} else {
 				header('location: magazzino.php');
 			}
-			$res=mysql_query("SELECT * from prodotti WHERE codice=".$codice."");
+			/*$res=mysql_query("SELECT * from prodotti WHERE codice=".$codice."");
 			$n=mysql_num_rows($res);
 			if($n==0){
 				header('location: magazzino.php');
@@ -31,7 +31,7 @@
 				if($num){
 					$log=mysql_fetch_array($res);
 				}
-			}
+			}*/
 		?>
 
 		<script>var numeroProdotti=0;</script>
