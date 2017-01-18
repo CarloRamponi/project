@@ -63,11 +63,13 @@
 									<td><?php echo $log[$i]['data']; ?></td>
 									<td><?php echo $log[$i]['tipo']; ?></td>
 									<td><?php echo $log[$i]['quantita']; ?></td>
-									<?php echo "<td style='background-color:#FFFFFF' id='del".$log[$i]['id']."'></td>"; ?>
+									<?php
+										echo "<td style='background-color:#FFFFFF' id='del".$log[$i]['id']."'></td>";
+										$numeroMassimo = $log[$i]['id'];
+									?>
 								</tr>
 						<?php }
 							}
-						$numeroMassimo = $log[$i]['id'];
 						echo "<script>var numeroProdotti=".$numeroMassimo.";</script>";
 						?>
 					</table>
