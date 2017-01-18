@@ -52,7 +52,7 @@
             </div>
             
             <div class="form-group">
-            	<select class="form-control"></select>
+            	<select class="form-control">
 					<option>Carico</option>
 					<option>Scarico</option>
 				</select>
