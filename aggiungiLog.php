@@ -52,7 +52,10 @@
             </div>
             
             <div class="form-group">
-            	<hr />
+            	<select class="form-control">
+					<option>Carico</option>
+					<option>Scarico</option>
+				</select>
             </div>
             
             <div class="form-group">
