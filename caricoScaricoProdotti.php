@@ -29,7 +29,8 @@
 				$res = mysql_query("SELECT * FROM log WHERE codice=".$codice."");
 				$num = mysql_num_rows($res);
 				if($num){
-					$log=mysql_fetch_array($res);
+					for($i=0; $i<$num; $i++)
+						$log[i]=mysql_fetch_array($res);
 				}
 			}
 		?>

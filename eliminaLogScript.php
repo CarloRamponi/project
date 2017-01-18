@@ -18,7 +18,7 @@
 		}
 	}
 
-	header("location: caricoScaricoProdotti.php");
+	header("location: caricoScaricoProdotti.php?codice=");
 
 
 ?>
