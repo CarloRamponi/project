@@ -95,10 +95,13 @@
 							$tot-=$log[$i]['quantita'];
 						}
 					}
-					echo "$tot";	
+					
 						
 					
 				?>
+				<tr>
+					<td><?php echo $tot; ?></td>;										
+				</tr>
 
 			</div>
 
