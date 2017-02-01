@@ -138,7 +138,7 @@
 							$n=mysql_num_rows($res);
 							if($n!=0){
 								for($i = 0; $i< $n; $i++){
-									$materie=[$i]=mysql_fetch_array($res);
+									$materie[$i]=mysql_fetch_array($res);
 
 						?>
 									<tr>
