@@ -101,7 +101,7 @@
 				?>
 				<br><br><br>
 				<h3>
-					<td>Totale: <?php echo $tot ?></td>;
+					<td>Totale: <?php echo $tot; ?></td>
 				</h3>										
 				
 
