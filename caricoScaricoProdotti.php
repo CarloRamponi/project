@@ -84,6 +84,21 @@
 					<!-- Non autorizzato a visualizzare! -->
 					Non autorizzato
 				<?php } ?>
+				
+				Totale:
+				<?php
+					$tot = 0;
+					for($i=0; $i<$num; $i++){
+						if($log[$i]['tipo']=="Carico"){
+							$tot+=$log[$i]['quantita'];
+						}else{
+							$tot-=$log[$i]['quantita'];
+						}
+					}
+					echo "$tot";	
+						
+					
+				?>
 
 			</div>
 
