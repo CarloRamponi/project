@@ -101,7 +101,7 @@
 
 				?>
 
-				<div class="btn btn-default" style="width:auto; float:right;">
+				<div class="btn btn-default" style="width:auto; float:right; font-size:20px;">
 						Totale: <?php echo $tot; ?>
 				</div>
 
