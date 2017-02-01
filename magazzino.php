@@ -32,7 +32,7 @@
 
 				<div class="panel panel-default">
 				<!-- Default panel contents -->
-					<div class="panel-heading">Log carico scarico prodotto</div>
+					<div class="panel-heading">Prodotti</div>
 
 					<!-- Table -->
 					<table class="table">
@@ -123,7 +123,7 @@
 
 				<div class="panel panel-default">
 				<!-- Default panel contents -->
-					<div class="panel-heading">Log carico scarico materie prime</div>
+					<div class="panel-heading">Materie Prime</div>
 
 					<!-- Table -->
 					<table class="table">
