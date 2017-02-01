@@ -14,13 +14,13 @@
 
 	if($permessi==2){
 		if(isset($_GET['id'])){
-			$res=mysql_query("DELETE from log WHERE id=".$_GET['id']."");
-			$res=mysql_query("SELECT * from log WHERE id=".$_GET['id']."");
+			$res=mysql_query("DELETE from logMaterie WHERE id=".$_GET['id']."");
+			$res=mysql_query("SELECT * from logMaterie WHERE id=".$_GET['id']."");
 			$arr=mysql_fetch_row($res);
 		}
 	}
 
-	header("location: caricoScaricoProdotti.php?codice=".$_GET['id']."");
+	header("location: caricoScaricoProdottiMateriePrime.php?codice=".$arr['codice']."");
 
 
 ?>
