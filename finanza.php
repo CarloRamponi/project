@@ -44,7 +44,7 @@
 					<table class="table">
 						<tr><td>Data</td><td>Tipo</td><td>Descrizione</td><td>Importo</td></tr>
  						<?php if($num==0) { ?>
-							<tr><td colspan=3>Nessuno log nel database...</td></tr>
+							<tr><td colspan=4>Nessuno log nel database...</td></tr>
 						<?php } else {
 							for($i=0; $i<$num; $i++){ ?>
 								<tr>
@@ -64,34 +64,35 @@
 					</table>
 				</div>
 
-					<?php if($userRow['finanza']==2) { ?>
+				<?php if($userRow['finanza']==2) { ?>
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
 					<a class="btn btn-success" href = 'aggiungiFinanza.php'>Aggiungi</a>
 					<?php } ?>
-				<?php } else { ?>
+					
+
+					<?php
+						$tot = 0;
+						for($i=0; $i<$num; $i++){
+							if($finanza[$i]['tipo']=="Entrata"){
+								$tot+=$finanza[$i]['importo'];
+							}else{
+								$tot-=$finanza[$i]['importo'];
+							}
+						}
+
+
+
+					?>
+
+					<div class="btn btn-default" style="width:auto; float:right; font-size:20px;">
+							Totale: <?php echo $tot; ?>
+					</div>
+					<?php } else { ?>
 					<!-- Non autorizzato a visualizzare! -->
 					Non autorizzato
 				<?php } ?>
 
-
-				<?php
-					$tot = 0;
-					for($i=0; $i<$num; $i++){
-						if($finanza[$i]['tipo']=="Entrata"){
-							$tot+=$finanza[$i]['importo'];
-						}else{
-							$tot-=$finanza[$i]['importo'];
-						}
-					}
-
-
-
-				?>
-
-				<div class="btn btn-default" style="width:auto; float:right; font-size:20px;">
-						Totale: <?php echo $tot; ?>
-				</div>
 
 
 			</div>
