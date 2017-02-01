@@ -107,17 +107,17 @@
 
 		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-		
-		
+
+
 		<!--oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo-->
-		
+
 		<script>var NumeroMateriePrime=0;</script>
 
 		<div id="wrapper">
 
 			<div class="container">
 
-				
+
 
 				<?php if($userRow['magazzino']){ ?>
 
@@ -147,8 +147,8 @@
 										<td><?php echo $prodotti[$i]['iva']; ?>%</td>
 										<td><?php echo $prodotti[$i]['prezzo']; ?>€</td>
 										<?php
-											echo "<td style='background-color:#FFFFFF' id='del".$prodotti[$i]['id']."'></td>";
-											echo "<td style='background-color:#FFFFFF' id='edit".$prodotti[$i]['id']."'></td>";
+											echo "<td style='background-color:#FFFFFF' id='de".$prodotti[$i]['id']."'></td>";
+											echo "<td style='background-color:#FFFFFF' id='edi".$prodotti[$i]['id']."'></td>";
 										?>
 									</tr>
 						<?php
@@ -180,25 +180,25 @@
 		<script>
 			function bottoniElimina(n){
 				for (i=1;i<=n;i++){
-					if(document.getElementById("del"+i+"")){
-						document.getElementById("del"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaProdotto.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
-					} else if(document.getElementById("eli"+i+""))
-							document.getElementById("eli"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='del"+i+"'></td>";
+					if(document.getElementById("de"+i+"")){
+						document.getElementById("de"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaProdotto.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
+					} else if(document.getElementById("elim"+i+""))
+							document.getElementById("elim"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='del"+i+"'></td>";
 				}
 			}
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
-					if(document.getElementById("edit"+i+"")){
-						document.getElementById("edit"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='mod"+i+"'><a href='aggiungiMagazzino.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
-					} else if(document.getElementById("mod"+i+""))
-							document.getElementById("mod"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edit"+i+"'></td>";
+					if(document.getElementById("edi"+i+"")){
+						document.getElementById("edi"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='mod"+i+"'><a href='aggiungiMagazzino.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
+					} else if(document.getElementById("modi"+i+""))
+							document.getElementById("modi"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edit"+i+"'></td>";
 				}
 			}
 		</script>
 
 		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-		
+
 
 	</body>
 </html>
