@@ -7,7 +7,9 @@
 	if ( isset($_SESSION['user'])!="" ) {
 		if($_SESSION['user']=="magazzino")
 			header("Location: magazzino.php");
-		else {
+		else if($_SESSION['user']=="finanza"){
+			header("Location: finanza.php");
+		} else {
 			header("Location: magazzino.php");
 		}
 		exit;
