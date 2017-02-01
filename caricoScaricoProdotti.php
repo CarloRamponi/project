@@ -104,7 +104,7 @@
 				
 				
 				<div class="panel panel-default">
-					<div class="panel-body">
+					<div>
 						<h3>Totale: <?php echo $tot; ?></h3>
 					</div>
 				</div>
