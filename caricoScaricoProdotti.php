@@ -103,7 +103,7 @@
 				<br><br>
 
 				<div class="panel panel-default">
-					<div style="Text-indent:right">
+					<div style="text-align:right; padding:right;">
 						<h3>Totale: <?php echo $tot; ?></h3>
 					</div>
 				</div>
