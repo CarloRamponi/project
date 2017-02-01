@@ -25,5 +25,5 @@
     }
 
     header("location: caricoScaricoProdotti.php?codice=".$codice."");*/
-	echo $_post['data'];
+	echo $_POST['data'];
 ?>
