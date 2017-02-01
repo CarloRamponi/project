@@ -20,7 +20,7 @@
 		}
 	}
 
-	header("location: caricoScaricoProdotti.php?codice=".$_GET['id']."");
+	header("location: caricoScaricoProdotti.php?codice=".$_GET['codice']."");
 
 
 ?>
