@@ -5,7 +5,11 @@
 
 	// it will never let you open index(login) page if session is set
 	if ( isset($_SESSION['user'])!="" ) {
-		header("Location: home.php");
+		if($_SESSION['user']=="magazzino")
+			header("Location: magazzino.php");
+		else {
+			header("Location: magazzino.php");
+		}
 		exit;
 	}
 
