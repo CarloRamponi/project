@@ -103,9 +103,11 @@
 				
 				
 				
-				<h3 class="border-0">
-					Totale: <?php echo $tot; ?>
-				</h3>										
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h3>Totale: <?php echo $tot; ?></h3>
+					</div>
+				</div>
 				
 
 			</div>
