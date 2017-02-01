@@ -41,7 +41,7 @@
 
 			if( $count == 1 && $row['password']==$password ) {
 				$_SESSION['user'] = $username;
-				header("Location: home.php");
+				header("Location: index.php");
 			} else {
 				$errMSG = "Credenziali errate";
 			}
