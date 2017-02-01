@@ -71,6 +71,7 @@
 						<?php }
 							}
 						echo "<script>var numeroProdotti=".$numeroMassimo.";</script>";
+						echo "<script>var codice=".$codice."</script>";
 						?>
 					</table>
 				</div>
@@ -84,8 +85,8 @@
 					<!-- Non autorizzato a visualizzare! -->
 					Non autorizzato
 				<?php } ?>
-				
-				
+
+
 				<?php
 					$tot = 0;
 					for($i=0; $i<$num; $i++){
@@ -95,20 +96,27 @@
 							$tot-=$log[$i]['quantita'];
 						}
 					}
-					
-						
-					
+
+
+
 				?>
 				<br><br>
+<<<<<<< HEAD
 				
 				
 				
 				<div>
+=======
+
+
+
+				<div class="panel panel-default">
+>>>>>>> d9d16aea3df58e0bb9022f06a089a697c672bd66
 					<div style="Text-indent:right">
 						<h3>Totale: <?php echo $tot; ?></h3>
 					</div>
 				</div>
-				
+
 
 			</div>
 
@@ -119,7 +127,7 @@
 			function bottoniElimina(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("del"+i+"")){
-						document.getElementById("del"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaLogScript.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
+						document.getElementById("del"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaLogScript.php?id="+i+"&codice="+codice+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
 					} else if(document.getElementById("eli"+i+""))
 							document.getElementById("eli"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='del"+i+"'></td>";
 				}
