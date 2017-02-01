@@ -181,17 +181,17 @@
 			function bottoniElimina(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("de"+i+"")){
-						document.getElementById("de"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaProdotto.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
+						document.getElementById("de"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='elim"+i+"'><a href='eliminaProdotto.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
 					} else if(document.getElementById("elim"+i+""))
-							document.getElementById("elim"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='del"+i+"'></td>";
+							document.getElementById("elim"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='de"+i+"'></td>";
 				}
 			}
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edi"+i+"")){
-						document.getElementById("edi"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='mod"+i+"'><a href='aggiungiMagazzino.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
+						document.getElementById("edi"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='modi"+i+"'><a href='aggiungiMagazzino.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
 					} else if(document.getElementById("modi"+i+""))
-							document.getElementById("modi"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edit"+i+"'></td>";
+							document.getElementById("modi"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edi"+i+"'></td>";
 				}
 			}
 		</script>
