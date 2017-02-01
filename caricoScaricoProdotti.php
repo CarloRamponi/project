@@ -100,9 +100,10 @@
 					
 				?>
 				<br><br><br><br>
-				<tr>
-					<td>Totale: <?php echo $tot; ?></td>;										
-				</tr>
+				<h2>
+					<td>Totale: <?php echo $tot; ?></td>;
+				</h2>										
+				
 
 			</div>
 
