@@ -134,27 +134,27 @@
 							<th>Prezzo senza Iva</th>
 						</tr>
 						<?php
-							$res=mysql_query("SELECT * from prodotti");
+							$res=mysql_query("SELECT * from materie");
 							$n=mysql_num_rows($res);
 							if($n!=0){
 								for($i = 0; $i< $n; $i++){
-									$prodotti[$i]=mysql_fetch_array($res);
+									$materie=[$i]=mysql_fetch_array($res);
 
 						?>
 									<tr>
-										<td><a href="caricoScaricoProdotti.php?codice=<?php echo $prodotti[$i]['codice']; ?>"><?php echo $prodotti[$i]['codice']; ?></a></td>
-										<td><?php echo $prodotti[$i]['descrizione']; ?></td>
-										<td><?php echo $prodotti[$i]['iva']; ?>%</td>
-										<td><?php echo $prodotti[$i]['prezzo']; ?>€</td>
+										<td><a href="caricoScaricoProdotti.php?codice=<?php echo $materie[$i]['codice']; ?>"><?php echo $materie[$i]['codice']; ?></a></td>
+										<td><?php echo $materie[$i]['descrizione']; ?></td>
+										<td><?php echo $materie[$i]['iva']; ?>%</td>
+										<td><?php echo $materie[$i]['prezzo']; ?>€</td>
 										<?php
-											echo "<td style='background-color:#FFFFFF' id='de".$prodotti[$i]['id']."'></td>";
-											echo "<td style='background-color:#FFFFFF' id='edi".$prodotti[$i]['id']."'></td>";
+											echo "<td style='background-color:#FFFFFF' id='de".$materie[$i]['id']."'></td>";
+											echo "<td style='background-color:#FFFFFF' id='edi".$materie[$i]['id']."'></td>";
 										?>
 									</tr>
 						<?php
-									$num=$prodotti[$i]['id'];
+									$numM=$materie[$i]['id'];
 								}
-								echo "<script>var numeroProdotti=".$num.";</script>";
+								echo "<script>var numeroProdotti=".$numM.";</script>";
 							} else {
 						?>
 								<tr><td colspan="4">Nessun prodotto nel database!</td></tr>
