@@ -1,6 +1,6 @@
 <?php
 
-    session_start();
+    /*session_start();
 
     if (!isset($_SESSION['user'])) {
         header("Location: index.php");
@@ -24,6 +24,6 @@
         }
     }
 
-    header("location: caricoScaricoProdotti.php?codice=".$codice."");
-
+    header("location: caricoScaricoProdotti.php?codice=".$codice."");*/
+	echo $_POST['data'];
 ?>
