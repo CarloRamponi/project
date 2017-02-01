@@ -178,7 +178,7 @@
 		</div>
 
 		<script>
-			function bottoniElimina(n){
+			function bottoniElimina2(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("de"+i+"")){
 						document.getElementById("de"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='elim"+i+"'><a href='eliminaProdotto.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
@@ -186,7 +186,7 @@
 							document.getElementById("elim"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='de"+i+"'></td>";
 				}
 			}
-			function bottoniModifica(n){
+			function bottoniModifica2(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edi"+i+"")){
 						document.getElementById("edi"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='modi"+i+"'><a href='aggiungiMagazzino.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
