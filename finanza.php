@@ -44,7 +44,7 @@
 					<table class="table">
 						<tr><td>Data</td><td>Tipo</td><td>Descrizione</td><td>Importo</td></tr>
  						<?php if($num==0) { ?>
-							<tr><td colspan=3>Nessuno log nel database...</td></tr>
+							<tr><td colspan=4>Nessuno log nel database...</td></tr>
 						<?php } else {
 							for($i=0; $i<$num; $i++){ ?>
 								<tr>
