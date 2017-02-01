@@ -85,7 +85,7 @@
 					Non autorizzato
 				<?php } ?>
 				
-				Totale:
+				
 				<?php
 					$tot = 0;
 					for($i=0; $i<$num; $i++){
@@ -99,8 +99,9 @@
 						
 					
 				?>
+				<br><br><br><br>
 				<tr>
-					<td><?php echo $tot; ?></td>;										
+					<td>Totale: <?php echo $tot; ?></td>;										
 				</tr>
 
 			</div>
