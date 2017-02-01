@@ -164,8 +164,8 @@
 
 				<?php if($userRow['magazzino']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
-					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
-					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
+					<button class="btn btn-danger" onclick="bottoniElimina2(numeroProdotti)">Elimina</button>
+					<button class="btn btn-warning" onclick="bottoniModifica2(numeroProdotti)">Modifica</button>
 					<a class="btn btn-success" href = 'aggiungiMagazzino.php?type=aggiungi'>Aggiungi</a>
 				<?php } ?>
 			</div>
@@ -198,7 +198,8 @@
 
 		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-
+	
+	<br><br><br><br>
 
 	</body>
 </html>
