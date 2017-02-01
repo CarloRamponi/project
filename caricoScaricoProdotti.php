@@ -102,8 +102,8 @@
 				?>
 				<br><br>
 
-				<div class="panel panel-default">
-					<div style="text-align:right; padding-right:20px;">
+				<div class="panel panel-default" style="width:0px;">
+					<div style="text-align:right; padding-right:20px; padding-left:20px;">
 						<h3>Totale: <?php echo $tot; ?></h3>
 					</div>
 				</div>
