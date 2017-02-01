@@ -1,6 +1,6 @@
 <?php
 
-    /*session_start();
+    session_start();
 
     if (!isset($_SESSION['user'])) {
         header("Location: index.php");
@@ -20,11 +20,9 @@
         if($codice=="" || $tipo == "" || $data=="" || $quantita=="")
             header("location: aggiungiLog.php?error=vuoto");
         else{
-            mysql_query("INSERT INTO log (codice, tipo, data, quantita) VALUES (".$codice.", '".$tipo."', ".$data.", ".$quantita.");");
+            mysql_query("INSERT INTO log (codice, tipo, data, quantita) VALUES (".$codice.", '".$data."', ".$tipo.", ".$quantita.");");
         }
     }
 
-    header("location: caricoScaricoProdotti.php?codice=".$codice."");*/
-     $data = $_POST['data'];
-    echo $data;
+    header("location: caricoScaricoProdotti.php?codice=".$codice."");
 ?>
