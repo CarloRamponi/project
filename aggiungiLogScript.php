@@ -20,7 +20,7 @@
         if($codice=="" || $tipo == "" || $data=="" || $quantita=="")
             header("location: aggiungiLog.php?error=vuoto");
         else{
-            mysql_query("INSERT INTO log (codice, tipo, data, quantita) VALUES (".$codice.", '".$data."', ".$tipo.", ".$quantita.");");
+            mysql_query("INSERT INTO log (codice, tipo, data, quantita) VALUES (".$codice.", '".$tipo."', ".$data.", ".$quantita.");");
         }
     }
 
