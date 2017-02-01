@@ -100,6 +100,9 @@
 					
 				?>
 				<br><br>
+				
+				
+				<img src="75" alt="75" class="rounded">
 				<h3>
 					<td>Totale: <?php echo $tot; ?>
 				</h3>										
