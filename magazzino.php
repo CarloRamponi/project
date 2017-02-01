@@ -154,7 +154,7 @@
 						<?php
 									$numM=$materie[$i]['id'];
 								}
-								echo "<script>var numeroProdotti=".$numM.";</script>";
+								echo "<script>var numeroMaterie=".$numM.";</script>";
 							} else {
 						?>
 								<tr><td colspan="4">Nessun prodotto nel database!</td></tr>
@@ -164,9 +164,9 @@
 
 				<?php if($userRow['magazzino']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
-					<button class="btn btn-danger" onclick="bottoniElimina2(numeroProdotti)">Elimina</button>
-					<button class="btn btn-warning" onclick="bottoniModifica2(numeroProdotti)">Modifica</button>
-					<a class="btn btn-success" href = 'aggiungiMagazzino.php?type=aggiungi'>Aggiungi</a>
+					<button class="btn btn-danger" onclick="bottoniElimina2(numeroMaterie)">Elimina</button>
+					<button class="btn btn-warning" onclick="bottoniModifica2(numeroMaterie)">Modifica</button>
+					<a class="btn btn-success" href = 'aggiungiMagazzinoMateriePrime.php?type=aggiungi'>Aggiungi</a>
 				<?php } ?>
 			</div>
 
@@ -181,7 +181,7 @@
 			function bottoniElimina2(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("de"+i+"")){
-						document.getElementById("de"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='elim"+i+"'><a href='eliminaProdotto.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
+						document.getElementById("de"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='elim"+i+"'><a href='eliminaProdottoMateriePrime.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
 					} else if(document.getElementById("elim"+i+""))
 							document.getElementById("elim"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='de"+i+"'></td>";
 				}
@@ -189,7 +189,7 @@
 			function bottoniModifica2(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("edi"+i+"")){
-						document.getElementById("edi"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='modi"+i+"'><a href='aggiungiMagazzino.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
+						document.getElementById("edi"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='modi"+i+"'><a href='aggiungiMagazzinoMateriePrime.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
 					} else if(document.getElementById("modi"+i+""))
 							document.getElementById("modi"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edi"+i+"'></td>";
 				}
@@ -198,7 +198,7 @@
 
 		<script src="assets/jquery-1.11.3-jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
-	
+
 	<br><br><br><br>
 
 	</body>
