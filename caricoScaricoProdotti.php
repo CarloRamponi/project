@@ -101,17 +101,8 @@
 
 				?>
 				<br><br>
-<<<<<<< HEAD
-				
-				
-				
-				<div>
-=======
-
-
 
 				<div class="panel panel-default">
->>>>>>> d9d16aea3df58e0bb9022f06a089a697c672bd66
 					<div style="Text-indent:right">
 						<h3>Totale: <?php echo $tot; ?></h3>
 					</div>
