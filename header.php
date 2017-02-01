@@ -28,8 +28,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="<?php if($page==1) echo "active"; ?>"><a href="magazzino.php">Magazzino</a></li>
-            <li class="<?php if($page==2) echo "active"; ?>"><a href="notYet.php?page=2">Finanza</a></li>
-            <li class="<?php if($page==3) echo "active"; ?>"><a href="notYet.php?page=3">Marketing</a></li>
+            <li class="<?php if($page==2) echo "active"; ?>"><a href="finanza.php">Finanza</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
 
