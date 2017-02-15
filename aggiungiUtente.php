@@ -3,7 +3,7 @@
 	<title>Aggiungi Utente</title>
 	<?php
 		if(!isset($_GET['type']))
-			header('location: magazzino.php');
+			header('location: index.php');
 		else {
 			$type=$_GET['type'];
 		}
@@ -13,7 +13,7 @@
 		}
 	?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php if($type=="modifica") echo "Modifica prodotto - Simulimpresa"; else echo "Aggiungi prodotto - Simulimpresa";?></title>
+<title><?php if($type=="modifica") echo "Modifica utente"; else echo "Aggiungi Utente";?></title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -23,14 +23,14 @@
 		$page=1;
 		include 'header.php';
 		if($type=="modifica"){
-			$res=mysql_query("SELECT * from prodotti where id='".$_GET['id']."'");
+			$res=mysql_query("SELECT * from utenti where id='".$_GET['id']."'");
 			$n=mysql_num_rows($res);
 			if($n==0)
 				header('location: magazzino.php');
 			$prodotto=mysql_fetch_array($res);
 		}
 	?>
-	
+
 	<div id="wrapper">
 
 	<div class="container">
@@ -39,94 +39,94 @@
     	<h3><?php if($type == "modifica") echo "Modifica utente"; else echo "Aggiungi utente"; ?></h3>
     	</div>
 
-         <form method="post" <?php if($type=="modifica") echo 'action="modificaProdottoScript.php?id='.$prodotto['id'].'"'; else echo 'action="aggiungiProdottoScript.php"'; ?> 	<autocomplete="off">
+         <form method="post" <?php if($type=="modifica") echo 'action="modificaUtenteScript.php?id='.$prodotto['id'].'"'; else echo 'action="aggiungiUtenteScript.php"'; ?> 	<autocomplete="off">
 
     	<div class="col-md-12">
 
         	<div class="form-group">
             	<hr />
-            </div>
+          </div>
 
 
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Nome utente" <?php if($type=="modifica") echo "value='".$prodotto['codice']."'";?>
+            	<input type="integer" name="codice" class="form-control" placeholder="Nome utente" <?php if($type=="modifica") echo "value='".$prodotto['username']."'";?>
                 </div>
             </div>
 
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            	<input type="password" name="descrizione" class="form-control" placeholder="Password" maxlength="150" <?php if($type=="modifica") echo "value='".$prodotto['descrizione']."'";?>
+            	<input type="password" name="descrizione" class="form-control" placeholder="Password" maxlength="150">
                 </div>
             </div>
 
              <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            	<input type="password" name="iva" class="form-control" placeholder="Conferma password" maxlength="150" <?php if($type=="modifica") echo "value='".$prodotto['iva']."'";?>
+            		<input type="password" name="iva" class="form-control" placeholder="Conferma password" maxlength="150">
                 </div>
             </div>
 
 
 
 
-		<div class="form-group">
-			<span class="col-md-2"><h4>Admin</h4></span>
-		</div>
+					<div class="form-group">
+						<span class="col-md-2"><h4>Admin</h4></span>
+					</div>
 
 
-		<div class="form-group col-md-10">
-			<select class="form-control" name="tipo">
-			<option>Nessuno</option>
-			<option>Scrittura</option>
-		</select>
-		</div>
-
-
-
+					<div class="form-group col-md-10">
+						<select class="form-control" name="tipo">
+						<option>Nessuno</option>
+						<option>Scrittura</option>
+					</select>
+					</div>
 
 
 
-		<div class="form-group">
-			<span class="col-md-2"><h4>Magazzino</h4></span>
-		</div>
-
-
-		<div class="form-group col-md-10">
-			<select class="form-control" name="tipo">
-			<option>Nessuno</option>
-			<option>Lettura</option>
-			<option>Scrittura</option>
-		</select>
-		</div>
 
 
 
-		<div class="form-group">
-			<span class="col-md-2"><h4>Finanza</h4></span>
-		</div>
+					<div class="form-group">
+						<span class="col-md-2"><h4>Magazzino</h4></span>
+					</div>
 
 
-		<div class="form-group col-md-10">
-			<select class="form-control" name="tipo">
-			<option>Nessuno</option>
-			<option>Lettura</option>
-			<option>Scrittura</option>
-		</select>
-		</div>
+					<div class="form-group col-md-10">
+						<select class="form-control" name="tipo">
+						<option>Nessuno</option>
+						<option>Lettura</option>
+						<option>Scrittura</option>
+					</select>
+					</div>
 
-		
+
+
+					<div class="form-group">
+						<span class="col-md-2"><h4>Finanza</h4></span>
+					</div>
+
+
+					<div class="form-group col-md-10">
+						<select class="form-control" name="tipo">
+						<option>Nessuno</option>
+						<option>Lettura</option>
+						<option>Scrittura</option>
+					</select>
+					</div>
+
+
             <div class="form-group">
             	<hr />
-				
+
 				<?php
 					if(isset($_GET['error'])){
 						if($_GET['error']=="vuoto")
 						?><span class="text-danger">I campi non possono essere vuoti!</span><?php
-					}
-				?> 
+					} else if($_GET['error']=="newPassword") {?><span class="text-danger">Le password non combaciano!</span><?php}
+				?>
             </div>
 
             <div class="form-group">
