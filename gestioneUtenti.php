@@ -75,7 +75,7 @@
 										?>
 									</tr>
 						<?php
-									$num=$prodotti[$i]['id'];
+									$num=$utenti[$i]['id'];
 								}
 								echo "<script>var numeroProdotti=".$num.";</script>";
 							} else {
