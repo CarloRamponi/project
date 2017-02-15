@@ -21,40 +21,36 @@
 
          <form method="post" action="modificaPassword.php" autocomplete="off">
 
-    	<div class="col-md-12">
+		    	<div class="col-md-12">
 
-        	<div class="form-group">
-            	<hr />
-        </div>
+		        	<div class="form-group">
+		            	<hr />
+		        </div>
 
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
+							</div>
+						</div>
 
-	<div class="form-group">
-		<div class="input-group">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-			<input type="password" name="Inserire la vecchia password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
-		</div>
-	</div>
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span></span>
+								<input type="password" name="new_password1" class="form-control" placeholder="Inserire la nuova password" maxlength="32" />
+							</div>
+						</div>
 
-	<div class="form-group">
-		<div class="input-group">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span></span>
-			<input type="password" name="Inserire la nuova password" class="form-control" placeholder="Inserire la nuova password" maxlength="32" />
-		</div>
-	</div>
-
-	<div class="form-group">
-		<div class="input-group">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-			<input type="password" name="Reinserisci la nuova password" class="form-control" placeholder="Reinserisci la nuova password" maxlength="32" />
-		</div>
-	</div>
-
-
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input type="password" name="new_password2" class="form-control" placeholder="Reinserisci la nuova password" maxlength="32" />
+							</div>
+						</div>
 
             <div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Conferma</button>
             </div>
-
 
         </div>
 
