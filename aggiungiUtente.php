@@ -9,7 +9,7 @@
 		}
 
 		if(!isset($_GET['id']) && $type=="modifica"){
-			header('location: magazzino.php');
+			header('location: index.php');
 		}
 	?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,7 +26,7 @@
 			$res=mysql_query("SELECT * from utenti where id='".$_GET['id']."'");
 			$n=mysql_num_rows($res);
 			if($n==0)
-				header('location: magazzino.php');
+				header('location: index.php');
 			$prodotto=mysql_fetch_array($res);
 		}
 	?>
