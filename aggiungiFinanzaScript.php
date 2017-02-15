@@ -17,9 +17,9 @@
         $descrizione = $_POST['descrizione'];
         $tipo = $_POST['tipo'];
         $importo = $_POST['importo'];
-        if($data == "" || $descrizione == "" || $tipo == "" || $importo = "")
+        if($data == "" || $descrizione == "" || $tipo == "" || $importo == "") {
             header("location: aggiungiFinanza.php?error=vuoto");
-        else{
+        } else {
             mysql_query("INSERT INTO finanza (data, descrizione, tipo, importo) VALUES ('".$data."', '".$descrizione."', '".$tipo."', ".$importo.");");
         }
     }
