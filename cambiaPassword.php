@@ -8,8 +8,7 @@
 <body>
 
 	<?php
-		$page=2;
-		include 'header.php'
+		include 'header.php';
 	?>
 
 	<div id="wrapper">
@@ -20,7 +19,7 @@
     	<h3>Pagina cambio password</h3>
     	</div>
 
-         <form method="post" action="aggiungiFinanzaScript.php" autocomplete="off">
+         <form method="post" action="modificaPassword.php" autocomplete="off">
 
     	<div class="col-md-12">
 
@@ -28,7 +27,7 @@
             	<hr />
         </div>
 
-            
+
 	<div class="form-group">
 		<div class="input-group">
 			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
@@ -48,12 +47,12 @@
 			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 			<input type="password" name="Reinserisci la nuova password" class="form-control" placeholder="Reinserisci la nuova password" maxlength="32" />
 		</div>
-	</div>					
+	</div>
 
-            
+
 
             <div class="form-group">
-            	<button type="submit" class="btn btn-block btn-primary" name="btn-login">CONFERMA</button>
+            	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Conferma</button>
             </div>
 
 
@@ -70,4 +69,3 @@
 
 </body>
 </html>
-
