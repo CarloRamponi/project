@@ -25,7 +25,7 @@
 		?>
 
 		<script>var numeroProdotti=0;</script>
-		
+
 		<div id="wrapper">
 
 			<div class="container">
@@ -68,8 +68,8 @@
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
 					<a class="btn btn-success" href = 'aggiungiFinanza.php'>Aggiungi</a>
-					<?php } ?>
-					
+				<?php } ?>
+
 
 					<?php
 						$tot = 0;
