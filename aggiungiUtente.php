@@ -50,21 +50,21 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Nome utente" <?php if($type=="modifica") echo "value='".$prodotto['username']."'";?>
+            	<input type="integer" name="codice" class="form-control" placeholder="Nome utente" <?php if($type=="modifica") echo "value='".$prodotto['username']."'";?>/>
                 </div>
             </div>
 
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            	<input type="password" name="descrizione" class="form-control" placeholder="Password" maxlength="150">
+            	<input type="password" name="descrizione" class="form-control" placeholder="Password" maxlength="150"/>
                 </div>
             </div>
 
              <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            		<input type="password" name="iva" class="form-control" placeholder="Conferma password" maxlength="150">
+            		<input type="password" name="iva" class="form-control" placeholder="Conferma password" maxlength="150"/>
                 </div>
             </div>
 
@@ -123,9 +123,11 @@
 				<?php
 					if(isset($_GET['error'])){
 						if($_GET['error']=="vuoto") {
-						?><span class="text-danger">I campi non possono essere vuoti!</span><?php
-					} else if($_GET['error']=="newPassword") {?><span class="text-danger">Le password non combaciano!</span><?php}
-				}
+							?><span class="text-danger">I campi non possono essere vuoti!</span><?php
+						} else if($_GET['error']=="newPassword") {
+						?><span class="text-danger">Le password non combaciano!</span><?php
+						}
+					}
 				?>
             </div>
 
