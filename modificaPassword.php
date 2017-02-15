@@ -24,7 +24,7 @@
 	} else if($new_password1!=$new_password2){
 		header("location: cambiaPassword.php?error=newPassword");
 	} else {
-    mysql_query("UPDATE utenti SET password=".$new_password1." WHERE username=".$_SESSION['user'].";");
+    mysql_query("UPDATE utenti SET password='".$new_password1."' WHERE username='".$_SESSION['user']."';");
     header("location: index.php");
   }
 
