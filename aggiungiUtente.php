@@ -20,7 +20,6 @@
 <body>
 
 	<?php
-		$page=1;
 		include 'header.php';
 		if($type=="modifica"){
 			$res=mysql_query("SELECT * from utenti where id='".$_GET['id']."'");
@@ -123,9 +122,10 @@
 
 				<?php
 					if(isset($_GET['error'])){
-						if($_GET['error']=="vuoto")
+						if($_GET['error']=="vuoto") {
 						?><span class="text-danger">I campi non possono essere vuoti!</span><?php
 					} else if($_GET['error']=="newPassword") {?><span class="text-danger">Le password non combaciano!</span><?php}
+				}
 				?>
             </div>
 
