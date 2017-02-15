@@ -13,7 +13,7 @@
 	$new_password1 = $_POST['new_password1'];
 	$new_password2 = $_POST['new_password2'];
 
-	$res= mysql_query("SELECT password from utenti where username=".$_SESSION['user'].";");
+	$res= mysql_query("SELECT password from utenti where username='".$_SESSION['user']."';");
 	$row = mysql_fetch_array($res);
 	$v_pass = $row[0];
 
