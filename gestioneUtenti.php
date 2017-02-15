@@ -40,7 +40,6 @@
 							<th>Nome utente</th>
 							<th>Magazzino</th>
 							<th>Finanza</th>
-							<th>Gestione</th>
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from utenti");
@@ -51,10 +50,25 @@
 
 						?>
 									<tr>
-										<td><?php echo $utenti[$i]['user name']; ?></td>
-										<td><?php echo $utenti[$i]['magazzino']; ?></td>
-										<td><?php echo $utenti[$i]['finanza']; ?></td>
-										<td><?php echo $utenti[$i]['admin']; ?></td>
+										<td><?php echo $utenti[$i]['username']; ?></td>
+										<td><?php
+													if($utenti[$i]['magazzino']==0)
+														echo "Nessuno";
+													else if($utenti[$i]['magazzino']==1)
+														echo "Lettura";
+													else if($utenti[$i]['magazzino']==2)
+														echo "Scrittura";
+												?>
+										</td>
+										<td><?php
+													if($utenti[$i]['finanza']==0)
+														echo "Nessuno";
+													else if($utenti[$i]['finanza']==1)
+														echo "Lettura";
+													else if($utenti[$i]['finanza']==2)
+														echo "Scrittura";
+												?>
+										</td>
 										<?php
 											echo "<td style='background-color:#FFFFFF' id='del".$utenti[$i]['id']."'></td>";
 											echo "<td style='background-color:#FFFFFF' id='edit".$utenti[$i]['id']."'></td>";
