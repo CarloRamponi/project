@@ -74,7 +74,7 @@
 					<?php
 						$tot = 0;
 						for($i=0; $i<$num; $i++){
-							if($finanza[$i]['tipo']=="Carico"){
+							if($finanza[$i]['tipo']=="Entrata"){
 								$tot+=$finanza[$i]['importo'];
 							}else{
 								$tot-=$finanza[$i]['importo'];
