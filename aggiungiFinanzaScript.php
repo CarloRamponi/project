@@ -24,6 +24,6 @@
         }
     }
 
-    header("location: magazzino.php");
+    header("location: finanza.php");
 
 ?>

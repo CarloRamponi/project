@@ -25,7 +25,7 @@
 		?>
 
 		<script>var numeroProdotti=0;</script>
-		
+
 		<div id="wrapper">
 
 			<div class="container">
@@ -69,12 +69,12 @@
 					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
 					<a class="btn btn-success" href = 'aggiungiFinanza.php'>Aggiungi</a>
 					<?php } ?>
-					
+
 
 					<?php
 						$tot = 0;
 						for($i=0; $i<$num; $i++){
-							if($finanza[$i]['tipo']=="Entrata"){
+							if($finanza[$i]['tipo']=="Carico"){
 								$tot+=$finanza[$i]['importo'];
 							}else{
 								$tot-=$finanza[$i]['importo'];
