@@ -12,9 +12,30 @@
     $userRow=mysql_fetch_array($res);
     $permessi=$userRow[0];
 	
-	$admin = $_POST['admin'];
-	$magazzino = $_POST['magazzino'];
-	$finanza = $_POST['finanza'];
+	$adminString = $_POST['admin'];
+	if($adminString == "Nessuno")
+		$admin=0;
+	else if ($adminString == "Scrittura")
+		$admin=1;
+		
+		
+	$magazzinoScrittura = $_POST['magazzino'];
+	if($magazzinoScrittura == "Nessuno")
+		$magazzino=0;
+	else if ($magazzinoScrittura == "Lettura")
+		$magazzino=1;
+	else if ($magazzinoScrittura == "Scrittura")
+		$magazzino=2;
+	
+	$finanzaScrittura = $_POST['finanza'];
+	if($finanzaScrittura == "Nessuno")
+		$finanza=0;
+	else if ($finanzaScrittura == "Lettura")
+		$finanza=1;
+	else if ($finanzaScrittura == "Scrittura")
+		$finanza=2;
+	
+	
 	$nuovo_utente = $_POST['nuovo_utente'];
 	$new_password1 = $_POST['new_password1'];
 	$new_password2 = $_POST['new_password2'];
@@ -26,13 +47,14 @@
 			if($nuovo_utente=="" || $new_password1=="" || $new_password2==""){
 				header("location: cambiaPassword.php?error=vuoto");
 			} else if($new_password1!=$new_password2){
-				eader("location: cambiaPassword.php?error=newPassword");
-			mysql_query("INSERT INTO utenti (username, password, admin, magazzino, finanza) values ('".$nuovo_utente."', '".$new_password1."', ".$admin.", ".$magazzino.", ".$finanza.");");
+				header("location: cambiaPassword.php?error=newPassword");
+			else
+				mysql_query("INSERT INTO utenti (username, password, admin, magazzino, finanza) values ('".$nuovo_utente."', '".$new_password1."', ".$admin.", ".$magazzino.", ".$finanza.");");
 		}
 		else
 			header("location: aggiungiUtente.php?error=utenteEsistente");
-	}
-	header("location: index.php");
+	} else
+		header("location: index.php");
   }
 
 ?>
