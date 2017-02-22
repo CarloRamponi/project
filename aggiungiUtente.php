@@ -50,21 +50,21 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Nome utente" <?php if($type=="modifica") echo "value='".$prodotto['username']."'";?>/>
+            	<input type="integer" name="nuovo_utente" class="form-control" placeholder="Nome utente" <?php if($type=="modifica") echo "value='".$prodotto['username']."'";?>/>
                 </div>
             </div>
 
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            	<input type="password" name="descrizione" class="form-control" placeholder="Password" maxlength="150"/>
+            	<input type="password" name="new_password1" class="form-control" placeholder="Password" maxlength="150"/>
                 </div>
             </div>
 
              <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            		<input type="password" name="iva" class="form-control" placeholder="Conferma password" maxlength="150"/>
+            		<input type="password" name="new_password2" class="form-control" placeholder="Conferma password" maxlength="150"/>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
 
 
 					<div class="form-group col-md-10">
-						<select class="form-control" name="tipo">
+						<select class="form-control" name="admin">
 						<option>Nessuno</option>
 						<option>Scrittura</option>
 					</select>
@@ -94,7 +94,7 @@
 
 
 					<div class="form-group col-md-10">
-						<select class="form-control" name="tipo">
+						<select class="form-control" name="magazzino">
 						<option>Nessuno</option>
 						<option>Lettura</option>
 						<option>Scrittura</option>
@@ -109,7 +109,7 @@
 
 
 					<div class="form-group col-md-10">
-						<select class="form-control" name="tipo">
+						<select class="form-control" name="finanza">
 						<option>Nessuno</option>
 						<option>Lettura</option>
 						<option>Scrittura</option>
@@ -126,7 +126,9 @@
 							?><span class="text-danger">I campi non possono essere vuoti!</span><?php
 						} else if($_GET['error']=="newPassword") {
 						?><span class="text-danger">Le password non combaciano!</span><?php
-						}
+					} else if ($_GET['error']=="utenteEsistente"){
+						?><span class="text-danger">Utente già esistente</span><?php
+					}
 					}
 				?>
             </div>

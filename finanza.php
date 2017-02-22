@@ -7,7 +7,7 @@
 			}
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>GS - Magazzino</title>
+		<title>GS - Finanza</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
@@ -16,6 +16,9 @@
 		<?php
 			$page=2;
 			include 'header.php';
+		?>
+
+		<?php
 			$res = mysql_query("SELECT * FROM finanza;");
 			$num = mysql_num_rows($res);
 			if($num){
