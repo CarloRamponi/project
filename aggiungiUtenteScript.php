@@ -9,10 +9,10 @@
   require_once 'dbconnect.php';
 
 	$res=mysql_query("SELECT admin FROM utenti WHERE username='".$_SESSION['user']."'");
-    $userRow=mysql_fetch_array($res);
-    $permessi=$userRow[0];
+  $userRow=mysql_fetch_array($res);
+  $permessi=$userRow[0];
 
-	$adminString = $_POST['admin'];
+	/*$adminString = $_POST['admin'];
 	if($adminString == "Nessuno")
 		$admin=0;
 	else if ($adminString == "Scrittura")
@@ -33,7 +33,11 @@
 	else if ($finanzaScrittura == "Lettura")
 		$finanza=1;
 	else if ($finanzaScrittura == "Scrittura")
-		$finanza=2;
+		$finanza=2;*/
+
+  $admin=0;
+  $magazzino=0;
+  $finanza=0;
 
 
 	$nuovo_utente = $_POST['nuovo_utente'];
