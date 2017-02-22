@@ -50,8 +50,10 @@
 				header("Location: cambiaPassword.php?error=vuoto");
 			} else if($new_password1!=$new_password2)
 				header("Location: cambiaPassword.php?error=newPassword");
-			else
+			else {
 				mysql_query("INSERT INTO utenti (username, password, admin, magazzino, finanza) values ('".$nuovo_utente."', '".$new_password1."', ".$admin.", ".$magazzino.", ".$finanza.");");
+        header("Location: gestioneUtenti.php");
+      }
 		}
 		else
 			header("Location: aggiungiUtente.php?error=utenteEsistente");
