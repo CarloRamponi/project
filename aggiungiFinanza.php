@@ -31,14 +31,14 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-            	<input type="date" name="data" class="form-control" placeholder="data" maxlength="150" />
+            	<input type="date" name="data" class="form-control" placeholder="Data" maxlength="150" />
                 </div>
             </div>
 
 						<div class="form-group">
 							<div class="input-group">
 								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-							<input type="text" name="descrizione" class="form-control" placeholder="descrizione" maxlength="150" />
+							<input type="text" name="descrizione" class="form-control" placeholder="Descrizione" maxlength="150" />
 								</div>
 						</div>
 
@@ -52,7 +52,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-piggy-bank"></span></span>
-            	<input type="text" name="importo" class="form-control" placeholder="importo"/>
+            	<input type="text" name="importo" class="form-control" placeholder="Importo"/>
                 </div>
             </div>
 
