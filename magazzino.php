@@ -20,7 +20,7 @@
 
 		<script>var numeroProdotti=0;</script>
 
-		<div id="wrapper">
+		<div>
 
 			<div class="container">
 
@@ -105,16 +105,11 @@
 			}
 		</script>
 
-
-		<!--oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo-->
-
 		<script>var NumeroMateriePrime=0;</script>
 
-		<div id="wrapper">
+		<div>
 
 			<div class="container">
-
-
 
 				<?php if($userRow['magazzino']){ ?>
 
@@ -163,7 +158,7 @@
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger" onclick="bottoniElimina2(numeroMaterie)">Elimina</button>
 					<button class="btn btn-warning" onclick="bottoniModifica2(numeroMaterie)">Modifica</button>
-					<a class="btn btn-success" href = 'aggiungiMagazzinoMateriePrime.php?type=aggiungi'>Aggiungi</a>
+					<a class="btn btn-success" href='aggiungiMagazzinoMateriePrime.php?type=aggiungi'>Aggiungi</a>
 				<?php } ?>
 			</div>
 
