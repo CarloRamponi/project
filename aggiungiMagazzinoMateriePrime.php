@@ -47,10 +47,10 @@
             </div>
 
 
-            <div class="form-group">
+            <div class="form-group" id="staticParent">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-barcode"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Codice materia" <?php if($type=="modifica") echo "value='".$prodotto['codice']."'";?>/>
+            	<input id="child" type="integer" name="codice" class="form-control" placeholder="Codice materia" maxlength="13" <?php if($type=="modifica") echo "value='".$prodotto['codice']."'";?>/>
                 </div>
             </div>
 
