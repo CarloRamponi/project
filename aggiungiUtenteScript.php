@@ -13,28 +13,30 @@
   $permessi=$userRow[0];
 
 	$adminString = $_POST['admin'];
-	if($adminString == "Nessuno")
+	if($adminString == "Nessuno"){
 		$admin=0;
-	else if ($adminString == "Scrittura")
+  } else if ($adminString == "Scrittura") {
 		$admin=1;
+  }
 
 
 	$magazzinoScrittura = $_POST['magazzino'];
-	if($magazzinoScrittura == "Nessuno")
+	if($magazzinoScrittura == "Nessuno") {
 		$magazzino=0;
-	else if ($magazzinoScrittura == "Lettura")
+	} else if ($magazzinoScrittura == "Lettura") {
 		$magazzino=1;
-	else if ($magazzinoScrittura == "Scrittura")
+	} else if ($magazzinoScrittura == "Scrittura") {
 		$magazzino=2;
+  }
 
 	$finanzaScrittura = $_POST['finanza'];
-	if($finanzaScrittura == "Nessuno")
+	if($finanzaScrittura == "Nessuno") {
 		$finanza=0;
-	else if ($finanzaScrittura == "Lettura")
+	} else if ($finanzaScrittura == "Lettura") {
 		$finanza=1;
-	else if ($finanzaScrittura == "Scrittura")
+	} else if ($finanzaScrittura == "Scrittura") {
 		$finanza=2;
-
+  }
 
 	$nuovo_utente = $_POST['nuovo_utente'];
 	$new_password1 = $_POST['new_password1'];
@@ -46,7 +48,7 @@
 		if($n==0){
 			if($nuovo_utente=="" || $new_password1=="" || $new_password2==""){
 				header("Location: cambiaPassword.php?error=vuoto");
-			} else if($new_password1!=$new_password2){
+			} else if($new_password1!=$new_password2)
 				header("Location: cambiaPassword.php?error=newPassword");
 			else
 				mysql_query("INSERT INTO utenti (username, password, admin, magazzino, finanza) values ('".$nuovo_utente."', '".$new_password1."', ".$admin.", ".$magazzino.", ".$finanza.");");
@@ -55,6 +57,5 @@
 			header("Location: aggiungiUtente.php?error=utenteEsistente");
 	} else
 		header("Location: index.php");
-  }
 
 ?>
