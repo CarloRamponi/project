@@ -50,7 +50,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-barcode"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Codice prodotto" <?php if($type=="modifica") echo "value='".$prodotto['codice']."'";?>/>
+            	<input id="child" type="integer" name="codice" class="form-control" placeholder="Codice prodotto" <?php if($type=="modifica") echo "value='".$prodotto['codice']."'";?>/>
                 </div>
             </div>
 
