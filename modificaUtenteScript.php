@@ -6,9 +6,9 @@
       header("Location: index.php");
   }
 
-  if(!isset($_GET['id']))
+  if(!isset($_GET['id'])) {
     header("Location: gestioneUtenti.php");
-  else {
+  } else {
     $id=$_GET['id'];
   }
 
@@ -61,7 +61,7 @@
         header("Location: gestioneUtenti.php");
       }
 		} else
-			header("Location: aggiungiUtente.php?error=utenteEsistente&type=modifica&id="$id);
+			header("Location: aggiungiUtente.php?error=utenteEsistente&type=modifica&id=".$id);
 	} else
 		header("Location: index.php");
 
