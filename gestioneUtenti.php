@@ -14,7 +14,6 @@
 	<body>
 
 		<?php
-			$page=1;
 			include 'header.php';
 		?>
 
@@ -25,7 +24,7 @@
 			<div class="container">
 
 				<div class="page-header">
-				<h3>Magazzino</h3>
+				<h3>Gestione Utenti</h3>
 				</div>
 
 				<?php if($userRow['admin']){ ?>

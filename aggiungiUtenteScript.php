@@ -47,15 +47,15 @@
 		$n=mysql_num_rows($res);
 		if($n==0){
 			if($nuovo_utente=="" || $new_password1=="" || $new_password2==""){
-				header("Location: aggiungiUtente.php?error=vuoto");
+				header("Location: aggiungiUtente.php?error=vuoto&type=aggiungi");
 			} else if($new_password1!=$new_password2) {
-				header("Location: aggiungiUtente.php?error=newPassword");
+				header("Location: aggiungiUtente.php?error=newPassword&type=aggiungi");
 			} else {
 				mysql_query("INSERT INTO utenti (username, password, admin, magazzino, finanza) values ('".$nuovo_utente."', '".$new_password1."', ".$admin.", ".$magazzino.", ".$finanza.");");
         header("Location: gestioneUtenti.php");
       }
 		} else
-			header("Location: aggiungiUtente.php?error=utenteEsistente");
+			header("Location: aggiungiUtente.php?error=utenteEsistente&type=aggiungi");
 	} else
 		header("Location: index.php");
 
