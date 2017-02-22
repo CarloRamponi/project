@@ -105,7 +105,7 @@
 			}
 		</script>
 
-		<script>var NumeroMateriePrime=0;</script>
+		<script>var NumeroMaterie=0;</script>
 
 		<div>
 
