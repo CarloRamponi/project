@@ -20,7 +20,7 @@
 
 		<script>var numeroProdotti=0;</script>
 
-		<div>
+		<div class="wrapper">
 
 			<div class="container">
 
@@ -107,7 +107,7 @@
 
 		<script>var NumeroMaterie=0;</script>
 
-		<div>
+		<div class="wrapper">
 
 			<div class="container">
 
