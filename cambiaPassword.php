@@ -96,9 +96,9 @@
 	{
 		var input = document.getElementById("pwd1");
 		if (input.getAttribute("type") === "password") {
-		show();
+			show1();
 		} else {
-			hide();
+			hide1();
 		}
 	}
 	
@@ -118,9 +118,9 @@
 	{
 		var input = document.getElementById("pwd2");
 		if (input.getAttribute("type") === "password") {
-		show();
+		show2();
 		} else {
-			hide();
+			hide2();
 		}
 	}
 	
@@ -140,9 +140,9 @@
 	{
 		var input = document.getElementById("pwd3");
 		if (input.getAttribute("type") === "password") {
-		show();
+		show3();
 		} else {
-			hide();
+			hide3();
 		}
 	}
  </script>
