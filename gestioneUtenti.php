@@ -87,7 +87,7 @@
 				<?php if(isset($_GET['error'])){
 					$error = $_GET['error'];
 					if($error=="deleteItself")
-						echo "<span class='text-danger'>Non puoi eliminare te stesso!</span><br>";
+						echo "<span class='text-danger'>Non puoi eliminare te stesso!</span><br><br>";
 				} ?>
 
 				<?php if($userRow['magazzino']==2){ ?>
