@@ -61,10 +61,10 @@
                 </div>
             </div>
 
-             <div class="form-group">
+             <div class="form-group" id="staticParent2">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
-            	<input type="text" name="iva" class="form-control" placeholder="Iva del prodotto" maxlength="150" <?php if($type=="modifica") echo "value='".$prodotto['iva']."'";?>/>
+            	<input id="child2" type="text" name="iva" class="form-control" placeholder="Iva del prodotto" maxlength="150" <?php if($type=="modifica") echo "value='".$prodotto['iva']."'";?>/>
                 </div>
             </div>
 
@@ -104,6 +104,11 @@
 	 <script>
 		$(function() { 
 			$('#staticParent1').on('keydown', '#child1', function(e){
+				-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||/65|67|86|88/.test(e.keyCode)&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()}); }) 
+	</script>
+	 <script>
+		$(function() { 
+			$('#staticParent2').on('keydown', '#child2', function(e){
 				-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||/65|67|86|88/.test(e.keyCode)&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()}); }) 
 	</script>
 
