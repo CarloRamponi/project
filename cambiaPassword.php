@@ -30,21 +30,22 @@
 						<div class="form-group">
 							<div class="input-group">
 								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-								<input type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
+								<span class="input-group-addon"><span onClick="showHide1()" class="glyphicon glyphicon-lock"></span></span>
+								<input id="pwd1" type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<div class="input-group">
 								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span></span>
-								<input type="password" name="new_password1" class="form-control" placeholder="Inserire la nuova password" maxlength="32" />
+								<input id="pwd2" type="password" name="new_password1" class="form-control" placeholder="Inserire la nuova password" maxlength="32" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<div class="input-group">
 								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-								<input type="password" name="new_password2" class="form-control" placeholder="Reinserisci la nuova password" maxlength="32" />
+								<input id="pwd3" type="password" name="new_password2" class="form-control" placeholder="Reinserisci la nuova password" maxlength="32" />
 							</div>
 						</div>
 						
@@ -78,6 +79,73 @@
 
     <script src="assets/jquery-1.11.3-jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+	 function show1()
+	{
+		var p = document.getElementById('pwd1');
+		p.setAttribute('type','text');  
+	}
+
+	function hide1()
+	{
+		var p = document.getElementById('pwd1');
+		p.setAttribute('type','password');   
+	}
+
+	function showHide1()
+	{
+		var input = document.getElementById("pwd1");
+		if (input.getAttribute("type") === "password") {
+		show();
+		} else {
+			hide();
+		}
+	}
+	
+		 function show2()
+	{
+		var p = document.getElementById('pwd2');
+		p.setAttribute('type','text');  
+	}
+
+	function hide2()
+	{
+		var p = document.getElementById('pwd2');
+		p.setAttribute('type','password');   
+	}
+
+	function showHide2()
+	{
+		var input = document.getElementById("pwd2");
+		if (input.getAttribute("type") === "password") {
+		show();
+		} else {
+			hide();
+		}
+	}
+	
+		 function show3()
+	{
+		var p = document.getElementById('pwd3');
+		p.setAttribute('type','text');  
+	}
+
+	function hide3()
+	{
+		var p = document.getElementById('pwd3');
+		p.setAttribute('type','password');   
+	}
+
+	function showHide3()
+	{
+		var input = document.getElementById("pwd3");
+		if (input.getAttribute("type") === "password") {
+		show();
+		} else {
+			hide();
+		}
+	}
+ </script>
 
 </body>
 </html>
