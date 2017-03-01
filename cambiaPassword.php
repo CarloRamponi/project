@@ -31,7 +31,7 @@
 							<div class="input-group">
 								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 								<input id="pwd1" type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
-								<a onClick="showHide1()">vagina</a>
+								<button type="button" onclick="showHide1()" id="eye">
 							</div>
 						</div>
 
