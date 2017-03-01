@@ -89,7 +89,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><img onclick="showHide()" src="eye.png" height=20px width=15px></img></span>
-            	<input id="pwd" type="password" name="pass" class="form-control" placeholder="Password" maxlength="32" />
+            	<input id="pwd" type="password" name="pass" class="form-control" placeholder="Password (Schacciare sull'occhio per vedere la password)" maxlength="32" />
                 </div>
                 <span class="text-danger"><?php echo $passError; ?></span>
             </div>
