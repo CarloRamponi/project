@@ -108,7 +108,7 @@
     </form>
     </div>
     <script>
-    <script>
+    
 	 function show()
 	{
 		var p = document.getElementById('pwd');
@@ -130,6 +130,7 @@
 			hide();
 		}
 	}
+	</script>
 
 
 </div>
