@@ -13,11 +13,11 @@
 	$userRow=mysql_fetch_array($res);
 ?>
 <!DOCTYPE html>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	 <script>
-		$(function() { 
+		$(function() {
 			$('#staticParent').on('keydown', '#child', function(e){
-				-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||/65|67|86|88/.test(e.keyCode)&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()}); }) 
+				-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||/65|67|86|88/.test(e.keyCode)&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()}); })
 	</script>
 	<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -42,10 +42,11 @@
 			  			<span class="glyphicon glyphicon-user"></span>&nbsp;Ciao <?php echo $userRow['username']; ?>&nbsp;<span class="caret"></span></a>
               <ul class="dropdown-menu">
 								<?php if($userRow['admin']==1) { ?>
-									<li><a href="gestioneUtenti.php"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Gestione Utenti</a></li>
+									<li><a href="gestioneUtenti.php">&nbsp;Gestione Utenti</a></li>
 								<?php } ?>
-								<li><a href="cambiaPassword.php"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Cambia Password</a></li>
-                <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Esci</a></li>
+								<li><a href="cambiaPassword.php">&nbsp;Cambia Password</a></li>
+                <li><a href="logout.php?logout">&nbsp;Esci</a></li>
+								<li><a href="manuale.pdf">&nbsp;Scarica il manuale</a></li>
               </ul>
             </li>
           </ul>
