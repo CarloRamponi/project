@@ -42,11 +42,11 @@
 			  			<span class="glyphicon glyphicon-user"></span>&nbsp;Ciao <?php echo $userRow['username']; ?>&nbsp;<span class="caret"></span></a>
               <ul class="dropdown-menu">
 								<?php if($userRow['admin']==1) { ?>
-									<li><a href="gestioneUtenti.php"><span class="glyphicon glyphicon-user-structure"></span>&nbsp;Gestione Utenti</a></li>
+									<li><a href="gestioneUtenti.php">&nbsp;Gestione Utenti</a></li>
 								<?php } ?>
-								<li><a href="cambiaPassword.php"><span class="glyphicon glyphicon-keys"></span>&nbsp;Cambia Password</a></li>
-                <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Esci</a></li>
-								<li><a href="manuale.pdf"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;Scarica il manuale</a></li>
+								<li><a href="cambiaPassword.php">&nbsp;Cambia Password</a></li>
+                <li><a href="logout.php?logout">&nbsp;Esci</a></li>
+								<li><a href="manuale.pdf">&nbsp;Scarica il manuale</a></li>
               </ul>
             </li>
           </ul>
