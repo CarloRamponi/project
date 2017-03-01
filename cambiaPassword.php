@@ -29,12 +29,8 @@
 
 						<div class="form-group">
 							<div class="input-group">
-								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-								<input id="pwd1" type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32">
-								<button type="button" onclick="showHide1()" id="eye">
-									<img src="eye.png" alt="eye" width="24" height="24"/>
-								</button>
-								</input>
+								<span class="input-group-addon"><button type="button" onclick="showHide1()"><img src="eye.png" alt="eye" width="24" height="24"/></button></span>
+								<input id="pwd1" type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
 							</div>
 						</div>
 
