@@ -84,6 +84,12 @@
 					</table>
 				</div>
 
+				<?php if(isset($_GET['error'])){
+					$error = $_GET['error'];
+					if($error=="deleteItself")
+						echo "<span class='text-danger'>Non puoi eliminare te stesso!</span>";
+				} ?>
+
 				<?php if($userRow['magazzino']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
 					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
