@@ -29,7 +29,7 @@
 
 						<div class="form-group">
 							<div class="input-group">
-								<span class="input-group-addon"><a onClick="showHide1()" class="glyphicon glyphicon-lock"></a></span>
+								<a onClick="showHide1()" class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></a>
 								<input id="pwd1" type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
 							</div>
 						</div>
