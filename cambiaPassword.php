@@ -30,21 +30,21 @@
 						<div class="form-group">
 							<div class="input-group">
 								<span class="input-group-addon"><img onclick="showHide1()" src="eye.png" height=20px width=20px></img></span>
-								<input id="pwd1" type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
+								<input id="pwd1" type="password" name="password" class="form-control" placeholder="Inserire la vecchia password (premere sull'occhio per vedere la password)" maxlength="32" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<div class="input-group">
 								<span class="input-group-addon"><img onclick="showHide2()" src="eye.png" height=20px width=20px></img></span>
-								<input id="pwd2" type="password" name="new_password1" class="form-control" placeholder="Inserire la nuova password" maxlength="32" />
+								<input id="pwd2" type="password" name="new_password1" class="form-control" placeholder="Inserire la nuova password (premere sull'occhio per vedere la password)" maxlength="32" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<div class="input-group">
 								<span class="input-group-addon"><img onclick="showHide3()" src="eye.png" height=20px width=20px></img></span>
-								<input id="pwd3" type="password" name="new_password2" class="form-control" placeholder="Reinserisci la nuova password" maxlength="32" />
+								<input id="pwd3" type="password" name="new_password2" class="form-control" placeholder="Reinserisci la nuova password (premere sull'occhio per vedere la password)" maxlength="32" />
 							</div>
 						</div>
 						
