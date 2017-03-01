@@ -29,7 +29,7 @@
 
 						<div class="form-group">
 							<div class="input-group">
-								<span class="input-group-addon"><img onclick="showHide1()" src="eye.png" height=32px width=32px></img></span>
+								<span class="input-group-addon"><img onclick="showHide1()" src="eye.png" height=20px width=20px></img></span>
 								<input id="pwd1" type="password" name="password" class="form-control" placeholder="Inserire la vecchia password" maxlength="32" />
 							</div>
 						</div>
