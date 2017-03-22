@@ -36,7 +36,7 @@
   $sito=$_POST['sito'];
 
 	if($permessi==2){
-		$res=mysql_query("SELECT * FROM clienti WHERE codice='".$codice."'");
+		$res=mysql_query("SELECT * FROM clienti WHERE id='".$id."'");
 		$n=mysql_num_rows($res);
 		if($n!=0){
 			if($codice=="" || $nome==""){
@@ -45,8 +45,7 @@
 				mysql_query("UPDATE clienti SET codice=".$codice.", nome='".$nome."', pi=".$pi.", via='".$via."', cap=".$cap.", citta='".$citta."', telefono=".$telefono.", fax=".$fax.", mail='".$mail."', iban=".$iban.", banca='".$banca."', pagamento='".$pagamento."', scadenza='".$scadenza."', annotazioni='".$annotazioni."', orari='".$orari."', sito='".$sito."' WHERE id=".$id.";");
         header("Location: clienti.php");
       }
-		}
-	} else
+		} else
 		header("Location: index.php");
 
 ?>
