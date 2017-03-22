@@ -50,7 +50,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-barcode"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Codice Cliente*" <?php if($type=="modifica") echo "value='".$clienti['codice']."'";?>/>
+            	<input type="number" name="codice" class="form-control" placeholder="Codice Cliente*" <?php if($type=="modifica") echo "value='".$clienti['codice']."'";?>/>
                 </div>
             </div>
 
@@ -78,7 +78,7 @@
             <div class="form-group">
              <div class="input-group">
                <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
-             <input type="integer" name="cap" class="form-control" placeholder="CAP"<?php if($type=="modifica") echo "value='".$clienti['cap']."'";?>/>
+             <input type="number" name="cap" class="form-control" placeholder="CAP"<?php if($type=="modifica") echo "value='".$clienti['cap']."'";?>/>
                </div>
             </div>
 
@@ -92,14 +92,14 @@
            <div class="form-group">
             <div class="input-group">
               <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
-            <input type="integer" name="telefono" class="form-control" placeholder="Telefono" <?php if($type=="modifica") echo "value='".$clienti['telefono']."'";?>/>
+            <input type="number" name="telefono" class="form-control" placeholder="Telefono" <?php if($type=="modifica") echo "value='".$clienti['telefono']."'";?>/>
               </div>
           </div>
 
           <div class="form-group">
            <div class="input-group">
              <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
-           <input type="integer" name="fax" class="form-control" placeholder="Fax" <?php if($type=="modifica") echo "value='".$clienti['fax']."'";?>/>
+           <input type="number" name="fax" class="form-control" placeholder="Fax" <?php if($type=="modifica") echo "value='".$clienti['fax']."'";?>/>
              </div>
          </div>
 
@@ -113,7 +113,7 @@
        <div class="form-group">
         <div class="input-group">
           <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
-        <input type="integer" name="iban" class="form-control" placeholder="Iban"<?php if($type=="modifica") echo "value='".$clienti['iban']."'";?>/>
+        <input type="number" name="iban" class="form-control" placeholder="Iban"<?php if($type=="modifica") echo "value='".$clienti['iban']."'";?>/>
           </div>
       </div>
 
