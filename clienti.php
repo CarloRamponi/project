@@ -39,22 +39,22 @@
 					<div style="overflow-x: scroll;">
 					<table class="table">
 						<tr>
-							<td><b>Codice cliente</b>
-							<td><b>Nome azienda</b>
-							<td><b>PI/CF </b>
-							<td><b>Indirizzo </b>
-							<td><b>CAP</b>
-							<td><b>Città</b>
-							<td ><b>Telefono </b>
-							<td><b>FAX</b>
-							<td><b>E-mail</b>
-							<td><b>Iban</b>
-							<td><b>Banca D'appogio</b>
-							<td><b>Modalità di pagamento</b>
-							<td><b>Scadenza</b>
-							<td><b>Annotazioni</b>
-							<td><b>Giorni di attività</b>
-							<td><b>Sito</b>
+							<td width="200px"><b>Codice cliente</b>
+							<td width="200px"><b>Nome azienda</b>
+							<td width="200px"><b>PI/CF </b>
+							<td width="200px"><b>Indirizzo </b>
+							<td width="200px"><b>CAP</b>
+							<td width="200px"><b>Città</b>
+							<td width="200px"><b>Telefono </b>
+							<td width="200px"><b>FAX</b>
+							<td width="200px"><b>E-mail</b>
+							<td width="200px"><b>Iban</b>
+							<td width="200px"><b>Banca D'appogio</b>
+							<td width="200px"><b>Modalità di pagamento</b>
+							<td width="200px"><b>Scadenza</b>
+							<td width="200px"><b>Annotazioni</b>
+							<td width="200px"><b>Giorni di attività</b>
+							<td width="200px"><b>Sito</b>
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from clienti");
