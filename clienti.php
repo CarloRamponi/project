@@ -80,8 +80,8 @@
 										<td><?php echo $utenti[$i]['orari']; ?></td>
 										<td><?php echo $utenti[$i]['sito']; ?></td>
 										<?php
-											echo "<td style='background-color:#FFFFFF' id='del".$utenti[$i]['id']."'></td>";
-											echo "<td style='background-color:#FFFFFF' id='edit".$utenti[$i]['id']."'></td>";
+											echo "<td style='background-color:#FFFFFF' id='delll".$utenti[$i]['id']."'></td>";
+											echo "<td style='background-color:#FFFFFF' id='editl".$utenti[$i]['id']."'></td>";
 										?>
 									</tr>
 						<?php
@@ -97,8 +97,8 @@
 
 				<?php if($userRow['vendite']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
-					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
-					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
+					<button class="btn btn-danger" onclick="bottoniElimina">Elimina</button>
+					<button class="btn btn-warning" onclick="bottoniModifica">Modifica</button>
 					<a class="btn btn-success" href = 'aggiungiUtente.php?type=aggiungi'>Aggiungi</a>
 				<?php } ?>
 			</div>
