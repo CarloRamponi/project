@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generato il: Mar 22, 2017 alle 15:15
+-- Generato il: Feb 01, 2017 alle 16:19
 -- Versione del server: 5.5.54-0ubuntu0.14.04.1
--- Versione PHP: 5.5.9-1ubuntu4.21
+-- Versione PHP: 5.5.9-1ubuntu4.20
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,33 +23,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struttura della tabella `clienti`
---
-
-CREATE TABLE IF NOT EXISTS `clienti` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `codice` int(11) NOT NULL,
-  `nome` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `pi` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `via` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `cap` int(11) NOT NULL,
-  `citta` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `telefono` bigint(20) NOT NULL,
-  `fax` bigint(20) NOT NULL,
-  `mail` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `iban` bigint(20) NOT NULL,
-  `banca` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `pagamento` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `scadenza` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `annotazioni` varchar(300) COLLATE utf8_unicode_ci NOT NULL,
-  `orari` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `sito` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Struttura della tabella `finanza`
 --
 
@@ -60,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `finanza` (
   `tipo` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
   `importo` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -75,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `log` (
   `data` date NOT NULL,
   `quantita` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=17 ;
 
 -- --------------------------------------------------------
 
@@ -92,6 +65,7 @@ CREATE TABLE IF NOT EXISTS `logMaterie` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
 
+
 -- --------------------------------------------------------
 
 --
@@ -105,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `materie` (
   `iva` int(11) NOT NULL,
   `prezzo` float NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
 
 -- --------------------------------------------------------
 
@@ -120,7 +94,8 @@ CREATE TABLE IF NOT EXISTS `prodotti` (
   `iva` int(11) NOT NULL,
   `prezzo` float NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=29 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=18 ;
+
 
 -- --------------------------------------------------------
 
@@ -133,11 +108,9 @@ CREATE TABLE IF NOT EXISTS `utenti` (
   `username` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `magazzino` int(11) NOT NULL DEFAULT '0',
-  `finanza` int(1) NOT NULL DEFAULT '1',
-  `admin` int(11) NOT NULL,
-  `vendite` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
