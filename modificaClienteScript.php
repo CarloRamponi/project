@@ -36,7 +36,7 @@
   $sito=$_POST['sito'];
 
 	if($permessi==2){
-		$res=mysql_query("SELECT * FROM clienti WHERE codice='".$codice."'");
+		$res=mysql_query("SELECT * FROM clienti WHERE id='".$id."'");
 		$n=mysql_num_rows($res);
 		if($n!=0){
 			if($codice=="" || $nome==""){
@@ -46,7 +46,7 @@
         header("Location: clienti.php");
       }
 		}
-	} else
-		header("Location: index.php");
+  } else
+	header("Location: index.php");
 
 ?>
