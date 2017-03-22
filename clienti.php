@@ -30,21 +30,22 @@
 
 				<?php if($userRow['vendite']){ ?>
 
-				<div style=" overflow-x: scroll;">
+
 				<!-- Default panel contents -->
-					<div class="panel-heading">Lista clienti</div>
+				<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<table cellpadding="4" cellspacing="1" width="100%">
 						<tr>
-							<td><b>Codice cliente    </b>
-							<td><b>Nome azienda    </b>
-							<td><b>PI/CF    </b>
-							<td><b>Indirizzo    </b>
-							<td><b>CAP   </b>
-							<td><b>Città    </b>
-							<td ><b>Telefono     </b>
+							<td><b>Codice cliente		</b>
+							<td><b>Nome azienda		</b>
+							<td><b>PI/CF		</b>
+							<td><b>Indirizzo		</b>
+							<td><b>CAP		</b>
+							<td><b>Città		</b>
+							<td ><b>Telefono		</b>
 							<td><b>FAX    </b>
 							<td><b>E-mail    </b>
 							<td><b>Iban    </b>
@@ -56,6 +57,10 @@
 							<td><b>Sito    </b>
 =======
 					<table>
+=======
+					<div style="overflow-x: scroll;">
+					<table class="table">
+>>>>>>> 6a3d419c8fc793d3033e76164b1b914f37aea8f9
 						<tr>
 							<td><b>Codice cliente</b>
 							<td><b>Nome azienda</b>
