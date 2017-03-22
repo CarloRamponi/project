@@ -77,7 +77,7 @@
 										<td><?php echo $utenti[$i]['banca']; ?></td>
 										<td><?php echo $utenti[$i]['pagamento']; ?></td>
 										<td><?php echo $utenti[$i]['scadenza']; ?></td>
-										<td><?php echo $utenti[$i]['annotazione']; ?></td>
+										<td><?php echo $utenti[$i]['annotazioni']; ?></td>
 										<td><?php echo $utenti[$i]['orari']; ?></td>
 										<td><?php echo $utenti[$i]['sito']; ?></td>
 										<?php
