@@ -34,7 +34,7 @@
 					<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
-					<table class="table">
+					<table class="srollable">
 						<tr>
 							<th>Codice cliente</th>
 							<th>Nome azienda</th>
