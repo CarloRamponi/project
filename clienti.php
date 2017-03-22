@@ -29,12 +29,12 @@
 
 				<?php if($userRow['vendite']){ ?>
 
-				<div class="panel panel-default">
+				<div style=""width:700px;height: 400px; overflow-x:  scroll; overflow-y:  scroll;border:1px solid black;"><table cellpadding="4" cellspacing="1" width="100%" border=0>
 				<!-- Default panel contents -->
 					<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
-					<table class="table myTable">
+					<table cellpadding="4" cellspacing="1" width="100%" border=0>
 						<tr>
 							<th>Codice cliente</th>
 							<th>Nome azienda</th>
