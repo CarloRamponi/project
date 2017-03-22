@@ -30,7 +30,7 @@
 
 				<?php if($userRow['vendite']){ ?>
 
-				<div style=" overflow-x:  scroll; overflow-y:scroll;border:1px solid black;">
+				<div style=" overflow-x:  scroll; overflow-y:scroll;">
 				<!-- Default panel contents -->
 					<div class="panel-heading">Lista clienti</div>
 
