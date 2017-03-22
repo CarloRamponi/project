@@ -30,12 +30,12 @@
 
 				<?php if($userRow['vendite']){ ?>
 
-				<div style=""width:700px;height: 400px; overflow-x:  scroll; overflow-y:  scroll;border:1px solid black;"><table cellpadding="4" cellspacing="1" width="100%" border=0>
+				<div style=""width: 700px ;height: 400px ; overflow-x:  scroll; overflow-y:  scroll;border:1px solid black;>
 				<!-- Default panel contents -->
 					<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
-					<table cellpadding="4" cellspacing="1" width="400%" border=0>
+					<table cellpadding="4" cellspacing="1" width="100%" border=0>
 						<tr>			
 							<td><b>Codice cliente</b>
 							<td><b>Nome azienda</b>
