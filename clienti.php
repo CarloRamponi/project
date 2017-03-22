@@ -36,23 +36,23 @@
 					<!-- Table -->
 					<table cellpadding="4" cellspacing="1" width="100%" border=0>
 						<tr>
-							<th>Codice cliente</th>
-							<th>Nome azienda</th>
-							<th>PI/CF</th>
-							<th>Indirizzo</th>
-							<th>CAP</th>
-							<th>Città</th>
-							<th>Telefono</th>
-							<th>FAX</th>
-							<th>E-mail</th>
-							<th>Iban</th>
-							<th>Banca D'appogio</th>
-							<th>Modalità di pagamento</th>
-							<th>Scadenza </th>
-							<th>Annotazioni</th>
-							<th>Giorni di attività</th>
-							<th>Sito</th>
 							
+							<td><b>Codice cliente</b>
+							<td><b>Nome azienda</b>
+							<td><b>PI/CF </b>
+							<td><b>Indirizzo </b>
+							<td><b>CAP</b>
+							<td><b>Città</b>
+							<td><b>Telefono </b>
+							<td><b>FAX</b>
+							<td><b>E-mail</b>
+							<td><b>Iban</b>
+							<td><b>Banca D'appogio</b>
+							<td><b>Modalità di pagamento</b>
+							<td><b>Scadenza</b>
+							<td><b>Annotazioni</b>
+							<td><b>Giorni di attività</b>
+							<td><b>Sito</b>
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from clienti");
