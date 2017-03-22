@@ -35,24 +35,24 @@
 					<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
-					<table cellpadding="4" cellspacing="1" width="200%" border=5>
+					<table cellpadding="4" cellspacing="1" width="400%" border=0>
 						<tr>			
-							<td width=30%><b>Codice cliente</b>
-							<td width=30%><b>Nome azienda</b>
-							<td width=30%><b>PI/CF </b>
-							<td width=30%><b>Indirizzo </b>
-							<td width=30%><b>CAP</b>
-							<td width=30%><b>Città</b>
-							<td width=30%><b>Telefono </b>
-							<td width=30%><b>FAX</b>
-							<td width=30%><b>E-mail</b>
-							<td width=30%><b>Iban</b>
-							<td width=30%><b>Banca D'appogio</b>
-							<td width=30%><b>Modalità di pagamento</b>
-							<td width=30%><b>Scadenza</b>
-							<td width=30%><b>Annotazioni</b>
-							<td width=30%><b>Giorni di attività</b>
-							<td width=30%><b>Sito</b>
+							<td><b>Codice cliente</b>
+							<td><b>Nome azienda</b>
+							<td><b>PI/CF </b>
+							<td><b>Indirizzo </b>
+							<td><b>CAP</b>
+							<td><b>Città</b>
+							<td ><b>Telefono </b>
+							<td><b>FAX</b>
+							<td><b>E-mail</b>
+							<td><b>Iban</b>
+							<td><b>Banca D'appogio</b>
+							<td><b>Modalità di pagamento</b>
+							<td><b>Scadenza</b>
+							<td><b>Annotazioni</b>
+							<td><b>Giorni di attività</b>
+							<td><b>Sito</b>
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from clienti");
