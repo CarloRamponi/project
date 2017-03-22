@@ -34,7 +34,7 @@
 					<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
-					<table class="srollable">
+					<table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
 						<tr>
 							<th>Codice cliente</th>
 							<th>Nome azienda</th>
