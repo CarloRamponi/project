@@ -30,11 +30,12 @@
 
 				<?php if($userRow['vendite']){ ?>
 
-				<div style=" overflow-x:  scroll; overflow-y:scroll;">
+				<div style=" overflow-x: scroll;">
 				<!-- Default panel contents -->
 					<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
+<<<<<<< HEAD
 					<table cellpadding="4" cellspacing="1" width="100%">
 						<tr>
 							<td><b>Codice cliente    </b>
@@ -53,6 +54,26 @@
 							<td><b>Annotazioni    </b>
 							<td><b>Giorni di attività    </b>
 							<td><b>Sito    </b>
+=======
+					<table>
+						<tr>
+							<td><b>Codice cliente</b>
+							<td><b>Nome azienda</b>
+							<td><b>PI/CF </b>
+							<td><b>Indirizzo </b>
+							<td><b>CAP</b>
+							<td><b>Città</b>
+							<td ><b>Telefono </b>
+							<td><b>FAX</b>
+							<td><b>E-mail</b>
+							<td><b>Iban</b>
+							<td><b>Banca D'appogio</b>
+							<td><b>Modalità di pagamento</b>
+							<td><b>Scadenza</b>
+							<td><b>Annotazioni</b>
+							<td><b>Giorni di attività</b>
+							<td><b>Sito</b>
+>>>>>>> cf08af1ad53f33fde8fcadf1e91b2dcfafdbd2e0
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from clienti");
