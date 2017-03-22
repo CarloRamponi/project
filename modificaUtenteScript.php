@@ -52,12 +52,17 @@
 		$res=mysql_query("SELECT * FROM utenti WHERE id='".$id."'");
 		$n=mysql_num_rows($res);
 		if($n!=0){
-			if($nuovo_utente=="" || $new_password1=="" || $new_password2==""){
+			if($nuovo_utente==""){
 				header("Location: aggiungiUtente.php?error=vuoto&type=modifica&id=".$id);
-			} else if($new_password1!=$new_password2) {
+			} else if($new_password1 == ""){
+        $vuoto=true;
+      } else if($new_password1!=$new_password2 && !$vuoto) {
 				header("Location: aggiungiUtente.php?error=newPassword&type=modifica&id=".$id);
 			} else {
-				mysql_query("UPDATE utenti SET username='".$nuovo_utente."', password='".$new_password1."', admin=".$admin.", finanza=".$finanza.", magazzino=".$magazzino." WHERE id=".$id.";");
+        if($vuoto)
+          mysql_query("UPDATE utenti SET username='".$nuovo_utente."', admin=".$admin.", finanza=".$finanza.", magazzino=".$magazzino." WHERE id=".$id.";");
+        else
+				    mysql_query("UPDATE utenti SET username='".$nuovo_utente."', password='".$new_password1."', admin=".$admin.", finanza=".$finanza.", magazzino=".$magazzino." WHERE id=".$id.";");
         header("Location: gestioneUtenti.php");
       }
 		} else

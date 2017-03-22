@@ -57,7 +57,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            	<input type="password" name="new_password1" class="form-control" placeholder="Password" maxlength="150"/>
+            	<input type="password" name="new_password1" class="form-control" placeholder="Password<?php if($type=="modifica") echo " (vuoto per invariato)"; ?>" maxlength="150"/>
                 </div>
             </div>
 

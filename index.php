@@ -88,8 +88,8 @@
 
             <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            	<input type="password" name="pass" class="form-control" placeholder="Password" maxlength="50" />
+                <span class="input-group-addon"><img onclick="showHide()" src="eye.png" height=20px width=15px></img></span>
+            	<input id="pwd" type="password" name="pass" class="form-control" placeholder="Password (premere sull'occhio per vedere la password)" maxlength="32" />
                 </div>
                 <span class="text-danger"><?php echo $passError; ?></span>
             </div>
@@ -107,6 +107,31 @@
 
     </form>
     </div>
+    <script>
+    
+	 function show()
+	{
+		var p = document.getElementById('pwd');
+		p.setAttribute('type','text');  
+	}
+
+	function hide()
+	{
+		var p = document.getElementById('pwd');
+		p.setAttribute('type','password');   
+	}
+
+	function showHide()
+	{
+		var input = document.getElementById("pwd");
+		if (input.getAttribute("type") === "password") {
+			show();
+		} else {
+			hide();
+		}
+	}
+	</script>
+
 
 </div>
 
