@@ -31,6 +31,7 @@
 				<?php if($userRow['vendite']){ ?>
 
 
+				<div class="panel panel-default">
 				<!-- Default panel contents -->
 				<div class="panel-heading">Lista clienti</div>
 
@@ -120,6 +121,7 @@
 						<?php } ?>
 					</table>
 				</div>
+			</div>
 
 				<?php if($userRow['vendite']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
