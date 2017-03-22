@@ -26,6 +26,16 @@
   }
 
 
+  $venditeScrittura = $_POST['vendite'];
+    if($venditeScrittura == "Nessuno") {
+      $vendite=0;
+    } else if ($venditeScrittura == "Lettura") {
+      $vendite=1;
+    } else if ($venditeScrittura == "Scrittura") {
+      $vendite=2;
+    }
+
+
 	$magazzinoScrittura = $_POST['magazzino'];
 	if($magazzinoScrittura == "Nessuno") {
 		$magazzino=0;
@@ -60,9 +70,9 @@
 				header("Location: aggiungiUtente.php?error=newPassword&type=modifica&id=".$id);
 			} else {
         if($vuoto)
-          mysql_query("UPDATE utenti SET username='".$nuovo_utente."', admin=".$admin.", finanza=".$finanza.", magazzino=".$magazzino." WHERE id=".$id.";");
+          mysql_query("UPDATE utenti SET username='".$nuovo_utente."', admin=".$admin.", finanza=".$finanza.", magazzino=".$magazzino.", vendite=".$vendite." WHERE id=".$id.";");
         else
-				    mysql_query("UPDATE utenti SET username='".$nuovo_utente."', password='".$new_password1."', admin=".$admin.", finanza=".$finanza.", magazzino=".$magazzino." WHERE id=".$id.";");
+				    mysql_query("UPDATE utenti SET username='".$nuovo_utente."', password='".$new_password1."', admin=".$admin.", finanza=".$finanza.", magazzino=".$magazzino.", vendite=".$vendite." WHERE id=".$id.";");
         header("Location: gestioneUtenti.php");
       }
 		} else

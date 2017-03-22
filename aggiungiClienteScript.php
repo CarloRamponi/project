@@ -35,13 +35,13 @@
 		$n=mysql_num_rows($res);
 		if($n==0){
 			if($codice=="" || $nome==""){
-				header("Location: aggiungiUtente.php?error=vuoto&type=aggiungi");
+				header("Location: aggiungiCliente.php?error=vuoto&type=aggiungi");
 			} else {
 				mysql_query("INSERT INTO clienti (codice, nome, pi, via, cap, citta, telefono, fax, mail, iban, banca, pagamento, scadenza, annotazioni, orari, sito) values (".$codice.", '".$nome."', ".$pi.", '".$via."', ".$cap.", '".$citta."', ".$telefono.", ".$fax.", '".$mail."', ".$iban.", '".$banca."', '".$pagamento."', '".$scadenza."', '".$annotazioni."', '".$orari."', '".$sito."');");
-        header("Location: gestioneUtenti.php");
+        header("Location: clienti.php");
       }
 		} else
-			header("Location: aggiungiUtente.php?error=clienteEsistente&type=aggiungi");
+			header("Location: aggiungiCliente.php?error=clienteEsistente&type=aggiungi");
 	} else
 		header("Location: index.php");
 

@@ -14,6 +14,7 @@
 	<body>
 
 		<?php
+			$page=3;
 			include 'header.php';
 		?>
 
@@ -35,8 +36,7 @@
 
 					<!-- Table -->
 					<table cellpadding="4" cellspacing="1" width="100%" border=0>
-						<tr>
-							
+						<tr>			
 							<tr><td width=10%><b>Codice cliente</b>
 							<td width=10%><b>Nome azienda</b>
 							<td width=10%><b>PI/CF </b>
@@ -76,7 +76,7 @@
 										<td><?php echo $utenti[$i]['banca']; ?></td>
 										<td><?php echo $utenti[$i]['pagamento']; ?></td>
 										<td><?php echo $utenti[$i]['scadenza']; ?></td>
-										<td><?php echo $utenti[$i]['annotazione']; ?></td>
+										<td><?php echo $utenti[$i]['annotazioni']; ?></td>
 										<td><?php echo $utenti[$i]['orari']; ?></td>
 										<td><?php echo $utenti[$i]['sito']; ?></td>
 										<?php
@@ -97,9 +97,9 @@
 
 				<?php if($userRow['vendite']==2){ ?>
 					<!-- Bottoni aggiungi e modifica! -->
-					<button class="btn btn-danger" onclick="bottoniElimina">Elimina</button>
-					<button class="btn btn-warning" onclick="bottoniModifica">Modifica</button>
-					<a class="btn btn-success" href = 'aggiungiUtente.php?type=aggiungi'>Aggiungi</a>
+					<button class="btn btn-danger" onclick="bottoniElimina(numeroProdotti)">Elimina</button>
+					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
+					<a class="btn btn-success" href = 'aggiungiCliente.php?type=aggiungi'>Aggiungi</a>
 				<?php } ?>
 			</div>
 
@@ -114,7 +114,7 @@
 			function bottoniElimina(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("delll"+i+"")){
-						document.getElementById("delll"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaUtenteScript.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
+						document.getElementById("delll"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaClienteScript.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
 					} else if(document.getElementById("elill"+i+""))
 							document.getElementById("elill"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='del"+i+"'></td>";
 				}
@@ -122,7 +122,7 @@
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("editl"+i+"")){
-						document.getElementById("editl"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='mod"+i+"'><a href='aggiungiUtente.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
+						document.getElementById("editl"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='mod"+i+"'><a href='aggiungiCliente.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
 					} else if(document.getElementById("modl"+i+""))
 							document.getElementById("modl"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edit"+i+"'></td>";
 				}

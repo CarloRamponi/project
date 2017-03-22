@@ -40,9 +40,9 @@
 		$n=mysql_num_rows($res);
 		if($n!=0){
 			if($codice=="" || $nome==""){
-				header("Location: aggiungiUtente.php?error=vuoto&type=modifica&id=".$id."");
+				header("Location: aggiungiCliente.php?error=vuoto&type=modifica&id=".$id."");
 			} else {
-				mysql_query("UPDATE clienti SET codice=".$codice.", nome='".$nome."', pi=".$pi.", via='".$via."', cap=".$cap.", citta='".$citta."', telefono=".$telefono", fax=".$fax.", mail='".$mail."', iban=".$iban.", banca='".$banca."', pagamento='".$pagamento."', scadenza='".$scadenza."', annotazioni='".$annotazioni."', orari='".$orari."', sito='".$sito."';");
+				mysql_query("UPDATE clienti SET codice=".$codice.", nome='".$nome."', pi=".$pi.", via='".$via."', cap=".$cap.", citta='".$citta."', telefono=".$telefono.", fax=".$fax.", mail='".$mail."', iban=".$iban.", banca='".$banca."', pagamento='".$pagamento."', scadenza='".$scadenza."', annotazioni='".$annotazioni."', orari='".$orari."', sito='".$sito."' WHERE id=".$id";");
         header("Location: clienti.php");
       }
 		}

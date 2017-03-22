@@ -50,13 +50,13 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-barcode"></span></span>
-            	<input type="integer" name="codice" class="form-control" placeholder="Codice Cliente*" <?php if($type=="modifica") echo "value='".$clienti['codice']."'";?>/>
+            	<input type="number" name="codice" class="form-control" placeholder="Codice Cliente*" <?php if($type=="modifica") echo "value='".$clienti['codice']."'";?>/>
                 </div>
             </div>
 
             <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
             	<input type="text" name="nome" class="form-control" placeholder="Nome Azienda*" maxlength="50" <?php if($type=="modifica") echo "value='".$clienti['nome']."'";?>/>
                 </div>
             </div>
@@ -70,91 +70,91 @@
 
              <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
             	<input type="text" name="via" class="form-control" placeholder="Indirizzo" maxlength="100" <?php if($type=="modifica") echo "value='".$clienti['via']."'";?>/>
                 </div>
             </div>
 
             <div class="form-group">
              <div class="input-group">
-               <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
-             <input type="integer" name="cap" class="form-control" placeholder="CAP"<?php if($type=="modifica") echo "value='".$clienti['cap']."'";?>/>
+               <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
+             <input type="number" name="cap" class="form-control" placeholder="CAP"<?php if($type=="modifica") echo "value='".$clienti['cap']."'";?>/>
                </div>
             </div>
 
             <div class="form-group">
              <div class="input-group">
-               <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+               <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
              <input type="text" name="citta" class="form-control" placeholder="Città" maxlength="50" <?php if($type=="modifica") echo "value='".$clienti['citta']."'";?>/>
                </div>
            </div>
 
            <div class="form-group">
             <div class="input-group">
-              <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
-            <input type="integer" name="telefono" class="form-control" placeholder="Telefono" <?php if($type=="modifica") echo "value='".$clienti['telefono']."'";?>/>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
+            <input type="number" name="telefono" class="form-control" placeholder="Telefono" <?php if($type=="modifica") echo "value='".$clienti['telefono']."'";?>/>
               </div>
           </div>
 
           <div class="form-group">
            <div class="input-group">
-             <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
-           <input type="integer" name="fax" class="form-control" placeholder="Fax" <?php if($type=="modifica") echo "value='".$clienti['fax']."'";?>/>
+             <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
+           <input type="number" name="fax" class="form-control" placeholder="Fax" <?php if($type=="modifica") echo "value='".$clienti['fax']."'";?>/>
              </div>
          </div>
 
         <div class="form-group">
          <div class="input-group">
-           <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+           <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
          <input type="text" name="mail" class="form-control" placeholder="E-mail" maxlength="100" <?php if($type=="modifica") echo "value='".$clienti['mail']."'";?>/>
            </div>
        </div>
 
        <div class="form-group">
         <div class="input-group">
-          <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
-        <input type="integer" name="iban" class="form-control" placeholder="Iban"<?php if($type=="modifica") echo "value='".$clienti['iban']."'";?>/>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
+        <input type="number" name="iban" class="form-control" placeholder="Iban"<?php if($type=="modifica") echo "value='".$clienti['iban']."'";?>/>
           </div>
       </div>
 
        <div class="form-group">
         <div class="input-group">
-          <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
         <input type="text" name="banca" class="form-control" placeholder="Banca d'appoggio" maxlength="200" <?php if($type=="modifica") echo "value='".$clienti['banca']."'";?>/>
           </div>
        </div>
 
        <div class="form-group">
         <div class="input-group">
-          <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
         <input type="text" name="pagamento" class="form-control" placeholder="Modalità di pagamento" maxlength="100" <?php if($type=="modifica") echo "value='".$clienti['pagamento']."'";?>/>
           </div>
       </div>
 
       <div class="form-group">
        <div class="input-group">
-         <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+         <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
        <input type="text" name="scadenza" class="form-control" placeholder="Scadenza" maxlength="100" <?php if($type=="modifica") echo "value='".$clienti['scadenza']."'";?>/>
          </div>
      </div>
 
      <div class="form-group">
       <div class="input-group">
-        <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+        <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
       <input type="text" name="annotazioni" class="form-control" placeholder="Annotazioni" maxlength="300" <?php if($type=="modifica") echo "value='".$clienti['annotazioni']."'";?>/>
         </div>
     </div>
 
     <div class="form-group">
      <div class="input-group">
-       <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+       <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
      <input type="text" name="orari" class="form-control" placeholder="Giorni di Attività" maxlength="100" <?php if($type=="modifica") echo "value='".$clienti['orari']."'";?>/>
        </div>
    </div>
 
    <div class="form-group">
     <div class="input-group">
-      <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
+      <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
     <input type="text" name="sito" class="form-control" placeholder="Sito" maxlength="100" <?php if($type=="modifica") echo "value='".$clienti['sito']."'";?>/>
       </div>
   </div>
