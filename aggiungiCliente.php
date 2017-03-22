@@ -19,7 +19,7 @@
 <body>
 
 	<?php
-		$page=1;
+		$page=3;
 		include 'header.php';
 		if($type=="modifica"){
 			$res=mysql_query("SELECT * from clienti where id='".$_GET['id']."'");
@@ -164,7 +164,6 @@
             	<hr />
 				<?php
 					if(isset($_GET['error'])){
-					if(isset($_GET['error'])){
 						if($_GET['error']=="vuoto")
 						?><span class="text-danger">I campi  obbligatori non possono essere vuoti!</span><?php
             if($_GET['error']=="clienteEsistente")
@@ -189,6 +188,6 @@
     <script src="assets/jquery-1.11.3-jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
+
 </body>
 </html>
