@@ -117,7 +117,9 @@
 					</div>
 
 
-					<div class="form
+					<div class="form-group">
+						<span class="col-md-2"><h4>Vendite</h4></span>
+					</div>
 
 
 					<div class="form-group col-md-10">
