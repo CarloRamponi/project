@@ -8,6 +8,9 @@
 			header("Location: magazzino.php");
 		else if($_SESSION['user']=="finanza"){
 			header("Location: finanza.php");
+			}
+		else if($_SESSION['user']=="vendite"){
+			header("Location: clienti.php");
 		} else {
 			header("Location: magazzino.php");
 		}
@@ -108,17 +111,17 @@
     </form>
     </div>
     <script>
-    
+
 	 function show()
 	{
 		var p = document.getElementById('pwd');
-		p.setAttribute('type','text');  
+		p.setAttribute('type','text');
 	}
 
 	function hide()
 	{
 		var p = document.getElementById('pwd');
-		p.setAttribute('type','password');   
+		p.setAttribute('type','password');
 	}
 
 	function showHide()
