@@ -37,22 +37,22 @@
 					<table cellpadding="4" cellspacing="1" width="100%" border=0>
 						<tr>
 							
-							<td><b>Codice cliente</b>
-							<td><b>Nome azienda</b>
-							<td><b>PI/CF </b>
-							<td><b>Indirizzo </b>
-							<td><b>CAP</b>
-							<td><b>Città</b>
-							<td><b>Telefono </b>
-							<td><b>FAX</b>
-							<td><b>E-mail</b>
-							<td><b>Iban</b>
-							<td><b>Banca D'appogio</b>
-							<td><b>Modalità di pagamento</b>
-							<td><b>Scadenza</b>
-							<td><b>Annotazioni</b>
-							<td><b>Giorni di attività</b>
-							<td><b>Sito</b>
+							<tr><td width=10%><b>Codice cliente</b>
+							<td width=10%><b>Nome azienda</b>
+							<td width=10%><b>PI/CF </b>
+							<td width=10%><b>Indirizzo </b>
+							<td width=10%><b>CAP</b>
+							<td width=10%><b>Città</b>
+							<td width=10%><b>Telefono </b>
+							<td width=10%><b>FAX</b>
+							<td width=10%><b>E-mail</b>
+							<td width=10%><b>Iban</b>
+							<td width=10%><b>Banca D'appogio</b>
+							<td width=10%><b>Modalità di pagamento</b>
+							<td width=10%><b>Scadenza</b>
+							<td width=10%><b>Annotazioni</b>
+							<td width=10%><b>Giorni di attività</b>
+							<tr><td width=10%><b>Sito</b>
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from clienti");
