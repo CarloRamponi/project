@@ -38,6 +38,16 @@
 		$finanza=2;
   }
 
+  $venditeScrittura = $_POST['vendite'];
+	if($venditeScrittura == "Nessuno") {
+		$vendite=0;
+	} else if ($venditeScrittura == "Lettura") {
+		$vendite=1;
+	} else if ($venditeScrittura == "Scrittura") {
+		$vendite=2;
+  }
+
+
 	$nuovo_utente = $_POST['nuovo_utente'];
 	$new_password1 = $_POST['new_password1'];
 	$new_password2 = $_POST['new_password2'];
@@ -51,7 +61,7 @@
 			} else if($new_password1!=$new_password2) {
 				header("Location: aggiungiUtente.php?error=newPassword&type=aggiungi");
 			} else {
-				mysql_query("INSERT INTO utenti (username, password, admin, magazzino, finanza) values ('".$nuovo_utente."', '".$new_password1."', ".$admin.", ".$magazzino.", ".$finanza.");");
+				mysql_query("INSERT INTO utenti (username, password, admin, magazzino, finanza, vendite) values ('".$nuovo_utente."', '".$new_password1."', ".$admin.", ".$magazzino.", ".$finanza.", ".$vendite.");");
         header("Location: gestioneUtenti.php");
       }
 		} else
