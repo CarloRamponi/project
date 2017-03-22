@@ -39,6 +39,7 @@
 							<th>Nome utente</th>
 							<th>Magazzino</th>
 							<th>Finanza</th>
+							<th>Vendite</th>
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from utenti");
@@ -65,6 +66,15 @@
 													else if($utenti[$i]['finanza']==1)
 														echo "Lettura";
 													else if($utenti[$i]['finanza']==2)
+														echo "Scrittura";
+												?>
+										</td>
+										<td><?php
+													if($utenti[$i]['vendite']==0)
+														echo "Nessuno";
+													else if($utenti[$i]['vendite']==1)
+														echo "Lettura";
+													else if($utenti[$i]['vendite']==2)
 														echo "Scrittura";
 												?>
 										</td>

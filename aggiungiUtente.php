@@ -117,6 +117,17 @@
 					</div>
 
 
+					<div class="form
+
+
+					<div class="form-group col-md-10">
+						<select class="form-control" name="vendite">
+						<option>Nessuno</option>
+						<option>Lettura</option>
+						<option>Scrittura</option>
+					</select>
+					</div>
+
             <div class="form-group">
             	<hr />
 
