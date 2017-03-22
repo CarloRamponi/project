@@ -36,69 +36,25 @@
 				<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-					<table cellpadding="4" cellspacing="1" width="100%">
-						<tr>
-							<td><b>Codice clienti</b>
-							<td><b>Nome azienda</b>
-							<td><b>PI/CF</b>
-							<td><b>Indirizzo</b>
-							<td><b>CAP</b>
-							<td><b>Città</b>
-							<td ><b>Telefono</b>
-							<td><b>FAX</b>
-							<td><b>E-mail</b>
-							<td><b>Iban</b>
-							<td><b>Banca D'appogio</b>
-							<td><b>Modalità di pagamento</b>
-							<td><b>Scadenza</b>
-							<td><b>Annotazioni</b>
-							<td><b>Giorni di attività</b>
-							<td><b>Sito</b>
-=======
-					<table>
-=======
 					<div style="overflow-x: scroll;">
 					<table class="table">
->>>>>>> 6a3d419c8fc793d3033e76164b1b914f37aea8f9
 						<tr>
-<<<<<<< HEAD
-							<td width="200px"><b>Codice cliente</b>
-							<td width="200px"><b>Nome azienda</b>
-							<td width="200px"><b>PI/CF </b>
-							<td width="200px"><b>Indirizzo </b>
-							<td width="200px"><b>CAP</b>
-							<td width="200px"><b>Città</b>
-							<td width="200px"><b>Telefono </b>
-							<td width="200px"><b>FAX</b>
-							<td width="200px"><b>E-mail</b>
-							<td width="200px"><b>Iban</b>
-							<td width="200px"><b>Banca D'appogio</b>
-							<td width="200px"><b>Modalità di pagamento</b>
-							<td width="200px"><b>Scadenza</b>
-							<td width="200px"><b>Annotazioni</b>
-							<td width="200px"><b>Giorni di attività</b>
-							<td width="200px"><b>Sito</b>
-=======
-							<td><b>Codice cliente</b>
-							<td><b>Nome azienda</b>
-							<td><b>PI/CF </b>
-							<td><b>Indirizzo </b>
-							<td><b>CAP</b>
-							<td><b>Città</b>
-							<td ><b>Telefono </b>
-							<td><b>FAX</b>
-							<td><b>E-mail</b>
-							<td><b>Iban</b>
-							<td><b>Banca D'appogio</b>
-							<td><b>Modalità di pagamento</b>
-							<td><b>Scadenza</b>
-							<td><b>Annotazioni</b>
-							<td><b>Giorni di attività</b>
-							<td><b>Sito</b>
->>>>>>> cf08af1ad53f33fde8fcadf1e91b2dcfafdbd2e0
->>>>>>> baf6f2c8e4d42acc40bb8089786811ae9f32a6b1
+							<th width="200px">Codice cliente</th>
+							<th width="200px">Nome azienda</th>
+							<th width="200px">PI/CF </th>
+							<th width="200px">Indirizzo </th>
+							<th width="200px">CAP</th>
+							<th width="200px">Città</th>
+							<th width="200px">Telefono </th>
+							<th width="200px">FAX</th>
+							<th width="200px">E-mail</th>
+							<th width="200px">Iban</th>
+							<th width="200px">Banca D'appogio</th>
+							<th width="200px">Modalità di pagamento</th>
+							<th width="200px">Scadenza</th>
+							<th width="200px">Annotazioni</th>
+							<th width="200px">Giorni di attività</th>
+							<th width="200px">Sito</th>
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from clienti");
