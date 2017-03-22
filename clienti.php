@@ -30,30 +30,29 @@
 
 				<?php if($userRow['vendite']){ ?>
 
-				<div class="panel panel-default">
+				<div style=""width:700px;height: 400px; overflow-x:  scroll; overflow-y:  scroll;border:1px solid black;"><table cellpadding="4" cellspacing="1" width="100%" border=0>
 				<!-- Default panel contents -->
 					<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
-					<table class="table myTable">
-						<tr>
-							<th>Codice cliente</th>
-							<th>Nome azienda</th>
-							<th>PI/CF</th>
-							<th>Indirizzo</th>
-							<th>CAP</th>
-							<th>Città</th>
-							<th>Telefono</th>
-							<th>FAX</th>
-							<th>E-mail</th>
-							<th>Iban</th>
-							<th>Banca D'appogio</th>
-							<th>Modalità di pagamento</th>
-							<th>Scadenza </th>
-							<th>Annotazioni</th>
-							<th>Giorni di attività</th>
-							<th>Sito</th>
-
+					<table cellpadding="4" cellspacing="1" width="100%" border=0>
+						<tr>			
+							<tr><td width=10%><b>Codice cliente</b>
+							<td width=10%><b>Nome azienda</b>
+							<td width=10%><b>PI/CF </b>
+							<td width=10%><b>Indirizzo </b>
+							<td width=10%><b>CAP</b>
+							<td width=10%><b>Città</b>
+							<td width=10%><b>Telefono </b>
+							<td width=10%><b>FAX</b>
+							<td width=10%><b>E-mail</b>
+							<td width=10%><b>Iban</b>
+							<td width=10%><b>Banca D'appogio</b>
+							<td width=10%><b>Modalità di pagamento</b>
+							<td width=10%><b>Scadenza</b>
+							<td width=10%><b>Annotazioni</b>
+							<td width=10%><b>Giorni di attività</b>
+							<tr><td width=10%><b>Sito</b>
 						</tr>
 						<?php
 							$res=mysql_query("SELECT * from clienti");
@@ -81,8 +80,8 @@
 										<td><?php echo $utenti[$i]['orari']; ?></td>
 										<td><?php echo $utenti[$i]['sito']; ?></td>
 										<?php
-											echo "<td style='background-color:#FFFFFF' id='del".$utenti[$i]['id']."'></td>";
-											echo "<td style='background-color:#FFFFFF' id='edit".$utenti[$i]['id']."'></td>";
+											echo "<td style='background-color:#FFFFFF' id='delll".$utenti[$i]['id']."'></td>";
+											echo "<td style='background-color:#FFFFFF' id='editl".$utenti[$i]['id']."'></td>";
 										?>
 									</tr>
 						<?php
@@ -115,17 +114,17 @@
 			function bottoniElimina(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("delll"+i+"")){
-						document.getElementById("delll"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaClienteScript.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
+						document.getElementById("delll"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='elill"+i+"'><a href='eliminaClienteScript.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
 					} else if(document.getElementById("elill"+i+""))
-							document.getElementById("elill"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='del"+i+"'></td>";
+							document.getElementById("elill"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='delll"+i+"'></td>";
 				}
 			}
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("editl"+i+"")){
-						document.getElementById("editl"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='mod"+i+"'><a href='aggiungiCliente.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
+						document.getElementById("editl"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='modl"+i+"'><a href='aggiungiCliente.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
 					} else if(document.getElementById("modl"+i+""))
-							document.getElementById("modl"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edit"+i+"'></td>";
+							document.getElementById("modl"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='editl"+i+"'></td>";
 				}
 			}
 		</script>
