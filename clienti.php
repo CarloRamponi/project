@@ -40,22 +40,22 @@
 <<<<<<< HEAD
 					<table cellpadding="4" cellspacing="1" width="100%">
 						<tr>
-							<td><b>Codice cliente		</b>
-							<td><b>Nome azienda		</b>
-							<td><b>PI/CF		</b>
-							<td><b>Indirizzo		</b>
-							<td><b>CAP		</b>
-							<td><b>Città		</b>
-							<td ><b>Telefono		</b>
-							<td><b>FAX    </b>
-							<td><b>E-mail    </b>
-							<td><b>Iban    </b>
-							<td><b>Banca D'appogio    </b>
-							<td><b>Modalità di pagamento    </b>
-							<td><b>Scadenza    </b>
-							<td><b>Annotazioni    </b>
-							<td><b>Giorni di attività    </b>
-							<td><b>Sito    </b>
+							<td><b>Codice clienti</b>
+							<td><b>Nome azienda</b>
+							<td><b>PI/CF</b>
+							<td><b>Indirizzo</b>
+							<td><b>CAP</b>
+							<td><b>Città</b>
+							<td ><b>Telefono</b>
+							<td><b>FAX</b>
+							<td><b>E-mail</b>
+							<td><b>Iban</b>
+							<td><b>Banca D'appogio</b>
+							<td><b>Modalità di pagamento</b>
+							<td><b>Scadenza</b>
+							<td><b>Annotazioni</b>
+							<td><b>Giorni di attività</b>
+							<td><b>Sito</b>
 =======
 					<table>
 =======
