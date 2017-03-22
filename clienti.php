@@ -114,17 +114,17 @@
 			function bottoniElimina(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("delll"+i+"")){
-						document.getElementById("delll"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='eli"+i+"'><a href='eliminaClienteScript.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
+						document.getElementById("delll"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='elill"+i+"'><a href='eliminaClienteScript.php?id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-remove'></div></a></td>";
 					} else if(document.getElementById("elill"+i+""))
-							document.getElementById("elill"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='del"+i+"'></td>";
+							document.getElementById("elill"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='delll"+i+"'></td>";
 				}
 			}
 			function bottoniModifica(n){
 				for (i=1;i<=n;i++){
 					if(document.getElementById("editl"+i+"")){
-						document.getElementById("editl"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='mod"+i+"'><a href='aggiungiCliente.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
+						document.getElementById("editl"+i+"").outerHTML="<td style='background-color:#FFFFFF;' id='modl"+i+"'><a href='aggiungiCliente.php?type=modifica&id="+i+"' style='font-size:25px;'><div class='glyphicon glyphicon-edit'></div></a></td>";
 					} else if(document.getElementById("modl"+i+""))
-							document.getElementById("modl"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='edit"+i+"'></td>";
+							document.getElementById("modl"+i+"").outerHTML="<td style='background-color:#FFFFFF' id='editl"+i+"'></td>";
 				}
 			}
 		</script>
