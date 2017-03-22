@@ -30,13 +30,13 @@
 
 				<?php if($userRow['vendite']){ ?>
 
-				<div style=" overflow-x:  scroll; overflow-y:scroll;">
+				<div style=" overflow-x: scroll;">
 				<!-- Default panel contents -->
 					<div class="panel-heading">Lista clienti</div>
 
 					<!-- Table -->
-					<table cellpadding="4" cellspacing="1" width="100%">
-						<tr>			
+					<table>
+						<tr>
 							<td><b>Codice cliente</b>
 							<td><b>Nome azienda</b>
 							<td><b>PI/CF </b>
