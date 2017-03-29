@@ -104,7 +104,7 @@
 					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
 					<a class="btn btn-success" href = 'aggiungiCliente.php?type=aggiungi'>Aggiungi</a>
 					<br></br>
-					<a class="btn btn-success" style="background-color: lightblue" href = 'aggiungiCliente.php?type=aggiungi'>Genera Fattura></a>
+					<a class="btn btn-success" style="background-color: blue ; border-color: blue" href = 'aggiungiCliente.php?type=aggiungi'> Genera Fattura </a>
 				<?php } ?>
 			</div>
 
