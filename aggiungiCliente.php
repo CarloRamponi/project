@@ -14,32 +14,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php if($type=="modifica") echo "Modifica Cliente - Simulimpresa"; else echo "Aggiungi Cliente - Simulimpresa";?></title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
-<link rel="stylesheet" href="style.css" type="text/css" />
-<style>
-	.btn-genera {
-	color: #fff;
-	background-color: #0066ff;
-	border-color: #0000ff;
-	}
-	.btn-genera:focus,
-	.btn-genera.focus {
-	color: #fff;
-	background-color: #0000ff;
-	border-color: #0000ff;
-	}
-	.btn-genera:hover {
-	color: #fff;
-	background-color: #0000ff;
-	border-color: #0000ff;
-	}
-	.btn-genera:active,
-	.btn-genera.active,
-	.open > .dropdown-toggle.btn-genera {
-	color: #fff;
-	background-color: #449d44;
-	border-color: #398439;
-	}
-</style>
+<link rel="stylesheet" href="style.css" type="text/css" />ì
 </head>
 <body>
 
