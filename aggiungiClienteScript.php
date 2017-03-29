@@ -55,6 +55,8 @@
                     $query.=", telefono";
                 if($fax!="")
                     $query.=", fax";
+                if($mail!="")
+                    $query.=", mail";
                 if($iban!="")
                     $query.=", iban";
                 if($banca!="")
@@ -88,6 +90,8 @@
                     $query.=", ".$telefono;
                 if($fax!="")
                     $query.=", ".$fax;
+                if($mail!="")
+                    $query.=", '".$mail."'";
                 if($iban!="")
                     $query.=", '".$iban."'";
                 if($banca!="")
