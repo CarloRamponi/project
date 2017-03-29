@@ -167,7 +167,7 @@
 						if($_GET['error']=="vuoto") {
 						?><span class="text-danger">I campi  obbligatori non possono essere vuoti!</span><?php
 						} else if($_GET['error']=="clienteEsistente") {
-            ?><span class="text-danger">Il codice inserito è gia esistente!</span><?php
+                ?><span class="text-danger">Il codice inserito è gia esistente!</span><?php
 					}
 				}
 				?>
