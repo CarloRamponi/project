@@ -1,16 +1,5 @@
 <html>
 <head>
-	<?php
-		if(!isset($_GET['type']))
-			header('location: clienti.php');
-		else {
-			$type=$_GET['type'];
-		}
-
-		if(!isset($_GET['id']) && $type=="modifica"){
-			header('location: clienti.php');
-		}
-	?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php if($type=="modifica") echo "Modifica Cliente - Simulimpresa"; else echo "Aggiungi Cliente - Simulimpresa";?></title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
