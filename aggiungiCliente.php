@@ -113,7 +113,7 @@
        <div class="form-group">
         <div class="input-group">
           <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-right"></span></span>
-        <input type="number" name="iban" class="form-control" placeholder="Iban"<?php if($type=="modifica") echo "value='".$clienti['iban']."'";?>/>
+        <input type="text" name="iban" class="form-control" placeholder="Iban"<?php if($type=="modifica") echo "value='".$clienti['iban']."'";?>/>
           </div>
       </div>
 
