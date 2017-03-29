@@ -37,7 +37,75 @@
 			if($codice=="" || $nome==""){
 				header("Location: aggiungiCliente.php?error=vuoto&type=aggiungi");
 			} else {
-				mysql_query("INSERT INTO clienti (codice, nome, pi, via, cap, citta, telefono, fax, mail, iban, banca, pagamento, scadenza, annotazioni, orari, sito) values (".$codice.", '".$nome."', ".$pi.", '".$via."', ".$cap.", '".$citta."', ".$telefono.", ".$fax.", '".$mail."', ".$iban.", '".$banca."', '".$pagamento."', '".$scadenza."', '".$annotazioni."', '".$orari."', '".$sito."');");
+			    $query="INSERT INTO clienti (";
+
+			    if($codice!="")
+			        $query+="codice";
+			    if($nome!="")
+			        $query+=", nome";
+                if($pi!="")
+                    $query+=", pi";
+                if($via!="")
+                    $query+=", via";
+                if($cap!="")
+                    $query+=", cap";
+                if($citta!="")
+                    $query+=", citta";
+                if($telefono!="")
+                    $query+=", telefono";
+                if($fax!="")
+                    $query+=", fax";
+                if($iban!="")
+                    $query+=", iban";
+                if($banca!="")
+                    $query+=", banca";
+                if($pagamento!="")
+                    $query+=", pagamento";
+                if($scadenza!="")
+                    $query+=", scadenza";
+                if($annotazioni!="")
+                    $query+=", annotazioni";
+                if($orari!="")
+                    $query+=", orari";
+                if($sito!="")
+                    $query+=", sito";
+
+                $query += ") VALUES ( ";
+
+                if($codice!="")
+                    $query+=$codice;
+                if($nome!="")
+                    $query+=", '".$nome."'";
+                if($pi!="")
+                    $query+=", '".$pi."'";
+                if($via!="")
+                    $query+=", '".$via."'";
+                if($cap!="")
+                    $query+=", ".$cap;
+                if($citta!="")
+                    $query+=", '".$citta."'";
+                if($telefono!="")
+                    $query+=", ".$telefono;
+                if($fax!="")
+                    $query+=", ".$fax;
+                if($iban!="")
+                    $query+=", '".$iban."'";
+                if($banca!="")
+                    $query+=", '".$banca."'";
+                if($pagamento!="")
+                    $query+=", '".$pagamento."'";
+                if($scadenza!="")
+                    $query+=", '".$scadenza."'";
+                if($annotazioni!="")
+                    $query+=", '".$annotazioni."'";
+                if($orari!="")
+                    $query+=", '".$orari."'";
+                if($sito!="")
+                    $query+=", '".$sito."'";
+
+                $query+=");";
+
+                mysql_query($query);
         header("Location: clienti.php");
       }
 		} else
