@@ -79,9 +79,7 @@
 
                 $res=mysql_query($query);
 
-                echo "$res";
-
-                //header("Location: clienti.php");
+                header("Location: clienti.php");
             }
 		}
     } else
