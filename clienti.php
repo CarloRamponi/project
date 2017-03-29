@@ -129,7 +129,7 @@
 					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
 					<a class="btn btn-success" href = 'aggiungiCliente.php?type=aggiungi'>Aggiungi</a>
 					<br></br>
-					<button class="btn btn-genera" href = 'generaFattura.php?'> Genera Fattura </button>
+					<button class="btn btn-genera" href = 'generaFattura.php'> Genera Fattura </button>
 				<?php } ?>
 			</div>
 
