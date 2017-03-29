@@ -31,8 +31,8 @@
 			.btn-genera.active,
 			.open > .dropdown-toggle.btn-genera {
 			color: #fff;
-			background-color: #449d44;
-			border-color: #398439;
+			background-color: #0000ff;
+			border-color: #0000ff;
 			}
 		</style>
 	</head>
