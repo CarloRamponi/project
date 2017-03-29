@@ -40,74 +40,74 @@
 			    $query="INSERT INTO clienti (";
 
 			    if($codice!="")
-			        $query+="codice";
+			        $query.="codice";
 			    if($nome!="")
-			        $query+=", nome";
+			        $query.=", nome";
                 if($pi!="")
-                    $query+=", pi";
+                    $query.=", pi";
                 if($via!="")
-                    $query+=", via";
+                    $query.=", via";
                 if($cap!="")
-                    $query+=", cap";
+                    $query.=", cap";
                 if($citta!="")
-                    $query+=", citta";
+                    $query.=", citta";
                 if($telefono!="")
-                    $query+=", telefono";
+                    $query.=", telefono";
                 if($fax!="")
-                    $query+=", fax";
+                    $query.=", fax";
                 if($iban!="")
-                    $query+=", iban";
+                    $query.=", iban";
                 if($banca!="")
-                    $query+=", banca";
+                    $query.=", banca";
                 if($pagamento!="")
-                    $query+=", pagamento";
+                    $query.=", pagamento";
                 if($scadenza!="")
-                    $query+=", scadenza";
+                    $query.=", scadenza";
                 if($annotazioni!="")
-                    $query+=", annotazioni";
+                    $query.=", annotazioni";
                 if($orari!="")
-                    $query+=", orari";
+                    $query.=", orari";
                 if($sito!="")
-                    $query+=", sito";
+                    $query.=", sito";
 
-                $query += ") VALUES ( ";
+                $query .= ") VALUES ( ";
 
                 if($codice!="")
-                    $query+=$codice;
+                    $query.=$codice;
                 if($nome!="")
-                    $query+=", '".$nome."'";
+                    $query.=", '".$nome."'";
                 if($pi!="")
-                    $query+=", '".$pi."'";
+                    $query.=", '".$pi."'";
                 if($via!="")
-                    $query+=", '".$via."'";
+                    $query.=", '".$via."'";
                 if($cap!="")
-                    $query+=", ".$cap;
+                    $query.=", ".$cap;
                 if($citta!="")
-                    $query+=", '".$citta."'";
+                    $query.=", '".$citta."'";
                 if($telefono!="")
-                    $query+=", ".$telefono;
+                    $query.=", ".$telefono;
                 if($fax!="")
-                    $query+=", ".$fax;
+                    $query.=", ".$fax;
                 if($iban!="")
-                    $query+=", '".$iban."'";
+                    $query.=", '".$iban."'";
                 if($banca!="")
-                    $query+=", '".$banca."'";
+                    $query.=", '".$banca."'";
                 if($pagamento!="")
-                    $query+=", '".$pagamento."'";
+                    $query.=", '".$pagamento."'";
                 if($scadenza!="")
-                    $query+=", '".$scadenza."'";
+                    $query.=", '".$scadenza."'";
                 if($annotazioni!="")
-                    $query+=", '".$annotazioni."'";
+                    $query.=", '".$annotazioni."'";
                 if($orari!="")
-                    $query+=", '".$orari."'";
+                    $query.=", '".$orari."'";
                 if($sito!="")
-                    $query+=", '".$sito."'";
+                    $query.=", '".$sito."'";
 
-                $query+=");";
+                $query.=");";
 
                 mysql_query($query);
-        header("Location: clienti.php");
-      }
+                header("Location: clienti.php");
+            }
 		} else
 			header("Location: aggiungiCliente.php?error=clienteEsistente&type=aggiungi");
 	} else
