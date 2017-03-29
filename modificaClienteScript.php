@@ -76,6 +76,7 @@
                     $query.=", sito='".$sito."'";
 
                 $query .= " WHERE  id=".$id.";";
+                mysql_query($query); 
 
                 header("Location: clienti.php");
             }
