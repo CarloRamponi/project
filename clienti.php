@@ -70,7 +70,7 @@
 										<td><?php echo $utenti[$i]['pi']; ?></td>
 										<td><?php echo $utenti[$i]['via']; ?></td>
 										<td><?php echo $utenti[$i]['cap']; ?></td>
-										<td><?php echo $utenti[$i]['città']; ?></td>
+										<td><?php echo $utenti[$i]['citta']; ?></td>
 										<td><?php echo $utenti[$i]['telefono']; ?></td>
 										<td><?php echo $utenti[$i]['fax']; ?></td>
 										<td><?php echo $utenti[$i]['mail']; ?></td>
