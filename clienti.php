@@ -70,7 +70,7 @@
 										<td><?php echo $utenti[$i]['pi']; ?></td>
 										<td><?php echo $utenti[$i]['via']; ?></td>
 										<td><?php echo $utenti[$i]['cap']; ?></td>
-										<td><?php echo $utenti[$i]['citta']; ?></td>
+										<td><?php echo $utenti[$i]['città']; ?></td>
 										<td><?php echo $utenti[$i]['telefono']; ?></td>
 										<td><?php echo $utenti[$i]['fax']; ?></td>
 										<td><?php echo $utenti[$i]['mail']; ?></td>
@@ -104,7 +104,7 @@
 					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
 					<a class="btn btn-success" href = 'aggiungiCliente.php?type=aggiungi'>Aggiungi</a>
 					<br></br>
-					<a class="btn btn-success" style="background-color: blue ; border-color: blue" href = 'aggiungiCliente.php?type=aggiungi'> Genera Fattura </a>
+					<a class="btn btn-genera" href = 'aggiungiCliente.php?type=aggiungi'> Genera Fattura </a>
 				<?php } ?>
 			</div>
 
