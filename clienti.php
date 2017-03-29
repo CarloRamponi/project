@@ -10,6 +10,31 @@
 		<title>Clienti</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 		<link rel="stylesheet" href="style.css" type="text/css" />
+		<style>
+			.btn-genera {
+			color: #fff;
+			background-color: #0066ff;
+			border-color: #0000ff;
+			}
+			.btn-genera:focus,
+			.btn-genera.focus {
+			color: #fff;
+			background-color: #0000ff;
+			border-color: #0000ff;
+			}
+			.btn-genera:hover {
+			color: #fff;
+			background-color: #0000ff;
+			border-color: #0000ff;
+			}
+			.btn-genera:active,
+			.btn-genera.active,
+			.open > .dropdown-toggle.btn-genera {
+			color: #fff;
+			background-color: #449d44;
+			border-color: #398439;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -104,7 +129,7 @@
 					<button class="btn btn-warning" onclick="bottoniModifica(numeroProdotti)">Modifica</button>
 					<a class="btn btn-success" href = 'aggiungiCliente.php?type=aggiungi'>Aggiungi</a>
 					<br></br>
-					<a class="btn btn-genera" href = 'aggiungiCliente.php?type=aggiungi'> Genera Fattura </a>
+					<button class="btn btn-genera"> Genera Fattura </button>
 				<?php } ?>
 			</div>
 
