@@ -42,11 +42,44 @@
 			if($codice=="" || $nome==""){
 				header("Location: aggiungiCliente.php?error=vuoto&type=modifica&id=".$id."");
 			} else {
-				mysql_query("UPDATE clienti SET codice=".$codice.", nome='".$nome."', pi=".$pi.", via='".$via."', cap=".$cap.", citta='".$citta."', telefono=".$telefono.", fax=".$fax.", mail='".$mail."', iban=".$iban.", banca='".$banca."', pagamento='".$pagamento."', scadenza='".$scadenza."', annotazioni='".$annotazioni."', orari='".$orari."', sito='".$sito."' WHERE id=".$id.";");
-        header("Location: clienti.php");
-      }
-		}
-  } else
-	header("Location: index.php");
+                $query="UPDATE clienti SET ";
 
+                if($codice!="")
+                    $query.="codice=".$codice;
+                if($nome!="")
+                    $query.=", nome='".$nome."'";
+                if($pi!="")
+                    $query.=", pi='".$pi."'";
+                if($via!="")
+                    $query.=", via='".$via."'";
+                if($cap!="")
+                    $query.=", cap=".$cap;
+                if($citta!="")
+                    $query.=", citta='".$citta."'";
+                if($telefono!="")
+                    $query.=", telefono=".$telefono;
+                if($fax!="")
+                    $query.=", fax=".$fax;
+                if($iban!="")
+                    $query.=", iban='".$iban."'";
+                if($banca!="")
+                    $query.=", banca='".$banca."'";
+                if($pagamento!="")
+                    $query.=", pagamento='".$pagamento."'";
+                if($scadenza!="")
+                    $query.=", scadenza='".$scadenza."'";
+                if($annotazioni!="")
+                    $query.=", annotazioni='".$annotazioni."'";
+                if($orari!="")
+                    $query.=", orari='".$orari."'";
+                if($sito!="")
+                    $query.=", sito='".$sito."'";
+
+                $query .= " WHERE  id=".$id.";";
+
+                header("Location: clienti.php");
+            }
+		}
+    } else
+	    header("Location: index.php");
 ?>
