@@ -37,7 +37,7 @@
                 </div>
 
                 <div>
-                    <hr><br><br>
+                    <br><br>
 
                     <h4>Dati cliente</h4>
 
@@ -55,19 +55,31 @@
                     </div>
 
                     <div class="col-md-4">
-
+                        <div class="input-group">
+                            <span class="input-group-addon">Banca d'appoggio:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
                     </div>
 
                     <div class="col-md-4">
-
+                        <div class="input-group">
+                            <span class="input-group-addon">Scadenza:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
                     </div>
 
                     <div class="col-md-6">
-
+                        <div class="input-group">
+                            <span class="input-group-addon">Modalità di pagamento:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
                     </div>
 
                     <div class="col-md-6">
-
+                        <div class="input-group">
+                            <span class="input-group-addon">IBAN:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
                     </div>
 
                     <br><br><hr>
