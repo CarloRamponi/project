@@ -159,13 +159,9 @@
                     <hr>
 
                     <!-- PRODOTTI -->
+                    <h4>Prodotti</h4>
                     <div id="prodotti">
-                        <h4>Prodotti</h4>
-
-                        <br>
-
                         <div id="prodotto0"></div>
-
                     </div>
 
                     <br><br><br><br>
