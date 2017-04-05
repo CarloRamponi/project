@@ -21,7 +21,7 @@
             </div>
 
             <form method="post" action="generaFattura.php" autocomplete="off">
-                
+
                 <div class="col-md-6">
                     <div class="input-group">
                         <span class="input-group-addon">Numero fattura: </span>
@@ -38,7 +38,9 @@
 
 
                 <br><br>
-                <button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
+                </div>
 
             </form>
 
