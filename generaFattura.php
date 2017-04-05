@@ -29,21 +29,13 @@
             </div>
 
             <div class="col-md-6">
-                <div class="col-md-3">
-                    Fattura n.
-                </div>
-                <div class="col-md-9">
-                    <input class="form-control" name="numeroFattura" type="number">
-                </div>
+                <span class="input-group-addon">Numero fattura: </span>
+                <input class="form-control" name="numeroFattura" type="number">
             </div>
 
             <div class="col-md-6">
-                <div class="col-md-3">
-                    Data
-                </div>
-                <div class="col-md-9">
-                    <input class="form-control" name="data" type="date">
-                </div>
+                <span class="input-group-addon">Data</span>
+                <input class="form-control" name="data" type="date">
             </div>
 
 
