@@ -36,6 +36,40 @@
                     </div>
                 </div>
 
+                <div>
+                    <hr><br>
+
+                    <h4>Dati cliente</h4>
+
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <span class="input-group-addon">Codice cliente</span>
+                            <select class="form-control" name="codiceCliente">
+                                <option>Pavel</option>
+                                <option>Ilie</option>
+                                <option>Rebenciuc</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                    </div>
+
+                    <br><hr>
+                </div>
 
                 <br><br><br>
                 <div class="col-md-12">
