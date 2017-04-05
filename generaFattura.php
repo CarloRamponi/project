@@ -78,6 +78,50 @@
 
                     <br><br>
 
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">Nome:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">Via:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">Città:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">CAP:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">E-mail:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">PI/CF:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
+                    </div>
+
+                    <br><br>
+
                     <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-addon">Modalità di pagamento:</span>
