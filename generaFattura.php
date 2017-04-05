@@ -40,6 +40,7 @@
 
                 <br><br><hr>
 
+                <!-- DATI CLIENTE -->
                 <div>
 
                     <h4>Dati cliente</h4>
@@ -94,6 +95,78 @@
                     </div>
 
                     <br><br>
+                </div>
+
+                <hr>
+
+                <!-- PRODOTTI -->
+                <div>
+                    <h2>Prodotti</h2>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">Codice prodotto:</span>
+                            <input class="form-control" name="codiceProdotto" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <span class="input-group-addon">Descrizione:</span>
+                            <input class="form-control" type="text" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">U.M.:</span>
+                            <input class="form-control" name="um" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">Quantità:</span>
+                            <input class="form-control" name="quantita" type="number" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">Prezzo Un.:</span>
+                            <input class="form-control" type="number" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">Prezzo Un.:</span>
+                            <input class="form-control" type="number" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">Sconto %:</span>
+                            <input class="form-control" type="number" name="sconto" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">Importo netto:</span>
+                            <input class="form-control" type="number" disabled />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">Iva %:</span>
+                            <input class="form-control" type="number" disabled />
+                        </div>
+                    </div>
+
+
                 </div>
 
                 <hr>
