@@ -22,35 +22,27 @@
 
          <form method="post" action="generaFattura.php" autocomplete="off">
 
-    	<div class="col-md-12">
-
-        	<div class="form-group">
-            	<hr />
-            </div>
-
-            <div class="col-md-6">
-                <div class="input-group">
-                    <span class="input-group-addon">Numero fattura: </span>
-                    <input class="form-control" name="numeroFattura" type="number" />
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="input-group">
-                    <span class="input-group-addon">Data:</span>
-                    <input class="form-control" name="data" type="date" />
-                </div>
-            </div>
-
-
-            <div class="form-group">
-                <br><br>
-            </div>
-
-            <button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
-
-
+        <div class="form-group">
+            <hr />
         </div>
+
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">Numero fattura: </span>
+                <input class="form-control" name="numeroFattura" type="number" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">Data:</span>
+                <input class="form-control" name="data" type="date" />
+            </div>
+        </div>
+
+
+        <br><br>
+        <button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
 
     </form>
 
