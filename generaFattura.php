@@ -103,6 +103,8 @@
                 <div>
                     <h4>Prodotti</h4>
 
+                    <br>
+
                     <div class="col-md-4">
                         <div class="input-group">
                             <span class="input-group-addon">Codice prodotto:</span>
@@ -177,8 +179,7 @@
                         </div>
                     </div>
 
-                    <br>
-                    <br>
+                    <br><br><br><br>
 
                     <div class="col-md-2">
                         <button class="btn btn-primary">Aggiungi prodotto</button>
