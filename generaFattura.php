@@ -38,11 +38,7 @@
                     </div>
                 </div>
 
-                <hr>
-                <hr>
-                <hr>
-                <hr>
-                <hr>
+                <br><br><hr>
 
                 <div>
                     <br><br>
