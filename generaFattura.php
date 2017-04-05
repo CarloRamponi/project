@@ -179,7 +179,11 @@
 
                     <br>
 
-                    <button class="btn btn-primary">Aggiungi prodotto</button>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary">Aggiungi prodotto</button>
+                    </div>
+
+                    <br>
 
 
                 </div>
