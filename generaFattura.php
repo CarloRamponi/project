@@ -178,7 +178,7 @@
 
                 </div>
 
-                <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+                <br><hr>
 
                 <br><br><br>
                 <div class="col-md-12">
