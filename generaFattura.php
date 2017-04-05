@@ -14,39 +14,35 @@
 
 	<div id="wrapper">
 
-	<div class="container">
+        <div class="container">
 
-    	<div class="page-header">
-    	<h3>Genera Fattura</h3>
-    	</div>
-
-         <form method="post" action="generaFattura.php" autocomplete="off">
-
-        <div class="form-group">
-            <hr />
-        </div>
-
-        <div class="col-md-6">
-            <div class="input-group">
-                <span class="input-group-addon">Numero fattura: </span>
-                <input class="form-control" name="numeroFattura" type="number" />
+            <div class="page-header">
+            <h3>Genera Fattura</h3>
             </div>
+
+            <form method="post" action="generaFattura.php" autocomplete="off">
+                
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">Numero fattura: </span>
+                        <input class="form-control" name="numeroFattura" type="number" />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">Data:</span>
+                        <input class="form-control" name="data" type="date" />
+                    </div>
+                </div>
+
+
+                <br><br>
+                <button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
+
+            </form>
+
         </div>
-
-        <div class="col-md-6">
-            <div class="input-group">
-                <span class="input-group-addon">Data:</span>
-                <input class="form-control" name="data" type="date" />
-            </div>
-        </div>
-
-
-        <br><br>
-        <button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
-
-    </form>
-
-    </div>
 
     </div>
 
