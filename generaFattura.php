@@ -28,14 +28,14 @@
             	<hr />
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 input-group">
                 <span class="input-group-addon">Numero fattura: </span>
-                <input class="form-control" name="numeroFattura" type="number">
+                <input class="form-control" name="numeroFattura" type="number" />
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 input-group">
                 <span class="input-group-addon">Data</span>
-                <input class="form-control" name="data" type="date">
+                <input class="form-control" name="data" type="date" />
             </div>
 
 
