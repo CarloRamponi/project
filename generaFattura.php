@@ -178,9 +178,8 @@
 
                 </div>
 
-                <br><hr>
-
-                <br><br><br>
+                <br><hr><br>
+                
                 <div class="col-md-12">
                     <button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
                 </div>
