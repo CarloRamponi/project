@@ -265,7 +265,7 @@
 
                 numeroProdotti++;
 
-                document.getElementById("prodotti").innerHTML = document.getElementById("prodotti")+'<span id=prodotto'+numeroProdotti+'></span>'
+                document.getElementById("prodotti").innerHTML = document.getElementById("prodotti")+'<span id=prodotto'+numeroProdotti+'></span>';
 
 
             }
