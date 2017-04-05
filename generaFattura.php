@@ -41,7 +41,6 @@
                 <br><br><hr>
 
                 <div>
-                    <br><br>
 
                     <h4>Dati cliente</h4>
 
