@@ -24,7 +24,7 @@
 	<div class="container">
 
     	<div class="page-header">
-    	<h3><?php if($type == "modifica") echo "Modifica"; else echo "Aggiungi"; ?></h3>
+    	<h3><?php if($type == "modifica") echo "Modifica"; else echo "Genera Fattura"; ?></h3>
     	</div>
 
          <form method="post" <?php if($type=="modifica") echo 'action="modificaClienteScript.php?id='.$clienti['id'].'"'; else echo 'action="aggiungiClienteScript.php"'; ?> autocomplete="off">
