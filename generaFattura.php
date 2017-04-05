@@ -10,7 +10,7 @@
         </script>
 
     </head>
-    <body>
+    <body onload="aggiungiProdotto()">
 
         <?php
             $page=3;
