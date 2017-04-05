@@ -41,8 +41,8 @@
 
                     <h4>Dati cliente</h4>
 
-                    <div class="col-md-2">
-                        <div class="form-group">
+                    <div class="col-md-4">
+                        <div class="input-group">
                             <span class="input-group-addon">Codice cliente</span>
                             <select class="form-control" name="codiceCliente">
                                 <option>Pavel</option>
@@ -52,19 +52,19 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-4">
 
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-4">
 
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
 
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
 
                     </div>
 
