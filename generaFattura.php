@@ -179,6 +179,8 @@
 
                     <br>
 
+                    <button class="btn btn-primary">Aggiungi prodotto</button>
+
 
                 </div>
 
