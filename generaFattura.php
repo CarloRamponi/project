@@ -101,7 +101,7 @@
 
                 <!-- PRODOTTI -->
                 <div>
-                    <h2>Prodotti</h2>
+                    <h3>Prodotti</h3>
 
                     <div class="col-md-4">
                         <div class="input-group">
@@ -119,7 +119,7 @@
                         </div>
                     </div>
 
-                    <br>
+                    <br><br>
 
                     <div class="col-md-2">
                         <div class="input-group">
@@ -178,7 +178,7 @@
 
                 </div>
 
-                <hr>
+                <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
 
                 <br><br><br>
                 <div class="col-md-12">
