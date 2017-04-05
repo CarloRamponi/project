@@ -33,7 +33,7 @@
                     Fattura n.
                 </div>
                 <div class="col-md-9">
-                    INPUT
+                    <input name="numeroFattura" type="number">
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
                     Data
                 </div>
                 <div class="col-md-9">
-                    INPUT
+                    <input name="data" type="date">
                 </div>
             </div>
 
