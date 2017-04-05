@@ -29,6 +29,8 @@
                     </div>
                 </div>
 
+                <br class="hidden-lg">
+
                 <div class="col-md-6">
                     <div class="input-group">
                         <span class="input-group-addon">Data:</span>
@@ -54,12 +56,16 @@
                         </div>
                     </div>
 
+                    <br class="hidden-lg">
+
                     <div class="col-md-4">
                         <div class="input-group">
                             <span class="input-group-addon">Banca d'appoggio:</span>
                             <input class="form-control" type="text" disabled />
                         </div>
                     </div>
+
+                    <br class="hidden-lg">
 
                     <div class="col-md-4">
                         <div class="input-group">
@@ -68,12 +74,16 @@
                         </div>
                     </div>
 
+                    <br>
+
                     <div class="col-md-6">
                         <div class="input-group">
                             <span class="input-group-addon">Modalità di pagamento:</span>
                             <input class="form-control" type="text" disabled />
                         </div>
                     </div>
+
+                    <br class="hidden-lg">
 
                     <div class="col-md-6">
                         <div class="input-group">
