@@ -106,7 +106,11 @@
                     <div class="col-md-4">
                         <div class="input-group">
                             <span class="input-group-addon">Codice prodotto:</span>
-                            <input class="form-control" name="codiceProdotto" type="text" />
+                            <select class="form-control" name="codiceProdotto">
+                                <option>Pavel</option>
+                                <option>Ilie</option>
+                                <option>Rebenciuc</option>
+                            </select>
                         </div>
                     </div>
 
@@ -179,7 +183,7 @@
                 </div>
 
                 <br><hr><br>
-                
+
                 <div class="col-md-12">
                     <button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
                 </div>
