@@ -38,6 +38,8 @@
                     </div>
                 </div>
 
+                <hr>
+
                 <div>
                     <br><br>
 
@@ -92,8 +94,10 @@
                         </div>
                     </div>
 
-                    <br><br><hr>
+                    <br><br>
                 </div>
+
+                <hr>
 
                 <br><br><br>
                 <div class="col-md-12">
