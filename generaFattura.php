@@ -191,80 +191,80 @@
 
         <script>
             function aggiungiProdotto() {
-                document.getElementById("prodotto"+numeroProdotti).innerHTML = '\
-                <div class="col-md-4">\
-                    <div class="input-group">\
-                        <span class="input-group-addon">Codice prodotto:</span>\
-                        <select class="form-control" name="codiceProdotto'+numeroProdotti+'">\
-                            <option>Pavel</option>\
-                            <option>Ilie</option>\
-                            <option>Rebenciuc</option>\
-                        </select>\
+                document.getElementById("prodotto"+numeroProdotti).innerHTML = document.getElementById("prodotto"+numeroProdotti).innerHTML + '\
+                    <div class="col-md-4">\
+                        <div class="input-group">\
+                            <span class="input-group-addon">Codice prodotto:</span>\
+                            <select class="form-control" name="codiceProdotto'+numeroProdotti+'">\
+                                <option>Pavel</option>\
+                                <option>Ilie</option>\
+                                <option>Rebenciuc</option>\
+                            </select>\
+                        </div>\
                     </div>\
-                </div>\
-    \
-                <br class="hidden-lg">\
-    \
-                <div class="col-md-8">\
-                    <div class="input-group">\
-                        <span class="input-group-addon">Descrizione:</span>\
-                        <input class="form-control" type="text" disabled />\
+        \
+                    <br class="hidden-lg">\
+        \
+                    <div class="col-md-8">\
+                        <div class="input-group">\
+                            <span class="input-group-addon">Descrizione:</span>\
+                            <input class="form-control" type="text" disabled />\
+                        </div>\
                     </div>\
-                </div>\
-    \
-                <br><br>\
-    \
-                <div class="col-md-2">\
-                    <div class="input-group">\
-                        <span class="input-group-addon">U.M.:</span>\
-                        <input class="form-control" name="um'+numeroProdotti+'" type="text" />\
+        \
+                    <br><br>\
+        \
+                    <div class="col-md-2">\
+                        <div class="input-group">\
+                            <span class="input-group-addon">U.M.:</span>\
+                            <input class="form-control" name="um'+numeroProdotti+'" type="text" />\
+                        </div>\
                     </div>\
-                </div>\
-    \
-                <br class="hidden-lg">\
-    \
-                <div class="col-md-2">\
-                    <div class="input-group">\
-                        <span class="input-group-addon">Quantità:</span>\
-                        <input class="form-control" name="quantita'+numeroProdotti+'" type="number" />\
+        \
+                    <br class="hidden-lg">\
+        \
+                    <div class="col-md-2">\
+                        <div class="input-group">\
+                            <span class="input-group-addon">Quantità:</span>\
+                            <input class="form-control" name="quantita'+numeroProdotti+'" type="number" />\
+                        </div>\
                     </div>\
-                </div>\
-    \
-                <br class="hidden-lg">\
-    \
-                <div class="col-md-2">\
-                    <div class="input-group">\
-                        <span class="input-group-addon">Prezzo Un.:</span>\
-                        <input class="form-control" type="number" disabled />\
+        \
+                    <br class="hidden-lg">\
+        \
+                    <div class="col-md-2">\
+                        <div class="input-group">\
+                            <span class="input-group-addon">Prezzo Un.:</span>\
+                            <input class="form-control" type="number" disabled />\
+                        </div>\
                     </div>\
-                </div>\
-    \
-                <br class="hidden-lg">\
-    \
-                <div class="col-md-2">\
-                    <div class="input-group">\
-                        <span class="input-group-addon">Sconto %:</span>\
-                        <input class="form-control" type="number" name="sconto'+numeroProdotti+'" />\
+        \
+                    <br class="hidden-lg">\
+        \
+                    <div class="col-md-2">\
+                        <div class="input-group">\
+                            <span class="input-group-addon">Sconto %:</span>\
+                            <input class="form-control" type="number" name="sconto'+numeroProdotti+'" />\
+                        </div>\
                     </div>\
-                </div>\
-    \
-                <br class="hidden-lg">\
-    \
-                <div class="col-md-2">\
-                    <div class="input-group">\
-                        <span class="input-group-addon">Importo netto:</span>\
-                        <input class="form-control" type="number" disabled />\
+        \
+                    <br class="hidden-lg">\
+        \
+                    <div class="col-md-2">\
+                        <div class="input-group">\
+                            <span class="input-group-addon">Importo netto:</span>\
+                            <input class="form-control" type="number" disabled />\
+                        </div>\
                     </div>\
-                </div>\
-    \
-                <br class="hidden-lg">\
-    \
-                <div class="col-md-2">\
-                    <div class="input-group">\
-                        <span class="input-group-addon">Iva %:</span>\
-                        <input class="form-control" type="number" disabled />\
-                    </div>\
-                </div>';
+        \
+                    <br class="hidden-lg">\
+        \
+                    <div class="col-md-2">\
+                        <div class="input-group">\
+                            <span class="input-group-addon">Iva %:</span>\
+                            <input class="form-control" type="number" disabled />\
+                        </div>\
+                    </div>';
 
                 numeroProdotti++;
 
