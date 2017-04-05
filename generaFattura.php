@@ -110,12 +110,16 @@
                         </div>
                     </div>
 
+                    <br class="hidden-lg">
+
                     <div class="col-md-8">
                         <div class="input-group">
                             <span class="input-group-addon">Descrizione:</span>
                             <input class="form-control" type="text" disabled />
                         </div>
                     </div>
+
+                    <br>
 
                     <div class="col-md-2">
                         <div class="input-group">
@@ -124,6 +128,8 @@
                         </div>
                     </div>
 
+                    <br class="hidden-lg">
+
                     <div class="col-md-2">
                         <div class="input-group">
                             <span class="input-group-addon">Quantità:</span>
@@ -131,12 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2">
-                        <div class="input-group">
-                            <span class="input-group-addon">Prezzo Un.:</span>
-                            <input class="form-control" type="number" disabled />
-                        </div>
-                    </div>
+                    <br class="hidden-lg">
 
                     <div class="col-md-2">
                         <div class="input-group">
@@ -144,6 +145,8 @@
                             <input class="form-control" type="number" disabled />
                         </div>
                     </div>
+
+                    <br class="hidden-lg">
 
                     <div class="col-md-2">
                         <div class="input-group">
@@ -152,6 +155,8 @@
                         </div>
                     </div>
 
+                    <br class="hidden-lg">
+
                     <div class="col-md-2">
                         <div class="input-group">
                             <span class="input-group-addon">Importo netto:</span>
@@ -159,12 +164,16 @@
                         </div>
                     </div>
 
+                    <br class="hidden-lg">
+
                     <div class="col-md-2">
                         <div class="input-group">
                             <span class="input-group-addon">Iva %:</span>
                             <input class="form-control" type="number" disabled />
                         </div>
                     </div>
+
+                    <br>
 
 
                 </div>
