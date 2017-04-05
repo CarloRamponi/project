@@ -37,9 +37,11 @@
                 </div>
 
                 <div>
-                    <hr><br>
+                    <hr><br><br>
 
                     <h4>Dati cliente</h4>
+
+                    <br>
 
                     <div class="col-md-4">
                         <div class="input-group">
@@ -68,7 +70,7 @@
 
                     </div>
 
-                    <br><hr>
+                    <br><br><hr>
                 </div>
 
                 <br><br><br>
