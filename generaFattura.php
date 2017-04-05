@@ -48,6 +48,10 @@
 
 
             <div class="form-group">
+                <br><br>
+            </div>
+
+            <div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Genera</button>
             </div>
 
