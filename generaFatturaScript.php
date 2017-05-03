@@ -23,22 +23,24 @@
             break;
     }
 
-    $prodotti2 = [];
+    $prodotti = [];
 
     $res=mysql_query("SELECT * from prodotti");
     $n=mysql_num_rows($res);
 
-    for($i = 0; $i< $n; $i++) {
-        $prodotto=mysql_fetch_array($res);
-        for($j=0; $j<$MAX_N; $j++) {
-            if ($prodotto['codice'] == $codiceProdotto[$j]) {
-                $prodotti[$i]['codice']=$prodotto['codice'];
-                $prodotti[$i]['descrizione']=$prodotto['descrizione'];
-                $prodotti[$i]['iva']=$prodotto['iva'];
-                $prodotti[$i]['prezzo']=$prodotto['prezzo'];
-                $prodotti[$i]['quantita']=$_POST['quantita'.$i];
-                $prodotti[$i]['um']=$_POST['um'.$i];
-                $prodotti[$i]['sconto']=$_POST['sconto'.$i];
+    for($i=0; $i<$MAX_N; $i++) {
+        if($codiceProdotto=="Seleziona")
+            continue;
+        for($j = 0; $j< $n; $j++) {
+            $prodotto = mysql_fetch_array($res);
+            if ($prodotto['codice'] == $codiceProdotto[$i]) {
+                $prodotti[$i]['codice'] = $prodotto['codice'];
+                $prodotti[$i]['descrizione'] = $prodotto['descrizione'];
+                $prodotti[$i]['iva'] = $prodotto['iva'];
+                $prodotti[$i]['prezzo'] = $prodotto['prezzo'];
+                $prodotti[$i]['quantita'] = $_POST['quantita' . $i];
+                $prodotti[$i]['um'] = $_POST['um' . $i];
+                $prodotti[$i]['sconto'] = $_POST['sconto' . $i];
                 break;
             }
         }
