@@ -26,7 +26,7 @@
 
 						<div class="form-group">
 							<div class="input-group">
-								<span class="input-group-addon"><img src="eye.png" height=20px width=20px></img></span>
+								<span class="glyphicon glyphicon-info-sign"></span>
 								<input id="pwd2" type="text" name="new_password1" class="form-control" placeholder="Inserire l'email" />
 							</div>
 						</div>
