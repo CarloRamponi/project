@@ -90,7 +90,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Banca d'appoggio:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled/>
                             </div>
                         </div>
 
