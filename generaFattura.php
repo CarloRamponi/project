@@ -240,7 +240,7 @@
                                 </div>
                             </div>
 
-                            <hr>
+                            <br><br><hr>
                         <?php } ?>
                     </div>
 
