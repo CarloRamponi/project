@@ -41,4 +41,10 @@
         }
     }
 
+    echo $prodotti[0]['codice']."\n";
+    echo $prodotti[1]['quantita']."\n";
+    echo $prodotti[2]['um']."\n";
+    echo $prodotti[3]['sconto']."\n";
+
+
 ?>
