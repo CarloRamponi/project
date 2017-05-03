@@ -301,16 +301,17 @@
               }
 
               else {
-                  document.getElementById("banca").setAttribute("value",clienti[i-1].banca);
-                  document.getElementById("scadenza").setAttribute("value",clienti[i-1].scadenza);
-                  document.getElementById("nome").setAttribute("value",clienti[i-1].nome);
-                  document.getElementById("via").setAttribute("value",clienti[i-1].via);
-                  document.getElementById("città").setAttribute("value",clienti[i-1].citta);
-                  document.getElementById("cap").setAttribute("value",clienti[i-1].cap);
-                  document.getElementById("mail").setAttribute("value",clienti[i-1].mail);
-                  document.getElementById("pi").setAttribute("value",clienti[i-1].pi);
-                  document.getElementById("pagamento").setAttribute("value",clienti[i-1].pagamento);
-                  document.getElementById("iban").setAttribute("value",clienti[i-1].iban);
+                var i=document.getElementById("codice").selectedIndex-1;
+                  document.getElementById("banca").setAttribute("value",clienti[i].banca);
+                  document.getElementById("scadenza").setAttribute("value",clienti[i].scadenza);
+                  document.getElementById("nome").setAttribute("value",clienti[i].nome);
+                  document.getElementById("via").setAttribute("value",clienti[i].via);
+                  document.getElementById("città").setAttribute("value",clienti[i].citta);
+                  document.getElementById("cap").setAttribute("value",clienti[i].cap);
+                  document.getElementById("mail").setAttribute("value",clienti[i].mail);
+                  document.getElementById("pi").setAttribute("value",clienti[i].pi);
+                  document.getElementById("pagamento").setAttribute("value",clienti[i].pagamento);
+                  document.getElementById("iban").setAttribute("value",clienti[i].iban);
               }
                 console.log("Aggiornato cliente");
             }
