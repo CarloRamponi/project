@@ -29,11 +29,11 @@
     $n=mysql_num_rows($res);
 
     for($i=0; $i<$MAX_N; $i++) {
-        echo "Codice prodotto $i: $codiceProdotto[$i] <br>";
         if($codiceProdotto=="Seleziona")
             continue;
         for($j = 0; $j< $n; $j++) {
             $prodotto = mysql_fetch_array($res);
+            echo "Codice prodotto $i: $codiceProdotto[$i] <br>";
             if ($prodotto['codice'] == $codiceProdotto[$i]) {
                 $prodotti[$i]['codice'] = $prodotto['codice'];
                 $prodotti[$i]['descrizione'] = $prodotto['descrizione'];
