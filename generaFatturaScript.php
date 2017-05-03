@@ -41,7 +41,7 @@
                 $prodotti[$i]['um'] = $_POST['um' . $i];
                 $prodotti[$i]['sconto'] = $_POST['sconto' . $i];
 
-                echo "Codice:  ".$prodotti[$i]['codice']."<br>";
+                /*echo "Codice:  ".$prodotti[$i]['codice']."<br>";
                 echo "Desc:  ".$prodotti[$i]['descrizione']."<br>";
                 echo "Iva:  ".$prodotti[$i]['iva']."<br>";
                 echo "Prezzo:  ".$prodotti[$i]['prezzo']."<br>";
@@ -49,7 +49,7 @@
                 echo "Um:  ".$prodotti[$i]['um']."<br>";
                 echo "Sconto:  ".$prodotti[$i]['sconto']."<br>";
 
-                echo "<br><br>";
+                echo "<br><br>";*/
 
                 break;
             }
