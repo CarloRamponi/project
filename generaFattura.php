@@ -286,7 +286,7 @@
             }
 
             function updateCliente() {
-              if (document.getElementById("codice").getAttribute()=="Seleziona"){
+              if (document.getElementById("codice").getAttribute("value")=="Seleziona"){
                 document.getElementById("banca").setAttribute("value","");
                 document.getElementById("scadenza").setAttribute("value","");
                 document.getElementById("nome").setAttribute("value","");
@@ -301,7 +301,7 @@
 
               else {
                 for($i = 0; $i< $n; $i++) {
-                  if(document.getElementById("codice").getAttribute()==clienti[$i].codice){
+                  if(document.getElementById("codice").getAttribute("value")==clienti[$i].codice){
                     document.getElementById("banca").setAttribute("value",clienti[$i].banca);
                     document.getElementById("scadenza").setAttribute("value",clienti[$i].scadenza);
                     document.getElementById("nome").setAttribute("value",clienti[$i].nome);
