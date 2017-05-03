@@ -239,6 +239,8 @@
                                     <input class='form-control' type='number' id="iva<?php echo $i; ?>" disabled />
                                 </div>
                             </div>
+
+                            <br><hr><br>
                         <?php } ?>
                     </div>
 
