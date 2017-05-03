@@ -83,10 +83,10 @@
                                 <span class="input-group-addon">Codice cliente</span>
                                 <select class="form-control" name="codiceCliente" onchange="updateCliente()" id="codice">
                                     <option>Seleziona</option>
-                                    <?php
+                                    <?php/*
                                         for($i = 0; $i< $numeroClienti; $i++) {
                                             echo "<option>".$clienti[$i]['codice']."</option>";
-                                        }
+                                        }*/
                                     ?>
                                 </select>
                             </div>
@@ -200,10 +200,10 @@
                                     <span class='input-group-addon'>Codice prodotto:</span>
                                     <select class='form-control' name='codiceProdotto<?php echo $i; ?>' id='codicep<?php echo $i; ?>' onchange="updateRow(<?php echo $i; ?>)">
                                         <option>Seleziona</option>
-                                        <?php
+                                        <?php/*
                                             for($i = 0; $i< $numeroProdotti; $i++) {
                                                 echo "<option>".$prodotti[$i]['codice']."</option>";
-                                            }
+                                            }*/
                                         ?>
                                     </select>
                                 </div>
