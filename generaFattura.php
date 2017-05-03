@@ -78,9 +78,10 @@
                             <div class="input-group">
                                 <span class="input-group-addon">Codice cliente</span>
                                 <select class="form-control" name="codiceCliente" onchange="updateCliente()" id="codice">
-                                    <option>Pavel</option>
-                                    <option>Ilie</option>
-                                    <option>Rebenciuc</option>
+                                  <option>select</option>
+                                  <option>Pavel</option>
+                                  <option>Ilie</option>
+                                  <option>Rebenciuc</option>
                                 </select>
                             </div>
                         </div>
