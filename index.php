@@ -43,6 +43,10 @@
 			}
 		}
 	}
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -108,12 +112,9 @@
             </div>
 
 						<br></br>
-						
 
 
-						<div class="form-group">
-							<button type="submit" class="btn btn-danger" name="btn-login">Hai dimenticato la password?</button>
-						</div>
+						<a href="http://www.google.it">Hai dimenticato la password?</a>
 
 
         </div>
