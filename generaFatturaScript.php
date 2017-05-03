@@ -57,4 +57,46 @@
     }
 
 
+    require('fpdf.php');
+    class PDF extends FPDF
+    {
+        // Page header
+        function Header()
+        {
+            // Logo
+            //$this->Image('../img/logoHitPilati.png',10,6,60);
+            // Arial bold 15
+            $this->SetFont('Arial','B',18);
+            // Move to the right
+            $this->Cell(80);
+            // Title
+            $this->Cell(40,10,'Fattura',0,0,'C');
+            // Line break
+            $this->Ln(20);
+        }
+        // Page footer
+        function Footer()
+        {
+            // Position at 1.5 cm from bottom
+            $this->SetY(-15);
+            // Arial italic 8
+            $this->SetFont('Arial','I',8);
+            // Page number
+            //$this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+            $this->Cell(0,10,'DY',0,0,'C');
+        }
+    }
+    $pdf = new PDF();
+    $pdf->AliasNbPages();
+    $pdf->SetFont('Times','',12);
+    $pdf->AddPage();
+    $pdf->Multicell(0,10,$welcomeMess.="ti comunichiamo che sei stato inserito nel sistema informativo dell'Istituto.\nPuoi accedere al registro elettronico al seguente indirizzo: http://192.168.1.5/",0,1);
+    $pdf->Multicell(0,10,"\nLe tue credenziali di accesso sono le seguenti:",0,1);
+    $pdf->Multicell(0,10,"Indirizzo e-mail:    ".$row['email']."\nUsername:            ".$row['username']."\nPassword:             ".$row['temp_pwd'],1,1);
+    $pdf->Multicell(0,10,"\nPer motivi di sicurezza al primo accesso ti verra' richiesto di cambiare la password.",0,1);
+
+
+    $pdf->Output();
+
+
 ?>
