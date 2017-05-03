@@ -101,6 +101,10 @@
             	<hr />
             </div>
 
+						<div class="form-group">
+								<h4 class="">Hai dimenticato la password?</h4>
+							</div>
+
             <div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Accedi</button>
             </div>
