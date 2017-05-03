@@ -23,7 +23,7 @@
             echo "var clienti = new Array(".$n.");\n";
             for($i = 0; $i< $n; $i++) {
                  $cliente=mysql_fetch_array($res);
-                 echo 'clienti['.$i.'] = { codice:'.$cliente['codice'].', banca:"'.$cliente['banca'].'", nome:"'.$cliente['nome'].'", pi:"'.$cliente['pi'].'", via:"'.$cliente['via'].'", cap:'.$cliente['cap'].', citta:"'.$cliente['citta'].'", mail:"'.$cliente['mail'].'", scadenza:"'.$cliente['scadenza'].'", pagamento:"'.$cliente['pagamento'].'", iban:"'.$cliente['iban'].'"" };';
+                 echo 'clienti['.$i.'] = { codice:'.$cliente['codice'].', banca:"'.$cliente['banca'].'", nome:"'.$cliente['nome'].'", pi:"'.$cliente['pi'].'", via:"'.$cliente['via'].'", cap:'.$cliente['cap'].', citta:"'.$cliente['citta'].'", mail:"'.$cliente['mail'].'", scadenza:"'.$cliente['scadenza'].'", pagamento:"'.$cliente['pagamento'].'", iban:"'.$cliente['iban'].'" };';
                  echo "\n";
             }
 
