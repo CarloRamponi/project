@@ -43,6 +43,10 @@
 			}
 		}
 	}
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -102,18 +106,18 @@
             </div>
 
 
+						<a href='aggiungiCliente.php'>Hai dimenticato la password?</a>
 
-            <div class="form-group">
+						<br></br>
+
+						<div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Accedi</button>
             </div>
 
-						<br></br>
-						
 
 
-						<div class="form-group">
-							<button type="submit" class="btn btn-danger" name="btn-login">Hai dimenticato la password?</button>
-						</div>
+
+
 
 
         </div>
