@@ -106,7 +106,7 @@
             </div>
 
 
-						<a href="http://www.pornhub.com">Hai dimenticato la password?</a>
+						<a href="aggiungiCliente.php">Hai dimenticato la password?</a>
 
 						<br></br>
 
