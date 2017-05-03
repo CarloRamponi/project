@@ -106,15 +106,16 @@
             </div>
 
 
+						<a href="http://www.google.it">Hai dimenticato la password?</a>
 
-            <div class="form-group">
+						<div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Accedi</button>
             </div>
 
-						<br></br>
 
 
-						<a href="http://www.google.it">Hai dimenticato la password?</a>
+
+
 
 
         </div>
