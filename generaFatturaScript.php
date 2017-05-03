@@ -33,6 +33,7 @@
             continue;
         for($j = 0; $j< $n; $j++) {
             $prodotto = mysql_fetch_array($res);
+            echo "Codice prodotto $i: $codiceProdotto[$i] <br>";
             if ($prodotto['codice'] == $codiceProdotto[$i]) {
                 $prodotti[$i]['codice'] = $prodotto['codice'];
                 $prodotti[$i]['descrizione'] = $prodotto['descrizione'];
