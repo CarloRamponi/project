@@ -23,7 +23,8 @@
             echo "var clienti = new Array(".$n.");\n";
             for($i = 0; $i< $n; $i++) {
                  $cliente=mysql_fetch_array($res);
-                 echo 'clienti[i] = { codice:'.$cliente['codice'].', banca:"'.$cliente['banca'].'", nome:"'.$cliente['nome'].'", pi:"'.$cliente['pi'].'", via:"'.$cliente['via'].'", cap:'.$cliente['cap'].', citta:"'.$cliente['citta'].'", mail:"'.$cliente['mail'].'", scadenza:"'.$cliente['scadenza'].'", pagamento:"'.$cliente['pagamento'].'", iban:'.$cliente['iban'].' };\n';
+                 echo 'clienti['.$i.'] = { codice:'.$cliente['codice'].', banca:"'.$cliente['banca'].'", nome:"'.$cliente['nome'].'", pi:"'.$cliente['pi'].'", via:"'.$cliente['via'].'", cap:'.$cliente['cap'].', citta:"'.$cliente['citta'].'", mail:"'.$cliente['mail'].'", scadenza:"'.$cliente['scadenza'].'", pagamento:"'.$cliente['pagamento'].'", iban:'.$cliente['iban'].' };';
+                 echo "\n";
             }
 
             $res=mysql_query("SELECT * from prodotti");
@@ -32,7 +33,8 @@
             echo "var prodotti = new Array(".$n.");\n";
             for($i = 0; $i< $n; $i++) {
                 $prodotto=mysql_fetch_array($res);
-                echo 'prodotti[i] = { codice:'.$prodotto['codice'].', descrizione:"'.$prodotto['descrizione'].'", prezzo:'.$prodotto['prezzo'].', iva:'.$prodotto['iva'].'};\n';
+                echo 'prodotti['.$i.'] = { codice:'.$prodotto['codice'].', descrizione:"'.$prodotto['descrizione'].'", prezzo:'.$prodotto['prezzo'].', iva:'.$prodotto['iva'].'};\n';
+                echo "\n";
             }
         ?>
         </script>
