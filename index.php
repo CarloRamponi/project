@@ -101,13 +101,15 @@
             	<hr />
             </div>
 
-						<div class="form-group">
-							<button type="submit" class="btn btn-danger" name="btn-login">Hai dimenticato la password?</button>
-						</div>
+
 
             <div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Accedi</button>
             </div>
+
+						<div class="form-group">
+							<button type="submit" class="btn btn-danger" name="btn-login">Hai dimenticato la password?</button>
+						</div>
 
 
         </div>
