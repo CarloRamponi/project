@@ -41,18 +41,21 @@
                 $prodotti[$i]['quantita'] = $_POST['quantita' . $i];
                 $prodotti[$i]['um'] = $_POST['um' . $i];
                 $prodotti[$i]['sconto'] = $_POST['sconto' . $i];
+
+                echo $prodotti[$i]['codice']."<br>";
+                echo $prodotti[$i]['descizione']."<br>";
+                echo $prodotti[$i]['iva']."<br>";
+                echo $prodotti[$i]['prezzo']."<br>";
+                echo $prodotti[$i]['quantita']."<br>";
+                echo $prodotti[$i]['um']."<br>";
+                echo $prodotti[$i]['sconto']."<br>";
+
+                echo "<br><br>";
+
                 break;
             }
         }
     }
-
-    echo $prodotti[0]['codice']."<br>";
-    echo $prodotti[0]['descizione']."<br>";
-    echo $prodotti[0]['iva']."<br>";
-    echo $prodotti[0]['prezzo']."<br>";
-    echo $prodotti[0]['quantita']."<br>";
-    echo $prodotti[0]['um']."<br>";
-    echo $prodotti[0]['sconto']."<br>";
 
 
 ?>
