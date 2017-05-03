@@ -20,19 +20,19 @@
             $res=mysql_query("SELECT * from clienti");
             $n=mysql_num_rows($res);
 
-            echo "var clienti = new Array(".$n.");";
+            echo "var clienti = new Array(".$n.");\n";
             for($i = 0; $i< $n; $i++) {
                  $cliente=mysql_fetch_array($res);
-                 echo 'clienti[i] = { codice:'.$cliente['codice'].', banca:"'.$cliente['banca'].'", nome:"'.$cliente['nome'].'", pi:"'.$cliente['pi'].'", via:"'.$cliente['via'].'", cap:'.$cliente['cap'].', citta:"'.$cliente['citta'].'", mail:"'.$cliente['mail'].'", scadenza:"'.$cliente['scadenza'].'", pagamento:"'.$cliente['pagamento'].'", iban:'.$cliente['iban'].' };';
+                 echo 'clienti[i] = { codice:'.$cliente['codice'].', banca:"'.$cliente['banca'].'", nome:"'.$cliente['nome'].'", pi:"'.$cliente['pi'].'", via:"'.$cliente['via'].'", cap:'.$cliente['cap'].', citta:"'.$cliente['citta'].'", mail:"'.$cliente['mail'].'", scadenza:"'.$cliente['scadenza'].'", pagamento:"'.$cliente['pagamento'].'", iban:'.$cliente['iban'].' };\n';
             }
 
             $res=mysql_query("SELECT * from prodotti");
             $n=mysql_num_rows($res);
 
-            echo "var prodotti = new Array(".$n.");";
+            echo "var prodotti = new Array(".$n.");\n";
             for($i = 0; $i< $n; $i++) {
                 $prodotto=mysql_fetch_array($res);
-                echo 'prodotti[i] = { codice:'.$prodotto['codice'].', descrizione:"'.$prodotto['descrizione'].'", prezzo:'.$prodotto['prezzo'].', iva:'.$prodotto['iva'].'};';
+                echo 'prodotti[i] = { codice:'.$prodotto['codice'].', descrizione:"'.$prodotto['descrizione'].'", prezzo:'.$prodotto['prezzo'].', iva:'.$prodotto['iva'].'};\n';
             }
         ?>
         </script>
