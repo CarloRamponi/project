@@ -41,6 +41,9 @@
         }
     }
 
-    echo "$prodotti[0]";
+    echo $prodotti[0]['quantita'];
+    echo $prodotti[0]['um'];
+    echo $prodotti[0]['sconto'];
+    echo $prodotti[0]['codice'];
 
 ?>
