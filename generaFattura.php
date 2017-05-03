@@ -77,7 +77,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Codice cliente</span>
-                                <select class="form-control" name="codiceCliente" onchange="updateCliente()">
+                                <select class="form-control" name="codiceCliente" onchange="updateCliente()" id="codice">
                                     <option>Pavel</option>
                                     <option>Ilie</option>
                                     <option>Rebenciuc</option>
@@ -90,7 +90,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Banca d'appoggio:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled  id="banca"/>
                             </div>
                         </div>
 
@@ -99,7 +99,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Scadenza:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="scadenza"/>
                             </div>
                         </div>
 
@@ -108,7 +108,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Nome:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="nome"/>
                             </div>
                         </div>
 
@@ -117,7 +117,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Via:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="via"/>
                             </div>
                         </div>
 
@@ -126,7 +126,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Città:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="città"/>
                             </div>
                         </div>
 
@@ -135,7 +135,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">CAP:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="cap"/>
                             </div>
                         </div>
 
@@ -144,7 +144,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">E-mail:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="mail"/>
                             </div>
                         </div>
 
@@ -153,7 +153,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">PI/CF:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="pi"/>
                             </div>
                         </div>
 
@@ -162,7 +162,7 @@
                         <div class="col-md-6">
                             <div class="input-group">
                                 <span class="input-group-addon">Modalità di pagamento:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="pagamento"/>
                             </div>
                         </div>
 
@@ -171,7 +171,7 @@
                         <div class="col-md-6">
                             <div class="input-group">
                                 <span class="input-group-addon">IBAN:</span>
-                                <input class="form-control" type="text" disabled />
+                                <input class="form-control" type="text" disabled id="iban"/>
                             </div>
                         </div>
 
@@ -286,6 +286,36 @@
             }
 
             function updateCliente() {
+              if (document.getElementById("codice").getAttribute()=="Seleziona"){
+                document.getElementById("banca").setAttribute("value","");
+                document.getElementById("scadenza").setAttribute("value","");
+                document.getElementById("nome").setAttribute("value","");
+                document.getElementById("via").setAttribute("value","");
+                document.getElementById("città").setAttribute("value","");
+                document.getElementById("cap").setAttribute("value","");
+                document.getElementById("mail").setAttribute("value","");
+                document.getElementById("pi").setAttribute("value","");
+                document.getElementById("pagamento").setAttribute("value","");
+                document.getElementById("iban").setAttribute("value","");
+              }
+
+              else {
+                for($i = 0; $i< $n; $i++) {
+                  if(document.getElementById("codice").getAttribute()==clienti[$i].codice){
+                    document.getElementById("banca").setAttribute("value",clienti[$i].banca);
+                    document.getElementById("scadenza").setAttribute("value",clienti[$i].scadenza);
+                    document.getElementById("nome").setAttribute("value",clienti[$i].nome);
+                    document.getElementById("via").setAttribute("value",clienti[$i].via);
+                    document.getElementById("città").setAttribute("value",clienti[$i].citta);
+                    document.getElementById("cap").setAttribute("value",clienti[$i].cap);
+                    document.getElementById("mail").setAttribute("value",clienti[$i].mail);
+                    document.getElementById("pi").setAttribute("value",clienti[$i].pi);
+                    document.getElementById("pagamento").setAttribute("value",clienti[$i].pagamento);
+                    document.getElementById("iban").setAttribute("value",clienti[$i].iban);
+                    break;
+                  }
+                }
+              }
                 console.log("Aggiornato cliente");
             }
         </script>
@@ -296,3 +326,5 @@
 
     </body>
 </html>
+
+<!-- c.setAttribute("value", "cosa vuoi metterci dentro") -->
