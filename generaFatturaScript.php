@@ -25,13 +25,12 @@
 
     $prodotti = [];
 
-    $res=mysql_query("SELECT * from prodotti");
-    $n=mysql_num_rows($res);
-
     for($i=0; $i<$MAX_N; $i++) {
         if($codiceProdotto=="Seleziona")
             continue;
         for($j = 0; $j< $n; $j++) {
+            $res=mysql_query("SELECT * from prodotti");
+            $n=mysql_num_rows($res);
             $prodotto = mysql_fetch_array($res);
             if ($prodotto['codice'] == $codiceProdotto[$i]) {
                 $prodotti[$i]['codice'] = $prodotto['codice'];
@@ -43,7 +42,7 @@
                 $prodotti[$i]['sconto'] = $_POST['sconto' . $i];
 
                 echo "Codice:  ".$prodotti[$i]['codice']."<br>";
-                echo "Desc:  ".$prodotti[$i]['descizione']."<br>";
+                echo "Desc:  ".$prodotti[$i]['descrizione']."<br>";
                 echo "Iva:  ".$prodotti[$i]['iva']."<br>";
                 echo "Prezzo:  ".$prodotti[$i]['prezzo']."<br>";
                 echo "Quantità:  ".$prodotti[$i]['quantita']."<br>";
