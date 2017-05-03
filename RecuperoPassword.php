@@ -26,7 +26,7 @@
 
 						<div class="form-group">
 							<div class="input-group">
-								<span class="glyphicons glyphicons-user"></span>
+								  <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
 								<input id="pwd2" type="text" name="new_password1" class="form-control" placeholder="Inserire l'email" />
 							</div>
 						</div>
