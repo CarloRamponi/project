@@ -283,8 +283,8 @@
 
         <script>
             function aggiornaImporto(i){
-              var a=document.getElementById("quantita"+i).getAttribute("value")*document.getElementById("prezzo"+i).getAttribute("value");
-              var b=a*document.getElementById("sconto"+i).getAttribute("value")/100;
+              var a=document.getElementById("quantita"+i).getAttribute("text")*document.getElementById("prezzo"+i).getAttribute("text");
+              var b=a*document.getElementById("sconto"+i).getAttribute("text")/100;
               var c=a-b;
               document.getElementById("netto"+i).setAttribute("value",c);
             }
