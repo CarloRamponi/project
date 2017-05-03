@@ -200,10 +200,10 @@
                                     <span class='input-group-addon'>Codice prodotto:</span>
                                     <select class='form-control' name='codiceProdotto<?php echo $i; ?>' id='codicep<?php echo $i; ?>' onchange="updateRow(<?php echo $i; ?>)">
                                         <option>Seleziona</option>
-                                        <?php/*
+                                        <?php
                                             for($i = 0; $i< $numeroProdotti; $i++) {
-                                                echo "<option>".$prodotti[$i]['codice']."</option>";
-                                            }*/
+                                                echo "<option>".$prodotti[$i]['codice']."</option>\n";
+                                            }
                                         ?>
                                     </select>
                                 </div>
