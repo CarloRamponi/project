@@ -43,6 +43,10 @@
 			}
 		}
 	}
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -101,13 +105,19 @@
             	<hr />
             </div>
 
-						<div class="form-group">
-							<button type="submit" class="btn btn-block btn-primary" name="btn-login">Hai dimenticato la password?</button>
-						</div>
 
-            <div class="form-group">
+						<a href="RecuperoPassword.php">Hai dimenticato la password?</a>
+
+						<br></br>
+
+						<div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Accedi</button>
             </div>
+
+
+
+
+
 
 
         </div>

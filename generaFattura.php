@@ -47,7 +47,7 @@
                 <h3>Genera Fattura</h3>
                 </div>
 
-                <form method="post" action="generaFattura.php" autocomplete="off">
+                <form method="post" action="generaFatturaScript.php" autocomplete="off">
 
                     <div class="col-md-6">
                         <div class="input-group">
