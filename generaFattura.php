@@ -19,20 +19,24 @@
         <?php
             $res=mysql_query("SELECT * from clienti");
             $n=mysql_num_rows($res);
+            $numeroClienti = $n;
 
             echo "var clienti = new Array(".$n.");\n";
             for($i = 0; $i< $n; $i++) {
                  $cliente=mysql_fetch_array($res);
+                 $clienti[$i]=$cliente;
                  echo 'clienti['.$i.'] = { codice:'.$cliente['codice'].', banca:"'.$cliente['banca'].'", nome:"'.$cliente['nome'].'", pi:"'.$cliente['pi'].'", via:"'.$cliente['via'].'", cap:'.$cliente['cap'].', citta:"'.$cliente['citta'].'", mail:"'.$cliente['mail'].'", scadenza:"'.$cliente['scadenza'].'", pagamento:"'.$cliente['pagamento'].'", iban:"'.$cliente['iban'].'" };';
                  echo "\n";
             }
 
             $res=mysql_query("SELECT * from prodotti");
             $n=mysql_num_rows($res);
+            $numeroProdotti=$n;
 
             echo "var prodotti = new Array(".$n.");\n";
             for($i = 0; $i< $n; $i++) {
                 $prodotto=mysql_fetch_array($res);
+                $prodotti[$i]=$prodotto;
                 echo 'prodotti['.$i.'] = { codice:'.$prodotto['codice'].', descrizione:"'.$prodotto['descrizione'].'", prezzo:'.$prodotto['prezzo'].', iva:'.$prodotto['iva'].'};';
                 echo "\n";
             }
@@ -80,13 +84,9 @@
                                 <select class="form-control" name="codiceCliente" onchange="updateCliente()" id="codice">
                                     <option>Seleziona</option>
                                     <?php
-                                    $res=mysql_query("SELECT * from clienti");
-                                    $n=mysql_num_rows($res);
-
-                                    for($i = 0; $i< $n; $i++) {
-                                        $cliente=mysql_fetch_array($res);
-                                        echo "<option>".$cliente['codice']."</option>";
-                                    }
+                                        for($i = 0; $i< $numeroClienti; $i++) {
+                                            echo "<option>".$clienti[$i]['codice']."</option>";
+                                        }
                                     ?>
                                 </select>
                             </div>
@@ -201,12 +201,8 @@
                                     <select class='form-control' name='codiceProdotto<?php echo $i; ?>' id='codicep<?php echo $i; ?>' onchange="updateRow(<?php echo $i; ?>)">
                                         <option>Seleziona</option>
                                         <?php
-                                            $res=mysql_query("SELECT * from prodotti");
-                                            $n=mysql_num_rows($res);
-
-                                            for($i = 0; $i< $n; $i++) {
-                                                $prodotto=mysql_fetch_array($res);
-                                                echo "<option>".$prodotto['codice']."</option>";
+                                            for($i = 0; $i< $numeroProdotti; $i++) {
+                                                echo "<option>".$prodotti[$i]['codice']."</option>";
                                             }
                                         ?>
                                     </select>
