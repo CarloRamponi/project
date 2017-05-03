@@ -241,7 +241,7 @@
                             <div class='col-md-2'>
                                 <div class='input-group'>
                                     <span class='input-group-addon'>Sconto %:</span>
-                                    <input class='form-control' type='number' name='sconto<?php echo $i; ?>' id='sconto<?php echo $i; ?>'/>
+                                    <input class='form-control' type='number' name='sconto<?php echo $i; ?>' id='sconto<?php echo $i; ?>' onchange="aggiornaImporto(<?php echo $i; ?>)"/>
                                 </div>
                             </div>
 
@@ -283,19 +283,19 @@
 
         <script>
             function aggiornaImporto(i){
-              
+              var a=document.getElementById("quantita"+i).getAttribute("value")*document.getElementById("prezzo"+i).getAttribute("value");
+              var b=a*document.getElementById("sconto"+i).getAttribute("value")/100;
+              var c=a-b;
+              document.getElementById("netto"+i).setAttribute("value",c);
             }
 
             function updateRow(i) {
-                var x=document.getElementById("codicep"+i).selectedIndex;
-                document.getElementById("descrizione"+i).setAttribute("value",prodotti[x].descrizione);
-                document.getElementById("iva"+i).setAttribute("value",prodotti[x].iva);
-                document.getElementById("prezzo"+i).setAttribute("value",prodotti[x].prezzo);
+              var x=document.getElementById("codicep"+i).selectedIndex;
+              document.getElementById("descrizione"+i).setAttribute("value",prodotti[x].descrizione);
+              document.getElementById("iva"+i).setAttribute("value",prodotti[x].iva);
+              document.getElementById("prezzo"+i).setAttribute("value",prodotti[x].prezzo);
 
-                var a=document.getElementById("quantita"+i).getAttribute("value")*document.getElementById("prezzo"+i).getAttribute("value");
-                document.getElementById("netto"+i).setAttribute("value",prodotti[x].prezzo);
-
-                console.log("Aggiornato:  "+i);
+              console.log("Aggiornato:  "+i);
             }
 
             function updateCliente() {
