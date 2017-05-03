@@ -23,7 +23,7 @@
             break;
     }
 
-    $prodotti = [[]];
+    $prodotti = [];
 
     $res=mysql_query("SELECT * from prodotti");
     $n=mysql_num_rows($res);
@@ -32,19 +32,19 @@
         $prodotto=mysql_fetch_array($res);
         for($j=0; $j<$MAX_N; $j++) {
             if ($prodotto['codice'] == $codiceProdotto[$j]) {
-                $prodotti[0][$i]=$prodotto;
+                $prodotti[$i]=$prodotto;
                 break;
             }
-            $prodotti[1][$i]['quantita']=$_POST['quantita'.$i];
-            $prodotti[1][$i]['um']=$_POST['um'.$i];
-            $prodotti[1][$i]['sconto']=$_POST['sconto'.$i];
+            $prodotti2[$i]['quantita']=$_POST['quantita'.$i];
+            $prodotti2[$i]['um']=$_POST['um'.$i];
+            $prodotti2[$i]['sconto']=$_POST['sconto'.$i];
         }
     }
 
-    echo $prodotti[0]['codice']."\n";
-    echo $prodotti[1]['quantita']."\n";
-    echo $prodotti[2]['um']."\n";
-    echo $prodotti[3]['sconto']."\n";
+    echo $prodotti['codice']."\n";
+    echo $prodotti2['quantita']."\n";
+    echo $prodotti2['um']."\n";
+    echo $prodotti2['sconto']."\n";
 
 
 ?>
