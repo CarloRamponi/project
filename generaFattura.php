@@ -193,7 +193,7 @@
                                 <div class='input-group'>
                                     <span class='input-group-addon'>Codice prodotto:</span>
                                     <select class='form-control' name='codiceProdotto<?php echo $i; ?>' onchange="updateRow(<?php echo $i; ?>)">
-                                    <option>Pavel</option>
+                                    <option>120212</option>
                                     <option>Ilie</option>
                                     <option>Rebenciuc</option>
                                     </select>
