@@ -214,7 +214,7 @@
                             <div class='col-md-2'>
                                 <div class='input-group'>
                                     <span class='input-group-addon'>U.M.:</span>
-                                    <input class='form-control' name='um<?php echo $i; ?>' type='text' />
+                                    <input class='form-control' name='um<?php echo $i; ?>' id='um<?php echo $i; ?>'type='text' />
                                 </div>
                             </div>
 
@@ -223,7 +223,7 @@
                             <div class='col-md-2'>
                                 <div class='input-group'>
                                     <span class='input-group-addon'>Quantità:</span>
-                                    <input class='form-control' name='quantita<?php echo $i; ?>' type='number' />
+                                    <input class='form-control' name='quantita<?php echo $i; ?>' id='quantita<?php echo $i; ?>'type='number' />
                                 </div>
                             </div>
 
@@ -241,7 +241,7 @@
                             <div class='col-md-2'>
                                 <div class='input-group'>
                                     <span class='input-group-addon'>Sconto %:</span>
-                                    <input class='form-control' type='number' name='sconto<?php echo $i; ?>' />
+                                    <input class='form-control' type='number' name='sconto<?php echo $i; ?>' id='sconto<?php echo $i; ?>'/>
                                 </div>
                             </div>
 
@@ -283,6 +283,14 @@
 
         <script>
             function updateRow(i) {
+                var x=document.getElementById("codicep"+i).selectedIndex;
+                document.getElementById("descrizione"+i).setAttribute("value",prodotti[x].descrizione);
+                document.getElementById("iva"+i).setAttribute("value",prodotti[x].iva);
+                document.getElementById("prezzo"+i).setAttribute("value",prodotti[x].prezzo);
+
+                var a=document.getElementById("quantita"+i).getAttribute("value")*document.getElementById("prezzo"+i).getAttribute("value");
+                document.getElementById("netto"+i).setAttribute("value",prodotti[x].prezzo);
+                
                 console.log("Aggiornato:  "+i);
             }
 
