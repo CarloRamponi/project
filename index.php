@@ -106,7 +106,9 @@
             </div>
 
 
-						<a href="http://www.google.it">Hai dimenticato la password?</a>
+						<a href="http://www.pornhub.com">Hai dimenticato la password?</a>
+
+						<br></br>
 
 						<div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Accedi</button>
