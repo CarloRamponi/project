@@ -23,7 +23,7 @@
             break;
     }
 
-    $prodotti = [];
+    $prodotti2 = [];
 
     $res=mysql_query("SELECT * from prodotti");
     $n=mysql_num_rows($res);
