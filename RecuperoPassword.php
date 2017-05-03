@@ -1,3 +1,25 @@
+<?php
+
+require_once 'swiftmailer/lib/swift_required.php';
+
+$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
+                          ->setUsername('s-elias.ennajimi@istitutopilati.it')
+                          ->setPassword('17082000');
+
+$mailer = Swift_Mailer::newInstance($transport);
+
+$msg = Swift_Message::newInstance('LUCCHINI SPAMMER')
+   ->setFrom(array('s-elias.ennajimi@istitutopilati.it' => 'LUCCHINI MEME'))
+        ->setBody("LUCCHINI INVIA MEME")
+   ->setTo(array("$email" => "s-alessandro.lucchini@istitutopilati.it"))
+  ;
+
+$numSent = $mailer->send($msg);
+
+
+?>
+
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
