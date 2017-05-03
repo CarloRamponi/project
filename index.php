@@ -109,12 +109,8 @@
 
 						<br></br>
 						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
 						
+
 						<div class="form-group">
 							<button type="submit" class="btn btn-danger" name="btn-login">Hai dimenticato la password?</button>
 						</div>
