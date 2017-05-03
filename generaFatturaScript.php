@@ -41,10 +41,10 @@
         }
     }
 
-    echo $prodotti['codice']."\n";
-    echo $prodotti2['quantita']."\n";
-    echo $prodotti2['um']."\n";
-    echo $prodotti2['sconto']."\n";
+    echo $prodotti[0]['codice']."\n";
+    echo $prodotti2[0]['quantita']."\n";
+    echo $prodotti2[0]['um']."\n";
+    echo $prodotti2[0]['sconto']."\n";
 
 
 ?>
