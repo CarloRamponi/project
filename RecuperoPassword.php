@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Cambio password</title>
+<title>Recupero password</title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -37,21 +37,6 @@
 
 
 
-			<?php
-				if(isset($_GET['error'])){
-					$error = $_GET['error'];
-					if($error=="vuoto")
-						echo '<span class="text-danger">I campi non possono essere vuoti</span>';
-
-					if($error=="password")
-						echo '<span class="text-danger">Password errata. Riprova.</span>';
-
-					if($error=="newPasssword")
-						echo '<span class="text-danger">Le pasword non combaciano</span>';
-
-				}
-
-			?>
 
             <div class="form-group">
             	<button type="submit" class="btn btn-block btn-primary" name="btn-login">Invia mail di recupero</button>
@@ -65,75 +50,7 @@
 
     </div>
 
-    <script src="assets/jquery-1.11.3-jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-	 function show1()
-	{
-		var p = document.getElementById('pwd1');
-		p.setAttribute('type','text');
-	}
 
-	function hide1()
-	{
-		var p = document.getElementById('pwd1');
-		p.setAttribute('type','password');
-	}
-
-	function showHide1()
-	{
-		var input = document.getElementById("pwd1");
-		if (input.getAttribute("type") === "password") {
-			show1();
-		} else {
-			hide1();
-		}
-	}
-
-		 function show2()
-	{
-		var p = document.getElementById('pwd2');
-		p.setAttribute('type','text');
-	}
-
-	function hide2()
-	{
-		var p = document.getElementById('pwd2');
-		p.setAttribute('type','password');
-	}
-
-	function showHide2()
-	{
-		var input = document.getElementById("pwd2");
-		if (input.getAttribute("type") === "password") {
-		show2();
-		} else {
-			hide2();
-		}
-	}
-
-		 function show3()
-	{
-		var p = document.getElementById('pwd3');
-		p.setAttribute('type','text');
-	}
-
-	function hide3()
-	{
-		var p = document.getElementById('pwd3');
-		p.setAttribute('type','password');
-	}
-
-	function showHide3()
-	{
-		var input = document.getElementById("pwd3");
-		if (input.getAttribute("type") === "password") {
-		show3();
-		} else {
-			hide3();
-		}
-	}
- </script>
 
 </body>
 </html>

@@ -106,7 +106,7 @@
             </div>
 
 
-						<a href="aggiungiCliente.php">Hai dimenticato la password?</a>
+						<a href="RecuperoPassword.php">Hai dimenticato la password?</a>
 
 						<br></br>
 
