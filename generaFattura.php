@@ -165,7 +165,7 @@
                             $MAX_N=10;
                             for($i=0; $i<$MAX_N; $i++){
                         ?>
-                            <br><br>
+                            <br>
                             <div class='col-md-4'>
                                 <div class='input-group'>
                                     <span class='input-group-addon'>Codice prodotto:</span>
