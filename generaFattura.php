@@ -55,7 +55,7 @@
                         <div class="col-md-4">
                             <div class="input-group">
                                 <span class="input-group-addon">Codice cliente</span>
-                                <select class="form-control" name="codiceCliente">
+                                <select class="form-control" name="codiceCliente" onchange="updateCliente()">
                                     <option>Pavel</option>
                                     <option>Ilie</option>
                                     <option>Rebenciuc</option>
@@ -261,6 +261,10 @@
         <script>
             function updateRow(i) {
                 console.log("Aggiornato:  "+i);
+            }
+
+            function updateCliente() {
+                console.log("Aggiornato cliente");
             }
         </script>
 
