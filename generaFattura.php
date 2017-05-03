@@ -78,10 +78,16 @@
                             <div class="input-group">
                                 <span class="input-group-addon">Codice cliente</span>
                                 <select class="form-control" name="codiceCliente" onchange="updateCliente()" id="codice">
-                                  <option>Selezione</option>
-                                  <option>Pavel</option>
-                                  <option>Ilie</option>
-                                  <option>Rebenciuc</option>
+                                    <option>Seleziona</option>
+                                    <?php
+                                    $res=mysql_query("SELECT * from clienti");
+                                    $n=mysql_num_rows($res);
+
+                                    for($i = 0; $i< $n; $i++) {
+                                        $cliente=mysql_fetch_array($res);
+                                        echo "<option>".$cliente['codice']."</option>";
+                                    }
+                                    ?>
                                 </select>
                             </div>
                         </div>
@@ -193,9 +199,16 @@
                                 <div class='input-group'>
                                     <span class='input-group-addon'>Codice prodotto:</span>
                                     <select class='form-control' name='codiceProdotto<?php echo $i; ?>' id='codicep<?php echo $i; ?>' onchange="updateRow(<?php echo $i; ?>)">
-                                    <option>120212</option>
-                                    <option>Ilie</option>
-                                    <option>Rebenciuc</option>
+                                        <option>Seleziona</option>
+                                        <?php
+                                            $res=mysql_query("SELECT * from prodotti");
+                                            $n=mysql_num_rows($res);
+
+                                            for($i = 0; $i< $n; $i++) {
+                                                $prodotto=mysql_fetch_array($res);
+                                                echo "<option>".$prodotto['codice']."</option>";
+                                            }
+                                        ?>
                                     </select>
                                 </div>
                             </div>
